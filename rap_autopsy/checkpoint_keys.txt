@@ -1,0 +1,4 @@
+cfg: <class 'dict'>
+state_dict: <class 'collections.OrderedDict'>
+optimizer_state_dict: <class 'dict'>
+step: <class 'int'>

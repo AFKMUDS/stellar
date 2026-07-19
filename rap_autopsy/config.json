@@ -1,0 +1,18 @@
+{
+  "vocab_size": 256,
+  "d_model": 256,
+  "d_state": 512,
+  "n_primitives": 8,
+  "use_bit_linear": false,
+  "use_symmetry_expansion": false,
+  "use_symmetry_retrieval": true,
+  "use_hypercube": false,
+  "use_delta_erase": false,
+  "delta_entropy_lo": 0.55,
+  "delta_entropy_hi": 0.95,
+  "delta_beta_max": 1.0,
+  "use_numeric_features": true,
+  "use_aux_numeric": true,
+  "aux_digit_weight": 0.1,
+  "aux_nibble_weight": 0.1
+}

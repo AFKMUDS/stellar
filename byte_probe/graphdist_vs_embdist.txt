@@ -1,0 +1,4 @@
+k_hop_max=2
+pairs_sampled=30000
+pairs_kept=2947
+pearson_r=-0.009266391497025041

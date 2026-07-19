@@ -1,0 +1,11 @@
+data=c:\Programming\Programming_Projects\RAPextended\natural_reasoning_train.jsonl
+mode=jsonl
+k=2
+reserved=[128, 129, 130]
+seqs=1145824
+tokens_scored=503582143
+usable_hits=454806537
+P(usable_neighbor)=0.9031
+P(usable_neighbor | ascii_0_127)=0.9030  (hits=453821649 / n=502581509)
+P(usable_neighbor | ext_128_255)=0.9843  (hits=984888 / n=1000634)
+P(usable_neighbor | reserved)=0.0000  (hits=0 / n=0)

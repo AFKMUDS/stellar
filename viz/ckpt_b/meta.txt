@@ -1,0 +1,8 @@
+ckpt=checkpoints1/b.pt
+cfg={'vocab_size': 256, 'd_model': 256, 'd_state': 512, 'n_primitives': 8, 'use_bit_linear': False, 'use_symmetry_expansion': False, 'use_symmetry_retrieval': True, 'use_path_retrieval': False, 'use_word_map_retrieval': False, 'path_k': 2, 'path_alpha': 1.0, 'use_hypercube': False, 'word_map_path': '', 'word_map_topk': 32, 'word_map_min_count': 1, 'use_delta_erase': False, 'delta_entropy_lo': 0.55, 'delta_entropy_hi': 0.95, 'delta_beta_max': 1.0, 'use_numeric_features': True, 'use_aux_numeric': True, 'aux_digit_weight': 0.1, 'aux_nibble_weight': 0.1}
+prim_A=(8, 512, 512)
+prim_B=(8, 512, 256)
+prim_bias=(8, 512)
+tok_emb.weight=(256, 256)
+bit_proj.weight=MISSING
+out.weight=(256, 768)

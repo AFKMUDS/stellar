@@ -1,0 +1,11 @@
+data=natural_reasoning_train.jsonl
+mode=jsonl
+k=2
+reserved=[128, 129, 130]
+seqs=201
+tokens_scored=89290
+usable_hits=81186
+P(usable_neighbor)=0.9092
+P(usable_neighbor | ascii_0_127)=0.9091  (hits=80985 / n=89086)
+P(usable_neighbor | ext_128_255)=0.9853  (hits=201 / n=204)
+P(usable_neighbor | reserved)=0.0000  (hits=0 / n=0)

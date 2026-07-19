@@ -1,0 +1,491 @@
+{
+  "purpose": "Test whether computation species persist after removing primitive-context and symbol features.",
+  "segment_count": 12649,
+  "results": [
+    {
+      "mode": "full",
+      "feature_count": 43,
+      "selected_k": 2,
+      "silhouette": 0.3130831792292431,
+      "nmi_with_primitive": 0.984255737146722,
+      "pca_explained_variance_ratio": [
+        0.30102959275245667,
+        0.07658643275499344
+      ],
+      "cluster_sizes": {
+        "0": 6314,
+        "1": 6335
+      },
+      "candidates": [
+        {
+          "k": 2,
+          "silhouette": 0.3130831792292431,
+          "inertia": 389024.59375
+        },
+        {
+          "k": 3,
+          "silhouette": 0.3009652888918907,
+          "inertia": 360619.125
+        },
+        {
+          "k": 4,
+          "silhouette": 0.23838941704435157,
+          "inertia": 336416.1875
+        },
+        {
+          "k": 5,
+          "silhouette": 0.2413495986476841,
+          "inertia": 319337.0
+        },
+        {
+          "k": 6,
+          "silhouette": 0.23872611413354708,
+          "inertia": 302520.75
+        },
+        {
+          "k": 7,
+          "silhouette": 0.21754400618029973,
+          "inertia": 286905.9375
+        },
+        {
+          "k": 8,
+          "silhouette": 0.2008360737261486,
+          "inertia": 271823.84375
+        }
+      ],
+      "features": [
+        "log_duration",
+        "state_drift",
+        "state_norm_delta",
+        "entropy_drift",
+        "mean_entropy",
+        "mean_confidence",
+        "min_confidence",
+        "retrieval_hits",
+        "retrieval_count",
+        "retrieval_hit_rate",
+        "mean_retrieval_norm",
+        "mean_graph_distance",
+        "mean_chosen_probability",
+        "byte_class_0",
+        "byte_class_1",
+        "byte_class_2",
+        "byte_class_3",
+        "byte_class_4",
+        "byte_class_5",
+        "byte_class_6",
+        "state_direction_rp_0",
+        "state_direction_rp_1",
+        "state_direction_rp_2",
+        "state_direction_rp_3",
+        "state_direction_rp_4",
+        "state_direction_rp_5",
+        "state_direction_rp_6",
+        "state_direction_rp_7",
+        "state_direction_rp_8",
+        "state_direction_rp_9",
+        "state_direction_rp_10",
+        "state_direction_rp_11",
+        "state_direction_rp_12",
+        "state_direction_rp_13",
+        "state_direction_rp_14",
+        "state_direction_rp_15",
+        "previous_primitive_0",
+        "previous_primitive_1",
+        "previous_primitive_2",
+        "previous_primitive_3",
+        "previous_primitive_4",
+        "previous_primitive_5",
+        "previous_primitive_6",
+        "previous_primitive_7",
+        "previous_primitive_8",
+        "next_primitive_0",
+        "next_primitive_1",
+        "next_primitive_2",
+        "next_primitive_3",
+        "next_primitive_4",
+        "next_primitive_5",
+        "next_primitive_6",
+        "next_primitive_7",
+        "next_primitive_8"
+      ]
+    },
+    {
+      "mode": "no_routing_context",
+      "feature_count": 33,
+      "selected_k": 4,
+      "silhouette": 0.28839751365952315,
+      "nmi_with_primitive": 0.7562373640996677,
+      "pca_explained_variance_ratio": [
+        0.2909861207008362,
+        0.09692054986953735
+      ],
+      "cluster_sizes": {
+        "0": 218,
+        "1": 6211,
+        "2": 1802,
+        "3": 4418
+      },
+      "candidates": [
+        {
+          "k": 2,
+          "silhouette": 0.2722073991304599,
+          "inertia": 308441.90625
+        },
+        {
+          "k": 3,
+          "silhouette": 0.28255897539647573,
+          "inertia": 279659.5625
+        },
+        {
+          "k": 4,
+          "silhouette": 0.28839751365952315,
+          "inertia": 259118.953125
+        },
+        {
+          "k": 5,
+          "silhouette": 0.26055257523049263,
+          "inertia": 242188.875
+        },
+        {
+          "k": 6,
+          "silhouette": 0.16952453511269186,
+          "inertia": 225186.625
+        },
+        {
+          "k": 7,
+          "silhouette": 0.18609388604021046,
+          "inertia": 212065.265625
+        },
+        {
+          "k": 8,
+          "silhouette": 0.185374958480188,
+          "inertia": 203494.25
+        }
+      ],
+      "features": [
+        "log_duration",
+        "state_drift",
+        "state_norm_delta",
+        "entropy_drift",
+        "mean_entropy",
+        "mean_confidence",
+        "min_confidence",
+        "retrieval_hits",
+        "retrieval_count",
+        "retrieval_hit_rate",
+        "mean_retrieval_norm",
+        "mean_graph_distance",
+        "mean_chosen_probability",
+        "byte_class_0",
+        "byte_class_1",
+        "byte_class_2",
+        "byte_class_3",
+        "byte_class_4",
+        "byte_class_5",
+        "byte_class_6",
+        "state_direction_rp_0",
+        "state_direction_rp_1",
+        "state_direction_rp_2",
+        "state_direction_rp_3",
+        "state_direction_rp_4",
+        "state_direction_rp_5",
+        "state_direction_rp_6",
+        "state_direction_rp_7",
+        "state_direction_rp_8",
+        "state_direction_rp_9",
+        "state_direction_rp_10",
+        "state_direction_rp_11",
+        "state_direction_rp_12",
+        "state_direction_rp_13",
+        "state_direction_rp_14",
+        "state_direction_rp_15"
+      ]
+    },
+    {
+      "mode": "dynamics_only",
+      "feature_count": 27,
+      "selected_k": 2,
+      "silhouette": 0.2499517785350402,
+      "nmi_with_primitive": 0.9404681875254386,
+      "pca_explained_variance_ratio": [
+        0.28552454710006714,
+        0.10622706264257431
+      ],
+      "cluster_sizes": {
+        "0": 6379,
+        "1": 6270
+      },
+      "candidates": [
+        {
+          "k": 2,
+          "silhouette": 0.2499517785350402,
+          "inertia": 258761.203125
+        },
+        {
+          "k": 3,
+          "silhouette": 0.241750747550931,
+          "inertia": 233862.015625
+        },
+        {
+          "k": 4,
+          "silhouette": 0.1694246841229195,
+          "inertia": 217024.34375
+        },
+        {
+          "k": 5,
+          "silhouette": 0.17329308675005492,
+          "inertia": 196421.640625
+        },
+        {
+          "k": 6,
+          "silhouette": 0.17154274949379159,
+          "inertia": 187302.515625
+        },
+        {
+          "k": 7,
+          "silhouette": 0.17524396313536897,
+          "inertia": 179567.875
+        },
+        {
+          "k": 8,
+          "silhouette": 0.16796836996923456,
+          "inertia": 168663.5625
+        }
+      ],
+      "features": [
+        "log_duration",
+        "state_drift",
+        "state_norm_delta",
+        "entropy_drift",
+        "mean_entropy",
+        "mean_confidence",
+        "min_confidence",
+        "retrieval_hits",
+        "retrieval_count",
+        "retrieval_hit_rate",
+        "mean_retrieval_norm",
+        "mean_graph_distance",
+        "state_direction_rp_0",
+        "state_direction_rp_1",
+        "state_direction_rp_2",
+        "state_direction_rp_3",
+        "state_direction_rp_4",
+        "state_direction_rp_5",
+        "state_direction_rp_6",
+        "state_direction_rp_7",
+        "state_direction_rp_8",
+        "state_direction_rp_9",
+        "state_direction_rp_10",
+        "state_direction_rp_11",
+        "state_direction_rp_12",
+        "state_direction_rp_13",
+        "state_direction_rp_14",
+        "state_direction_rp_15"
+      ]
+    },
+    {
+      "mode": "state_only",
+      "feature_count": 18,
+      "selected_k": 2,
+      "silhouette": 0.25118071758743704,
+      "nmi_with_primitive": 0.9523273600450388,
+      "pca_explained_variance_ratio": [
+        0.30658480525016785,
+        0.1415730118751526
+      ],
+      "cluster_sizes": {
+        "0": 6302,
+        "1": 6347
+      },
+      "candidates": [
+        {
+          "k": 2,
+          "silhouette": 0.25118071758743704,
+          "inertia": 165993.984375
+        },
+        {
+          "k": 3,
+          "silhouette": 0.20502935900798372,
+          "inertia": 149185.109375
+        },
+        {
+          "k": 4,
+          "silhouette": 0.1771632231866419,
+          "inertia": 135232.3125
+        },
+        {
+          "k": 5,
+          "silhouette": 0.1705326851225683,
+          "inertia": 128113.6171875
+        },
+        {
+          "k": 6,
+          "silhouette": 0.17630252179674216,
+          "inertia": 120395.125
+        },
+        {
+          "k": 7,
+          "silhouette": 0.17492299618230125,
+          "inertia": 115363.40625
+        },
+        {
+          "k": 8,
+          "silhouette": 0.18210213153871144,
+          "inertia": 110493.3828125
+        }
+      ],
+      "features": [
+        "state_drift",
+        "state_norm_delta",
+        "state_direction_rp_0",
+        "state_direction_rp_1",
+        "state_direction_rp_2",
+        "state_direction_rp_3",
+        "state_direction_rp_4",
+        "state_direction_rp_5",
+        "state_direction_rp_6",
+        "state_direction_rp_7",
+        "state_direction_rp_8",
+        "state_direction_rp_9",
+        "state_direction_rp_10",
+        "state_direction_rp_11",
+        "state_direction_rp_12",
+        "state_direction_rp_13",
+        "state_direction_rp_14",
+        "state_direction_rp_15"
+      ]
+    },
+    {
+      "mode": "control_only",
+      "feature_count": 9,
+      "selected_k": 4,
+      "silhouette": 0.6939479227365088,
+      "nmi_with_primitive": 0.3895886064883104,
+      "pca_explained_variance_ratio": [
+        0.4388463795185089,
+        0.3038164973258972
+      ],
+      "cluster_sizes": {
+        "0": 8912,
+        "1": 3490,
+        "2": 227,
+        "3": 20
+      },
+      "candidates": [
+        {
+          "k": 2,
+          "silhouette": 0.660683636529484,
+          "inertia": 72578.265625
+        },
+        {
+          "k": 3,
+          "silhouette": 0.6897736584435977,
+          "inertia": 51001.55078125
+        },
+        {
+          "k": 4,
+          "silhouette": 0.6939479227365088,
+          "inertia": 40257.25
+        },
+        {
+          "k": 5,
+          "silhouette": 0.6903021247649139,
+          "inertia": 33660.83984375
+        },
+        {
+          "k": 6,
+          "silhouette": 0.6823051370111064,
+          "inertia": 28907.78515625
+        },
+        {
+          "k": 7,
+          "silhouette": 0.6874614736903605,
+          "inertia": 24811.994140625
+        },
+        {
+          "k": 8,
+          "silhouette": 0.6917264452683246,
+          "inertia": 22943.55859375
+        }
+      ],
+      "features": [
+        "log_duration",
+        "entropy_drift",
+        "mean_entropy",
+        "mean_confidence",
+        "min_confidence",
+        "retrieval_hits",
+        "retrieval_count",
+        "retrieval_hit_rate",
+        "mean_retrieval_norm",
+        "mean_graph_distance"
+      ]
+    },
+    {
+      "mode": "symbol_only",
+      "feature_count": 6,
+      "selected_k": 5,
+      "silhouette": 0.6253749183220875,
+      "nmi_with_primitive": 0.6601306318126255,
+      "pca_explained_variance_ratio": [
+        0.39603257179260254,
+        0.2521201968193054
+      ],
+      "cluster_sizes": {
+        "0": 6106,
+        "1": 1355,
+        "2": 625,
+        "3": 3610,
+        "4": 953
+      },
+      "candidates": [
+        {
+          "k": 2,
+          "silhouette": 0.4793535707659548,
+          "inertia": 47801.9765625
+        },
+        {
+          "k": 3,
+          "silhouette": 0.5735225293081264,
+          "inertia": 30919.248046875
+        },
+        {
+          "k": 4,
+          "silhouette": 0.6078264645464435,
+          "inertia": 21824.751953125
+        },
+        {
+          "k": 5,
+          "silhouette": 0.6253749183220875,
+          "inertia": 14544.591796875
+        },
+        {
+          "k": 6,
+          "silhouette": 0.6020276704457912,
+          "inertia": 11283.6162109375
+        },
+        {
+          "k": 7,
+          "silhouette": 0.5595500269682495,
+          "inertia": 9587.0078125
+        },
+        {
+          "k": 8,
+          "silhouette": 0.5665491817520496,
+          "inertia": 8323.82421875
+        }
+      ],
+      "features": [
+        "mean_chosen_probability",
+        "byte_class_0",
+        "byte_class_1",
+        "byte_class_2",
+        "byte_class_3",
+        "byte_class_4",
+        "byte_class_5",
+        "byte_class_6"
+      ]
+    }
+  ]
+}

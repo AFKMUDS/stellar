@@ -1,0 +1,2690 @@
+{
+  "byte_class_order": [
+    "whitespace",
+    "digit",
+    "letter",
+    "punctuation",
+    "reserved_tag",
+    "control",
+    "high_byte"
+  ],
+  "modes": [
+    {
+      "mode": "no_routing_context",
+      "k": 4,
+      "features": [
+        "log_duration",
+        "state_drift",
+        "state_norm_delta",
+        "entropy_drift",
+        "mean_entropy",
+        "mean_confidence",
+        "min_confidence",
+        "retrieval_hits",
+        "retrieval_count",
+        "retrieval_hit_rate",
+        "mean_retrieval_norm",
+        "mean_graph_distance",
+        "mean_chosen_probability",
+        "byte_class_0",
+        "byte_class_1",
+        "byte_class_2",
+        "byte_class_3",
+        "byte_class_4",
+        "byte_class_5",
+        "byte_class_6",
+        "state_direction_rp_0",
+        "state_direction_rp_1",
+        "state_direction_rp_2",
+        "state_direction_rp_3",
+        "state_direction_rp_4",
+        "state_direction_rp_5",
+        "state_direction_rp_6",
+        "state_direction_rp_7",
+        "state_direction_rp_8",
+        "state_direction_rp_9",
+        "state_direction_rp_10",
+        "state_direction_rp_11",
+        "state_direction_rp_12",
+        "state_direction_rp_13",
+        "state_direction_rp_14",
+        "state_direction_rp_15"
+      ],
+      "profiles": [
+        {
+          "species": 0,
+          "count": 2251,
+          "primitive_distribution": {
+            "2": 2160,
+            "6": 91
+          },
+          "previous_primitive_distribution": {
+            "6": 2149,
+            "2": 91,
+            "none": 5,
+            "7": 3,
+            "0": 3
+          },
+          "next_primitive_distribution": {
+            "6": 1943,
+            "none": 212,
+            "2": 90,
+            "0": 5,
+            "7": 1
+          },
+          "mean_duration": 2.68236339404709,
+          "mean_state_drift": 21.3413229276741,
+          "mean_state_norm_delta": -0.953746368174339,
+          "mean_entropy_drift": -0.0023728722520522812,
+          "mean_entropy": 0.006276314921577612,
+          "mean_confidence": 0.9975585941022258,
+          "mean_retrieval_hits": 0.3673922701021768,
+          "mean_retrieval_hit_rate": 0.10805852636836252,
+          "mean_retrieval_norm": 1.8442898197868876,
+          "mean_chosen_probability": 0.27734838496947617,
+          "byte_class_distribution": [
+            0.0004442470089998096,
+            0.21852262318134308,
+            0.18270201981067657,
+            0.4937637746334076,
+            0.10456719249486923,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 5433,
+              "prompt_id": 409,
+              "primitive": 2,
+              "duration": 5,
+              "text": "b�^2x",
+              "byte_labels": [
+                "b",
+                "x80",
+                "^",
+                "2",
+                "x"
+              ]
+            },
+            {
+              "segment_id": 3732,
+              "prompt_id": 283,
+              "primitive": 2,
+              "duration": 3,
+              "text": "(3,",
+              "byte_labels": [
+                "(",
+                "3",
+                ","
+              ]
+            },
+            {
+              "segment_id": 10683,
+              "prompt_id": 850,
+              "primitive": 2,
+              "duration": 2,
+              "text": "(x",
+              "byte_labels": [
+                "(",
+                "x"
+              ]
+            },
+            {
+              "segment_id": 8944,
+              "prompt_id": 700,
+              "primitive": 2,
+              "duration": 4,
+              "text": "m�^2",
+              "byte_labels": [
+                "m",
+                "x80",
+                "^",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 12471,
+              "prompt_id": 986,
+              "primitive": 2,
+              "duration": 3,
+              "text": "(1,",
+              "byte_labels": [
+                "(",
+                "1",
+                ","
+              ]
+            },
+            {
+              "segment_id": 8535,
+              "prompt_id": 665,
+              "primitive": 2,
+              "duration": 3,
+              "text": "x^2",
+              "byte_labels": [
+                "x",
+                "^",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 1630,
+              "prompt_id": 136,
+              "primitive": 2,
+              "duration": 4,
+              "text": "m�^2",
+              "byte_labels": [
+                "m",
+                "x80",
+                "^",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 10789,
+              "prompt_id": 858,
+              "primitive": 2,
+              "duration": 3,
+              "text": "(1,",
+              "byte_labels": [
+                "(",
+                "1",
+                ","
+              ]
+            },
+            {
+              "segment_id": 7938,
+              "prompt_id": 613,
+              "primitive": 2,
+              "duration": 4,
+              "text": "x�^2",
+              "byte_labels": [
+                "x",
+                "x80",
+                "^",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 12610,
+              "prompt_id": 998,
+              "primitive": 2,
+              "duration": 3,
+              "text": "(0,",
+              "byte_labels": [
+                "(",
+                "0",
+                ","
+              ]
+            },
+            {
+              "segment_id": 9739,
+              "prompt_id": 778,
+              "primitive": 2,
+              "duration": 3,
+              "text": "x^2",
+              "byte_labels": [
+                "x",
+                "^",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 12498,
+              "prompt_id": 989,
+              "primitive": 2,
+              "duration": 5,
+              "text": "C�2),",
+              "byte_labels": [
+                "C",
+                "x80",
+                "2",
+                ")",
+                ","
+              ]
+            }
+          ]
+        },
+        {
+          "species": 1,
+          "count": 6234,
+          "primitive_distribution": {
+            "6": 6227,
+            "2": 5,
+            "7": 2
+          },
+          "previous_primitive_distribution": {
+            "2": 5488,
+            "none": 741,
+            "6": 2,
+            "0": 2,
+            "7": 1
+          },
+          "next_primitive_distribution": {
+            "2": 6174,
+            "none": 55,
+            "6": 5
+          },
+          "mean_duration": 1.0242220083413538,
+          "mean_state_drift": 22.6796031498473,
+          "mean_state_norm_delta": 1.3987245790691456,
+          "mean_entropy_drift": 0.00018897674996120426,
+          "mean_entropy": 0.0024560150608040057,
+          "mean_confidence": 0.9992873493321068,
+          "mean_retrieval_hits": 0.00016041065126724414,
+          "mean_retrieval_hit_rate": 3.208213025344883e-05,
+          "mean_retrieval_norm": 0.0005663019057302319,
+          "mean_chosen_probability": 0.7614644694868173,
+          "byte_class_distribution": [
+            0.9810313582420349,
+            8.555235399398953e-05,
+            0.012544112280011177,
+            0.006274729501456022,
+            6.416426185751334e-05,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 12240,
+              "prompt_id": 968,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 12373,
+              "prompt_id": 980,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 587,
+              "prompt_id": 56,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 9621,
+              "prompt_id": 767,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 5978,
+              "prompt_id": 456,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 6857,
+              "prompt_id": 524,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 544,
+              "prompt_id": 53,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 12178,
+              "prompt_id": 960,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 1106,
+              "prompt_id": 103,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 10238,
+              "prompt_id": 817,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 294,
+              "prompt_id": 21,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 12401,
+              "prompt_id": 982,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            }
+          ]
+        },
+        {
+          "species": 2,
+          "count": 206,
+          "primitive_distribution": {
+            "2": 179,
+            "6": 12,
+            "0": 8,
+            "7": 7
+          },
+          "previous_primitive_distribution": {
+            "6": 176,
+            "2": 27,
+            "none": 2,
+            "0": 1
+          },
+          "next_primitive_distribution": {
+            "6": 166,
+            "2": 27,
+            "none": 12,
+            "7": 1
+          },
+          "mean_duration": 5.718446601941747,
+          "mean_state_drift": 21.910276459258736,
+          "mean_state_norm_delta": -1.5979606387684646,
+          "mean_entropy_drift": -0.15439438240276987,
+          "mean_entropy": 0.11490533469389533,
+          "mean_confidence": 0.9128871525241705,
+          "mean_retrieval_hits": 0.6990291262135923,
+          "mean_retrieval_hit_rate": 0.08677611705843694,
+          "mean_retrieval_norm": 1.5022208470637735,
+          "mean_chosen_probability": 0.3216716380727894,
+          "byte_class_distribution": [
+            0.0,
+            0.027858419343829155,
+            0.6370902061462402,
+            0.16889770328998566,
+            0.16615350544452667,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 1218,
+              "prompt_id": 110,
+              "primitive": 2,
+              "duration": 8,
+              "text": "Limited�",
+              "byte_labels": [
+                "L",
+                "i",
+                "m",
+                "i",
+                "t",
+                "e",
+                "d",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 4944,
+              "prompt_id": 370,
+              "primitive": 2,
+              "duration": 2,
+              "text": "m�",
+              "byte_labels": [
+                "m",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 8763,
+              "prompt_id": 687,
+              "primitive": 2,
+              "duration": 3,
+              "text": "m�.",
+              "byte_labels": [
+                "m",
+                "x81",
+                "."
+              ]
+            },
+            {
+              "segment_id": 3849,
+              "prompt_id": 293,
+              "primitive": 2,
+              "duration": 4,
+              "text": "max�",
+              "byte_labels": [
+                "m",
+                "a",
+                "x",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 12030,
+              "prompt_id": 948,
+              "primitive": 2,
+              "duration": 2,
+              "text": "u�",
+              "byte_labels": [
+                "u",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 303,
+              "prompt_id": 23,
+              "primitive": 2,
+              "duration": 6,
+              "text": "cm�^2)",
+              "byte_labels": [
+                "c",
+                "m",
+                "x80",
+                "^",
+                "2",
+                ")"
+              ]
+            },
+            {
+              "segment_id": 9238,
+              "prompt_id": 733,
+              "primitive": 2,
+              "duration": 2,
+              "text": "m�",
+              "byte_labels": [
+                "m",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 4303,
+              "prompt_id": 327,
+              "primitive": 2,
+              "duration": 2,
+              "text": "m�",
+              "byte_labels": [
+                "m",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 12322,
+              "prompt_id": 976,
+              "primitive": 2,
+              "duration": 4,
+              "text": "meg�",
+              "byte_labels": [
+                "m",
+                "e",
+                "g",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 10878,
+              "prompt_id": 863,
+              "primitive": 2,
+              "duration": 2,
+              "text": "p�",
+              "byte_labels": [
+                "p",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 9592,
+              "prompt_id": 765,
+              "primitive": 2,
+              "duration": 5,
+              "text": "mons�",
+              "byte_labels": [
+                "m",
+                "o",
+                "n",
+                "s",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 2173,
+              "prompt_id": 167,
+              "primitive": 2,
+              "duration": 4,
+              "text": "many",
+              "byte_labels": [
+                "m",
+                "a",
+                "n",
+                "y"
+              ]
+            }
+          ]
+        },
+        {
+          "species": 3,
+          "count": 3958,
+          "primitive_distribution": {
+            "2": 3956,
+            "6": 2
+          },
+          "previous_primitive_distribution": {
+            "6": 3949,
+            "7": 5,
+            "0": 2,
+            "2": 2
+          },
+          "next_primitive_distribution": {
+            "6": 3477,
+            "none": 469,
+            "7": 7,
+            "0": 3,
+            "2": 2
+          },
+          "mean_duration": 5.608640727640222,
+          "mean_state_drift": 24.37373108066291,
+          "mean_state_norm_delta": -1.4240608820112863,
+          "mean_entropy_drift": -0.003168448014979426,
+          "mean_entropy": 0.0030809031043586075,
+          "mean_confidence": 0.9987261270782933,
+          "mean_retrieval_hits": 1.1791308741788782,
+          "mean_retrieval_hit_rate": 0.22431997091874908,
+          "mean_retrieval_norm": 3.9306360812121097,
+          "mean_chosen_probability": 0.5619630127851056,
+          "byte_class_distribution": [
+            0.0,
+            0.003572450252249837,
+            0.8804959058761597,
+            0.03085416555404663,
+            0.08508214354515076,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 9073,
+              "prompt_id": 716,
+              "primitive": 2,
+              "duration": 5,
+              "text": "other",
+              "byte_labels": [
+                "o",
+                "t",
+                "h",
+                "e",
+                "r"
+              ]
+            },
+            {
+              "segment_id": 4614,
+              "prompt_id": 351,
+              "primitive": 2,
+              "duration": 5,
+              "text": "form�",
+              "byte_labels": [
+                "f",
+                "o",
+                "r",
+                "m",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 10098,
+              "prompt_id": 807,
+              "primitive": 2,
+              "duration": 9,
+              "text": "simplify�",
+              "byte_labels": [
+                "s",
+                "i",
+                "m",
+                "p",
+                "l",
+                "i",
+                "f",
+                "y",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 3640,
+              "prompt_id": 279,
+              "primitive": 2,
+              "duration": 4,
+              "text": "many",
+              "byte_labels": [
+                "m",
+                "a",
+                "n",
+                "y"
+              ]
+            },
+            {
+              "segment_id": 9077,
+              "prompt_id": 716,
+              "primitive": 2,
+              "duration": 6,
+              "text": "using�",
+              "byte_labels": [
+                "u",
+                "s",
+                "i",
+                "n",
+                "g",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 8448,
+              "prompt_id": 659,
+              "primitive": 2,
+              "duration": 4,
+              "text": "fixe",
+              "byte_labels": [
+                "f",
+                "i",
+                "x",
+                "e"
+              ]
+            },
+            {
+              "segment_id": 561,
+              "prompt_id": 53,
+              "primitive": 2,
+              "duration": 9,
+              "text": "geometry�",
+              "byte_labels": [
+                "g",
+                "e",
+                "o",
+                "m",
+                "e",
+                "t",
+                "r",
+                "y",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 7540,
+              "prompt_id": 580,
+              "primitive": 2,
+              "duration": 6,
+              "text": "BoBks�",
+              "byte_labels": [
+                "B",
+                "o",
+                "B",
+                "k",
+                "s",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 899,
+              "prompt_id": 80,
+              "primitive": 2,
+              "duration": 8,
+              "text": "viscaps�",
+              "byte_labels": [
+                "v",
+                "i",
+                "s",
+                "c",
+                "a",
+                "p",
+                "s",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 9801,
+              "prompt_id": 782,
+              "primitive": 2,
+              "duration": 7,
+              "text": "various",
+              "byte_labels": [
+                "v",
+                "a",
+                "r",
+                "i",
+                "o",
+                "u",
+                "s"
+              ]
+            },
+            {
+              "segment_id": 11649,
+              "prompt_id": 927,
+              "primitive": 2,
+              "duration": 7,
+              "text": "matrix�",
+              "byte_labels": [
+                "m",
+                "a",
+                "t",
+                "r",
+                "i",
+                "x",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 7628,
+              "prompt_id": 584,
+              "primitive": 2,
+              "duration": 5,
+              "text": "form�",
+              "byte_labels": [
+                "f",
+                "o",
+                "r",
+                "m",
+                "x81"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "control_only",
+      "k": 4,
+      "features": [
+        "log_duration",
+        "entropy_drift",
+        "mean_entropy",
+        "mean_confidence",
+        "min_confidence",
+        "retrieval_hits",
+        "retrieval_count",
+        "retrieval_hit_rate",
+        "mean_retrieval_norm",
+        "mean_graph_distance"
+      ],
+      "profiles": [
+        {
+          "species": 0,
+          "count": 8912,
+          "primitive_distribution": {
+            "6": 6319,
+            "2": 2591,
+            "7": 2
+          },
+          "previous_primitive_distribution": {
+            "2": 5580,
+            "6": 2579,
+            "none": 745,
+            "7": 4,
+            "0": 4
+          },
+          "next_primitive_distribution": {
+            "2": 6265,
+            "6": 2380,
+            "none": 257,
+            "0": 7,
+            "7": 3
+          },
+          "mean_duration": 1.55217684021544,
+          "mean_state_drift": 22.605534677338557,
+          "mean_state_norm_delta": 0.6100819878133024,
+          "mean_entropy_drift": -0.0004099364328610266,
+          "mean_entropy": 0.0033096143919061653,
+          "mean_confidence": 0.9988876999482968,
+          "mean_retrieval_hits": 0.0,
+          "mean_retrieval_hit_rate": 0.0,
+          "mean_retrieval_norm": 0.0,
+          "mean_chosen_probability": 0.642245759172769,
+          "byte_class_distribution": [
+            0.6863498091697693,
+            0.028114134445786476,
+            0.1504545658826828,
+            0.1021823063492775,
+            0.03289918974041939,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 12422,
+              "prompt_id": 984,
+              "primitive": 2,
+              "duration": 1,
+              "text": "1",
+              "byte_labels": [
+                "1"
+              ]
+            },
+            {
+              "segment_id": 1326,
+              "prompt_id": 116,
+              "primitive": 2,
+              "duration": 1,
+              "text": "1",
+              "byte_labels": [
+                "1"
+              ]
+            },
+            {
+              "segment_id": 3963,
+              "prompt_id": 301,
+              "primitive": 2,
+              "duration": 1,
+              "text": "=",
+              "byte_labels": [
+                "="
+              ]
+            },
+            {
+              "segment_id": 6387,
+              "prompt_id": 489,
+              "primitive": 2,
+              "duration": 1,
+              "text": "0",
+              "byte_labels": [
+                "0"
+              ]
+            },
+            {
+              "segment_id": 1548,
+              "prompt_id": 128,
+              "primitive": 2,
+              "duration": 1,
+              "text": "l",
+              "byte_labels": [
+                "l"
+              ]
+            },
+            {
+              "segment_id": 7823,
+              "prompt_id": 602,
+              "primitive": 2,
+              "duration": 1,
+              "text": "A",
+              "byte_labels": [
+                "A"
+              ]
+            },
+            {
+              "segment_id": 9616,
+              "prompt_id": 767,
+              "primitive": 2,
+              "duration": 1,
+              "text": "A",
+              "byte_labels": [
+                "A"
+              ]
+            },
+            {
+              "segment_id": 6530,
+              "prompt_id": 502,
+              "primitive": 2,
+              "duration": 1,
+              "text": "A",
+              "byte_labels": [
+                "A"
+              ]
+            },
+            {
+              "segment_id": 9655,
+              "prompt_id": 769,
+              "primitive": 2,
+              "duration": 1,
+              "text": "A",
+              "byte_labels": [
+                "A"
+              ]
+            },
+            {
+              "segment_id": 9045,
+              "prompt_id": 715,
+              "primitive": 2,
+              "duration": 1,
+              "text": "A",
+              "byte_labels": [
+                "A"
+              ]
+            },
+            {
+              "segment_id": 2260,
+              "prompt_id": 173,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 12453,
+              "prompt_id": 986,
+              "primitive": 2,
+              "duration": 1,
+              "text": "0",
+              "byte_labels": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "species": 1,
+          "count": 3490,
+          "primitive_distribution": {
+            "2": 3488,
+            "6": 2
+          },
+          "previous_primitive_distribution": {
+            "6": 3479,
+            "7": 5,
+            "0": 3,
+            "2": 2,
+            "none": 1
+          },
+          "next_primitive_distribution": {
+            "6": 3011,
+            "none": 471,
+            "7": 5,
+            "2": 2,
+            "0": 1
+          },
+          "mean_duration": 5.859885386819484,
+          "mean_state_drift": 23.915069542368368,
+          "mean_state_norm_delta": -1.2790590532188089,
+          "mean_entropy_drift": -0.0016647785823377219,
+          "mean_entropy": 0.0031988808297341727,
+          "mean_confidence": 0.9986995005986528,
+          "mean_retrieval_hits": 1.5601719197707737,
+          "mean_retrieval_hit_rate": 0.3223782735397077,
+          "mean_retrieval_norm": 5.617187436216531,
+          "mean_chosen_probability": 0.5308236203724037,
+          "byte_class_distribution": [
+            0.0,
+            0.07284597307443619,
+            0.7460018992424011,
+            0.1024957150220871,
+            0.0786593034863472,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 10488,
+              "prompt_id": 839,
+              "primitive": 2,
+              "duration": 6,
+              "text": "finds�",
+              "byte_labels": [
+                "f",
+                "i",
+                "n",
+                "d",
+                "s",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 6687,
+              "prompt_id": 512,
+              "primitive": 2,
+              "duration": 6,
+              "text": "bunds�",
+              "byte_labels": [
+                "b",
+                "u",
+                "n",
+                "d",
+                "s",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 865,
+              "prompt_id": 77,
+              "primitive": 2,
+              "duration": 6,
+              "text": "P�_2),",
+              "byte_labels": [
+                "P",
+                "x80",
+                "_",
+                "2",
+                ")",
+                ","
+              ]
+            },
+            {
+              "segment_id": 4291,
+              "prompt_id": 326,
+              "primitive": 2,
+              "duration": 6,
+              "text": "molf�.",
+              "byte_labels": [
+                "m",
+                "o",
+                "l",
+                "f",
+                "x80",
+                "."
+              ]
+            },
+            {
+              "segment_id": 5301,
+              "prompt_id": 398,
+              "primitive": 2,
+              "duration": 6,
+              "text": "\\(\\mu�",
+              "byte_labels": [
+                "\\",
+                "(",
+                "\\",
+                "m",
+                "u",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 2153,
+              "prompt_id": 166,
+              "primitive": 2,
+              "duration": 6,
+              "text": "3.815,",
+              "byte_labels": [
+                "3",
+                ".",
+                "8",
+                "1",
+                "5",
+                ","
+              ]
+            },
+            {
+              "segment_id": 2409,
+              "prompt_id": 183,
+              "primitive": 2,
+              "duration": 6,
+              "text": "(20\\).",
+              "byte_labels": [
+                "(",
+                "2",
+                "0",
+                "\\",
+                ")",
+                "."
+              ]
+            },
+            {
+              "segment_id": 8545,
+              "prompt_id": 667,
+              "primitive": 2,
+              "duration": 6,
+              "text": "\\cdot�",
+              "byte_labels": [
+                "\\",
+                "c",
+                "d",
+                "o",
+                "t",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 7221,
+              "prompt_id": 549,
+              "primitive": 2,
+              "duration": 6,
+              "text": "\\cdot�",
+              "byte_labels": [
+                "\\",
+                "c",
+                "d",
+                "o",
+                "t",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 11469,
+              "prompt_id": 913,
+              "primitive": 2,
+              "duration": 6,
+              "text": "\\(r�).",
+              "byte_labels": [
+                "\\",
+                "(",
+                "r",
+                "x80",
+                ")",
+                "."
+              ]
+            },
+            {
+              "segment_id": 1364,
+              "prompt_id": 117,
+              "primitive": 2,
+              "duration": 6,
+              "text": "\\cdot�",
+              "byte_labels": [
+                "\\",
+                "c",
+                "d",
+                "o",
+                "t",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 6904,
+              "prompt_id": 528,
+              "primitive": 2,
+              "duration": 6,
+              "text": "200400",
+              "byte_labels": [
+                "2",
+                "0",
+                "0",
+                "4",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "species": 2,
+          "count": 20,
+          "primitive_distribution": {
+            "0": 7,
+            "7": 6,
+            "6": 4,
+            "2": 3
+          },
+          "previous_primitive_distribution": {
+            "2": 17,
+            "none": 2,
+            "6": 1
+          },
+          "next_primitive_distribution": {
+            "2": 17,
+            "6": 3
+          },
+          "mean_duration": 1.1,
+          "mean_state_drift": 19.019109106063844,
+          "mean_state_norm_delta": -2.45416374206543,
+          "mean_entropy_drift": -0.05044504364777822,
+          "mean_entropy": 0.4466914983568131,
+          "mean_confidence": 0.6384566217660904,
+          "mean_retrieval_hits": 0.0,
+          "mean_retrieval_hit_rate": 0.0,
+          "mean_retrieval_norm": 0.0,
+          "mean_chosen_probability": 0.13264645352737717,
+          "byte_class_distribution": [
+            0.0,
+            0.0,
+            0.8500000238418579,
+            0.15000000596046448,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 2756,
+              "prompt_id": 209,
+              "primitive": 6,
+              "duration": 1,
+              "text": "l",
+              "byte_labels": [
+                "l"
+              ]
+            },
+            {
+              "segment_id": 10911,
+              "prompt_id": 865,
+              "primitive": 7,
+              "duration": 1,
+              "text": "c",
+              "byte_labels": [
+                "c"
+              ]
+            },
+            {
+              "segment_id": 9479,
+              "prompt_id": 755,
+              "primitive": 0,
+              "duration": 1,
+              "text": "p",
+              "byte_labels": [
+                "p"
+              ]
+            },
+            {
+              "segment_id": 676,
+              "prompt_id": 64,
+              "primitive": 2,
+              "duration": 1,
+              "text": "-",
+              "byte_labels": [
+                "-"
+              ]
+            },
+            {
+              "segment_id": 8013,
+              "prompt_id": 624,
+              "primitive": 0,
+              "duration": 1,
+              "text": "p",
+              "byte_labels": [
+                "p"
+              ]
+            },
+            {
+              "segment_id": 10404,
+              "prompt_id": 832,
+              "primitive": 7,
+              "duration": 1,
+              "text": "c",
+              "byte_labels": [
+                "c"
+              ]
+            },
+            {
+              "segment_id": 2489,
+              "prompt_id": 188,
+              "primitive": 7,
+              "duration": 1,
+              "text": "l",
+              "byte_labels": [
+                "l"
+              ]
+            },
+            {
+              "segment_id": 2666,
+              "prompt_id": 203,
+              "primitive": 0,
+              "duration": 1,
+              "text": "l",
+              "byte_labels": [
+                "l"
+              ]
+            },
+            {
+              "segment_id": 7078,
+              "prompt_id": 542,
+              "primitive": 0,
+              "duration": 1,
+              "text": "p",
+              "byte_labels": [
+                "p"
+              ]
+            },
+            {
+              "segment_id": 6148,
+              "prompt_id": 468,
+              "primitive": 6,
+              "duration": 1,
+              "text": "c",
+              "byte_labels": [
+                "c"
+              ]
+            },
+            {
+              "segment_id": 3592,
+              "prompt_id": 275,
+              "primitive": 7,
+              "duration": 1,
+              "text": "l",
+              "byte_labels": [
+                "l"
+              ]
+            },
+            {
+              "segment_id": 10406,
+              "prompt_id": 832,
+              "primitive": 0,
+              "duration": 1,
+              "text": "p",
+              "byte_labels": [
+                "p"
+              ]
+            }
+          ]
+        },
+        {
+          "species": 3,
+          "count": 227,
+          "primitive_distribution": {
+            "2": 218,
+            "6": 7,
+            "7": 1,
+            "0": 1
+          },
+          "previous_primitive_distribution": {
+            "6": 217,
+            "2": 9,
+            "0": 1
+          },
+          "next_primitive_distribution": {
+            "6": 197,
+            "none": 20,
+            "2": 9,
+            "7": 1
+          },
+          "mean_duration": 6.581497797356828,
+          "mean_state_drift": 22.485500373504234,
+          "mean_state_norm_delta": -1.3960273843504785,
+          "mean_entropy_drift": -0.1675633602792908,
+          "mean_entropy": 0.06920832021119346,
+          "mean_confidence": 0.9504710308039038,
+          "mean_retrieval_hits": 0.8546255506607929,
+          "mean_retrieval_hit_rate": 0.10605239300463042,
+          "mean_retrieval_norm": 1.8412231804298755,
+          "mean_chosen_probability": 0.3650797774255452,
+          "byte_class_distribution": [
+            0.0,
+            0.033130623400211334,
+            0.6356860399246216,
+            0.15918216109275818,
+            0.172000914812088,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 1218,
+              "prompt_id": 110,
+              "primitive": 2,
+              "duration": 8,
+              "text": "Limited�",
+              "byte_labels": [
+                "L",
+                "i",
+                "m",
+                "i",
+                "t",
+                "e",
+                "d",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 4441,
+              "prompt_id": 341,
+              "primitive": 2,
+              "duration": 8,
+              "text": "carbonal",
+              "byte_labels": [
+                "c",
+                "a",
+                "r",
+                "b",
+                "o",
+                "n",
+                "a",
+                "l"
+              ]
+            },
+            {
+              "segment_id": 12062,
+              "prompt_id": 949,
+              "primitive": 2,
+              "duration": 8,
+              "text": "planes�)",
+              "byte_labels": [
+                "p",
+                "l",
+                "a",
+                "n",
+                "e",
+                "s",
+                "x80",
+                ")"
+              ]
+            },
+            {
+              "segment_id": 5798,
+              "prompt_id": 440,
+              "primitive": 2,
+              "duration": 5,
+              "text": "m�^p�",
+              "byte_labels": [
+                "m",
+                "x81",
+                "^",
+                "p",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 8723,
+              "prompt_id": 685,
+              "primitive": 2,
+              "duration": 5,
+              "text": "m�)^2",
+              "byte_labels": [
+                "m",
+                "x81",
+                ")",
+                "^",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 2480,
+              "prompt_id": 188,
+              "primitive": 2,
+              "duration": 4,
+              "text": "m�),",
+              "byte_labels": [
+                "m",
+                "x81",
+                ")",
+                ","
+              ]
+            },
+            {
+              "segment_id": 5846,
+              "prompt_id": 449,
+              "primitive": 2,
+              "duration": 9,
+              "text": "m�/s�^p�|",
+              "byte_labels": [
+                "m",
+                "x81",
+                "/",
+                "s",
+                "x81",
+                "^",
+                "p",
+                "x80",
+                "|"
+              ]
+            },
+            {
+              "segment_id": 6383,
+              "prompt_id": 489,
+              "primitive": 2,
+              "duration": 5,
+              "text": "m�/s�",
+              "byte_labels": [
+                "m",
+                "x81",
+                "/",
+                "s",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 9592,
+              "prompt_id": 765,
+              "primitive": 2,
+              "duration": 5,
+              "text": "mons�",
+              "byte_labels": [
+                "m",
+                "o",
+                "n",
+                "s",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 303,
+              "prompt_id": 23,
+              "primitive": 2,
+              "duration": 6,
+              "text": "cm�^2)",
+              "byte_labels": [
+                "c",
+                "m",
+                "x80",
+                "^",
+                "2",
+                ")"
+              ]
+            },
+            {
+              "segment_id": 3911,
+              "prompt_id": 296,
+              "primitive": 2,
+              "duration": 5,
+              "text": "m�)^2",
+              "byte_labels": [
+                "m",
+                "x81",
+                ")",
+                "^",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 4668,
+              "prompt_id": 355,
+              "primitive": 2,
+              "duration": 5,
+              "text": "more�",
+              "byte_labels": [
+                "m",
+                "o",
+                "r",
+                "e",
+                "x81"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "symbol_only",
+      "k": 5,
+      "features": [
+        "mean_chosen_probability",
+        "byte_class_0",
+        "byte_class_1",
+        "byte_class_2",
+        "byte_class_3",
+        "byte_class_4",
+        "byte_class_5",
+        "byte_class_6"
+      ],
+      "profiles": [
+        {
+          "species": 0,
+          "count": 952,
+          "primitive_distribution": {
+            "2": 819,
+            "6": 133
+          },
+          "previous_primitive_distribution": {
+            "6": 813,
+            "2": 132,
+            "none": 6,
+            "7": 1
+          },
+          "next_primitive_distribution": {
+            "6": 759,
+            "2": 132,
+            "none": 60,
+            "0": 1
+          },
+          "mean_duration": 1.8266806722689075,
+          "mean_state_drift": 20.808274877171556,
+          "mean_state_norm_delta": -0.8005369851569167,
+          "mean_entropy_drift": 0.0002634724830450806,
+          "mean_entropy": 0.008081357963820049,
+          "mean_confidence": 0.9960680580297236,
+          "mean_retrieval_hits": 0.2804621848739496,
+          "mean_retrieval_hit_rate": 0.07002257537284821,
+          "mean_retrieval_norm": 1.1852344037582956,
+          "mean_chosen_probability": 0.334316814933686,
+          "byte_class_distribution": [
+            0.011904762126505375,
+            0.021011492237448692,
+            0.03016471490263939,
+            0.9309835433959961,
+            0.005935762543231249,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 12540,
+              "prompt_id": 990,
+              "primitive": 2,
+              "duration": 1,
+              "text": "=",
+              "byte_labels": [
+                "="
+              ]
+            },
+            {
+              "segment_id": 6035,
+              "prompt_id": 460,
+              "primitive": 2,
+              "duration": 1,
+              "text": "*",
+              "byte_labels": [
+                "*"
+              ]
+            },
+            {
+              "segment_id": 1506,
+              "prompt_id": 126,
+              "primitive": 2,
+              "duration": 1,
+              "text": "+",
+              "byte_labels": [
+                "+"
+              ]
+            },
+            {
+              "segment_id": 11080,
+              "prompt_id": 880,
+              "primitive": 2,
+              "duration": 1,
+              "text": "=",
+              "byte_labels": [
+                "="
+              ]
+            },
+            {
+              "segment_id": 445,
+              "prompt_id": 39,
+              "primitive": 6,
+              "duration": 1,
+              "text": "-",
+              "byte_labels": [
+                "-"
+              ]
+            },
+            {
+              "segment_id": 8743,
+              "prompt_id": 685,
+              "primitive": 2,
+              "duration": 1,
+              "text": "$",
+              "byte_labels": [
+                "$"
+              ]
+            },
+            {
+              "segment_id": 3953,
+              "prompt_id": 301,
+              "primitive": 2,
+              "duration": 1,
+              "text": "+",
+              "byte_labels": [
+                "+"
+              ]
+            },
+            {
+              "segment_id": 3308,
+              "prompt_id": 255,
+              "primitive": 2,
+              "duration": 1,
+              "text": "=",
+              "byte_labels": [
+                "="
+              ]
+            },
+            {
+              "segment_id": 11982,
+              "prompt_id": 946,
+              "primitive": 2,
+              "duration": 1,
+              "text": "+",
+              "byte_labels": [
+                "+"
+              ]
+            },
+            {
+              "segment_id": 7085,
+              "prompt_id": 542,
+              "primitive": 2,
+              "duration": 1,
+              "text": "+",
+              "byte_labels": [
+                "+"
+              ]
+            },
+            {
+              "segment_id": 11593,
+              "prompt_id": 922,
+              "primitive": 2,
+              "duration": 1,
+              "text": "+",
+              "byte_labels": [
+                "+"
+              ]
+            },
+            {
+              "segment_id": 3206,
+              "prompt_id": 249,
+              "primitive": 2,
+              "duration": 1,
+              "text": "=",
+              "byte_labels": [
+                "="
+              ]
+            }
+          ]
+        },
+        {
+          "species": 1,
+          "count": 625,
+          "primitive_distribution": {
+            "2": 625
+          },
+          "previous_primitive_distribution": {
+            "6": 625
+          },
+          "next_primitive_distribution": {
+            "6": 555,
+            "none": 70
+          },
+          "mean_duration": 3.232,
+          "mean_state_drift": 21.29221632080078,
+          "mean_state_norm_delta": -0.8675641632080078,
+          "mean_entropy_drift": -0.0015731156257189041,
+          "mean_entropy": 0.007262486351536715,
+          "mean_confidence": 0.9972986229850288,
+          "mean_retrieval_hits": 0.7728,
+          "mean_retrieval_hit_rate": 0.23273157509157508,
+          "mean_retrieval_norm": 3.9846526088434198,
+          "mean_chosen_probability": 0.16285664486468343,
+          "byte_class_distribution": [
+            0.0,
+            0.7138223648071289,
+            0.012766692787408829,
+            0.27028629183769226,
+            0.0031243469566106796,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 367,
+              "prompt_id": 35,
+              "primitive": 2,
+              "duration": 7,
+              "text": "1021*4.",
+              "byte_labels": [
+                "1",
+                "0",
+                "2",
+                "1",
+                "*",
+                "4",
+                "."
+              ]
+            },
+            {
+              "segment_id": 939,
+              "prompt_id": 82,
+              "primitive": 2,
+              "duration": 7,
+              "text": "0.29.67",
+              "byte_labels": [
+                "0",
+                ".",
+                "2",
+                "9",
+                ".",
+                "6",
+                "7"
+              ]
+            },
+            {
+              "segment_id": 2217,
+              "prompt_id": 170,
+              "primitive": 2,
+              "duration": 4,
+              "text": "12/2",
+              "byte_labels": [
+                "1",
+                "2",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 12360,
+              "prompt_id": 978,
+              "primitive": 2,
+              "duration": 4,
+              "text": "1.14",
+              "byte_labels": [
+                "1",
+                ".",
+                "1",
+                "4"
+              ]
+            },
+            {
+              "segment_id": 8647,
+              "prompt_id": 678,
+              "primitive": 2,
+              "duration": 4,
+              "text": "4.02",
+              "byte_labels": [
+                "4",
+                ".",
+                "0",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 1996,
+              "prompt_id": 158,
+              "primitive": 2,
+              "duration": 4,
+              "text": "100,",
+              "byte_labels": [
+                "1",
+                "0",
+                "0",
+                ","
+              ]
+            },
+            {
+              "segment_id": 10325,
+              "prompt_id": 822,
+              "primitive": 2,
+              "duration": 4,
+              "text": "1.60",
+              "byte_labels": [
+                "1",
+                ".",
+                "6",
+                "0"
+              ]
+            },
+            {
+              "segment_id": 10066,
+              "prompt_id": 804,
+              "primitive": 2,
+              "duration": 4,
+              "text": "10^1",
+              "byte_labels": [
+                "1",
+                "0",
+                "^",
+                "1"
+              ]
+            },
+            {
+              "segment_id": 4890,
+              "prompt_id": 368,
+              "primitive": 2,
+              "duration": 4,
+              "text": "4.02",
+              "byte_labels": [
+                "4",
+                ".",
+                "0",
+                "2"
+              ]
+            },
+            {
+              "segment_id": 8090,
+              "prompt_id": 629,
+              "primitive": 2,
+              "duration": 4,
+              "text": "120.",
+              "byte_labels": [
+                "1",
+                "2",
+                "0",
+                "."
+              ]
+            },
+            {
+              "segment_id": 10317,
+              "prompt_id": 822,
+              "primitive": 2,
+              "duration": 4,
+              "text": "(100",
+              "byte_labels": [
+                "(",
+                "1",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "segment_id": 4735,
+              "prompt_id": 357,
+              "primitive": 2,
+              "duration": 4,
+              "text": "(159",
+              "byte_labels": [
+                "(",
+                "1",
+                "5",
+                "9"
+              ]
+            }
+          ]
+        },
+        {
+          "species": 2,
+          "count": 6106,
+          "primitive_distribution": {
+            "6": 6106
+          },
+          "previous_primitive_distribution": {
+            "2": 5366,
+            "none": 740
+          },
+          "next_primitive_distribution": {
+            "2": 6052,
+            "none": 54
+          },
+          "mean_duration": 1.0188339338355716,
+          "mean_state_drift": 22.700312772813955,
+          "mean_state_norm_delta": 1.4206082704533447,
+          "mean_entropy_drift": 0.00011822487632608075,
+          "mean_entropy": 0.00218605388727073,
+          "mean_confidence": 0.9993832233704676,
+          "mean_retrieval_hits": 0.0,
+          "mean_retrieval_hit_rate": 0.0,
+          "mean_retrieval_norm": 0.0,
+          "mean_chosen_probability": 0.7721394954976436,
+          "byte_class_distribution": [
+            0.999904453754425,
+            0.0,
+            0.0,
+            9.553445124765858e-05,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 4566,
+              "prompt_id": 348,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 8626,
+              "prompt_id": 675,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 12180,
+              "prompt_id": 964,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 3171,
+              "prompt_id": 247,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 6877,
+              "prompt_id": 525,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 8885,
+              "prompt_id": 698,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 12178,
+              "prompt_id": 960,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 6587,
+              "prompt_id": 506,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 1000,
+              "prompt_id": 89,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 2993,
+              "prompt_id": 229,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 8911,
+              "prompt_id": 699,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            },
+            {
+              "segment_id": 11522,
+              "prompt_id": 917,
+              "primitive": 6,
+              "duration": 1,
+              "text": " ",
+              "byte_labels": [
+                "sp"
+              ]
+            }
+          ]
+        },
+        {
+          "species": 3,
+          "count": 3607,
+          "primitive_distribution": {
+            "2": 3497,
+            "6": 93,
+            "7": 9,
+            "0": 8
+          },
+          "previous_primitive_distribution": {
+            "6": 3488,
+            "2": 110,
+            "7": 6,
+            "0": 3
+          },
+          "next_primitive_distribution": {
+            "6": 3035,
+            "none": 448,
+            "2": 109,
+            "7": 9,
+            "0": 6
+          },
+          "mean_duration": 5.470196839478791,
+          "mean_state_drift": 24.321622099742886,
+          "mean_state_norm_delta": -1.316077356626692,
+          "mean_entropy_drift": -0.006466048489748815,
+          "mean_entropy": 0.007285681619693719,
+          "mean_confidence": 0.9958385765022382,
+          "mean_retrieval_hits": 1.1205988355974494,
+          "mean_retrieval_hit_rate": 0.2154660634379867,
+          "mean_retrieval_norm": 3.78468934415787,
+          "mean_chosen_probability": 0.5492744444901636,
+          "byte_class_distribution": [
+            0.0,
+            0.0006759807001799345,
+            0.9332482218742371,
+            0.01732677035033703,
+            0.04875189810991287,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 3670,
+              "prompt_id": 280,
+              "primitive": 2,
+              "duration": 14,
+              "text": "signifisation�",
+              "byte_labels": [
+                "s",
+                "i",
+                "g",
+                "n",
+                "i",
+                "f",
+                "i",
+                "s",
+                "a",
+                "t",
+                "i",
+                "o",
+                "n",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 5574,
+              "prompt_id": 419,
+              "primitive": 2,
+              "duration": 15,
+              "text": "Reconsiderance�",
+              "byte_labels": [
+                "R",
+                "e",
+                "c",
+                "o",
+                "n",
+                "s",
+                "i",
+                "d",
+                "e",
+                "r",
+                "a",
+                "n",
+                "c",
+                "e",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 3999,
+              "prompt_id": 303,
+              "primitive": 2,
+              "duration": 14,
+              "text": "Rearrangument�",
+              "byte_labels": [
+                "R",
+                "e",
+                "a",
+                "r",
+                "r",
+                "a",
+                "n",
+                "g",
+                "u",
+                "m",
+                "e",
+                "n",
+                "t",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 6157,
+              "prompt_id": 469,
+              "primitive": 2,
+              "duration": 13,
+              "text": "discondition�",
+              "byte_labels": [
+                "d",
+                "i",
+                "s",
+                "c",
+                "o",
+                "n",
+                "d",
+                "i",
+                "t",
+                "i",
+                "o",
+                "n",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 10699,
+              "prompt_id": 852,
+              "primitive": 2,
+              "duration": 13,
+              "text": "Therefrected�",
+              "byte_labels": [
+                "T",
+                "h",
+                "e",
+                "r",
+                "e",
+                "f",
+                "r",
+                "e",
+                "c",
+                "t",
+                "e",
+                "d",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 11473,
+              "prompt_id": 914,
+              "primitive": 2,
+              "duration": 13,
+              "text": "conveltering�",
+              "byte_labels": [
+                "c",
+                "o",
+                "n",
+                "v",
+                "e",
+                "l",
+                "t",
+                "e",
+                "r",
+                "i",
+                "n",
+                "g",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 10395,
+              "prompt_id": 832,
+              "primitive": 2,
+              "duration": 14,
+              "text": "Reconvariance�",
+              "byte_labels": [
+                "R",
+                "e",
+                "c",
+                "o",
+                "n",
+                "v",
+                "a",
+                "r",
+                "i",
+                "a",
+                "n",
+                "c",
+                "e",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 4573,
+              "prompt_id": 348,
+              "primitive": 2,
+              "duration": 13,
+              "text": "Independency�",
+              "byte_labels": [
+                "I",
+                "n",
+                "d",
+                "e",
+                "p",
+                "e",
+                "n",
+                "d",
+                "e",
+                "n",
+                "c",
+                "y",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 1886,
+              "prompt_id": 149,
+              "primitive": 2,
+              "duration": 16,
+              "text": "Carthermometric�",
+              "byte_labels": [
+                "C",
+                "a",
+                "r",
+                "t",
+                "h",
+                "e",
+                "r",
+                "m",
+                "o",
+                "m",
+                "e",
+                "t",
+                "r",
+                "i",
+                "c",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 5700,
+              "prompt_id": 427,
+              "primitive": 2,
+              "duration": 13,
+              "text": "habilization�",
+              "byte_labels": [
+                "h",
+                "a",
+                "b",
+                "i",
+                "l",
+                "i",
+                "z",
+                "a",
+                "t",
+                "i",
+                "o",
+                "n",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 11108,
+              "prompt_id": 884,
+              "primitive": 2,
+              "duration": 12,
+              "text": "costability�",
+              "byte_labels": [
+                "c",
+                "o",
+                "s",
+                "t",
+                "a",
+                "b",
+                "i",
+                "l",
+                "i",
+                "t",
+                "y",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 2836,
+              "prompt_id": 215,
+              "primitive": 2,
+              "duration": 14,
+              "text": "competitives�.",
+              "byte_labels": [
+                "c",
+                "o",
+                "m",
+                "p",
+                "e",
+                "t",
+                "i",
+                "t",
+                "i",
+                "v",
+                "e",
+                "s",
+                "x80",
+                "."
+              ]
+            }
+          ]
+        },
+        {
+          "species": 4,
+          "count": 1359,
+          "primitive_distribution": {
+            "2": 1359
+          },
+          "previous_primitive_distribution": {
+            "6": 1350,
+            "0": 5,
+            "7": 2,
+            "none": 2
+          },
+          "next_primitive_distribution": {
+            "6": 1242,
+            "none": 116,
+            "0": 1
+          },
+          "mean_duration": 4.480500367917586,
+          "mean_state_drift": 22.778068378271644,
+          "mean_state_norm_delta": -1.483187029868737,
+          "mean_entropy_drift": -0.018525156091595565,
+          "mean_entropy": 0.009892193393921805,
+          "mean_confidence": 0.9935852520255629,
+          "mean_retrieval_hits": 0.623252391464312,
+          "mean_retrieval_hit_rate": 0.11763741784961511,
+          "mean_retrieval_norm": 2.0248832355193533,
+          "mean_chosen_probability": 0.4016357525766188,
+          "byte_class_distribution": [
+            0.0,
+            0.032175078988075256,
+            0.5171272158622742,
+            0.13921017944812775,
+            0.31148865818977356,
+            0.0,
+            0.0
+          ],
+          "exemplars": [
+            {
+              "segment_id": 4553,
+              "prompt_id": 347,
+              "primitive": 2,
+              "duration": 6,
+              "text": "v�\\pi�",
+              "byte_labels": [
+                "v",
+                "x80",
+                "\\",
+                "p",
+                "i",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 5030,
+              "prompt_id": 377,
+              "primitive": 2,
+              "duration": 6,
+              "text": "m�_on�",
+              "byte_labels": [
+                "m",
+                "x81",
+                "_",
+                "o",
+                "n",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 736,
+              "prompt_id": 69,
+              "primitive": 2,
+              "duration": 13,
+              "text": "z�_j�_i�\\phi�",
+              "byte_labels": [
+                "z",
+                "x80",
+                "_",
+                "j",
+                "x80",
+                "_",
+                "i",
+                "x82",
+                "\\",
+                "p",
+                "h",
+                "i",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 7099,
+              "prompt_id": 542,
+              "primitive": 2,
+              "duration": 20,
+              "text": "x�_i�}s�\\sqrt�{n�(u�",
+              "byte_labels": [
+                "x",
+                "x81",
+                "_",
+                "i",
+                "x82",
+                "}",
+                "s",
+                "x81",
+                "\\",
+                "s",
+                "q",
+                "r",
+                "t",
+                "x80",
+                "{",
+                "n",
+                "x80",
+                "(",
+                "u",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 10132,
+              "prompt_id": 809,
+              "primitive": 2,
+              "duration": 7,
+              "text": "y�)\\pi�",
+              "byte_labels": [
+                "y",
+                "x80",
+                ")",
+                "\\",
+                "p",
+                "i",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 10470,
+              "prompt_id": 838,
+              "primitive": 2,
+              "duration": 7,
+              "text": "kg�,z�,",
+              "byte_labels": [
+                "k",
+                "g",
+                "x80",
+                ",",
+                "z",
+                "x80",
+                ","
+              ]
+            },
+            {
+              "segment_id": 8420,
+              "prompt_id": 658,
+              "primitive": 2,
+              "duration": 3,
+              "text": "is�",
+              "byte_labels": [
+                "i",
+                "s",
+                "x80"
+              ]
+            },
+            {
+              "segment_id": 2496,
+              "prompt_id": 191,
+              "primitive": 2,
+              "duration": 3,
+              "text": "is�",
+              "byte_labels": [
+                "i",
+                "s",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 4033,
+              "prompt_id": 306,
+              "primitive": 2,
+              "duration": 3,
+              "text": "is�",
+              "byte_labels": [
+                "i",
+                "s",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 11774,
+              "prompt_id": 936,
+              "primitive": 2,
+              "duration": 3,
+              "text": "We�",
+              "byte_labels": [
+                "W",
+                "e",
+                "x82"
+              ]
+            },
+            {
+              "segment_id": 1256,
+              "prompt_id": 112,
+              "primitive": 2,
+              "duration": 3,
+              "text": "is�",
+              "byte_labels": [
+                "i",
+                "s",
+                "x81"
+              ]
+            },
+            {
+              "segment_id": 11374,
+              "prompt_id": 904,
+              "primitive": 2,
+              "duration": 3,
+              "text": "It�",
+              "byte_labels": [
+                "I",
+                "t",
+                "x82"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

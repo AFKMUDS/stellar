@@ -1,0 +1,64 @@
+  4     x04  emb_dist=20.7839  graph_dist=-1
+135     x87  emb_dist=20.8480  graph_dist=-1
+191     xbf  emb_dist=20.8548  graph_dist=-1
+218     xda  emb_dist=21.1389  graph_dist=-1
+ 78       N  emb_dist=21.1575  graph_dist=-1
+136     x88  emb_dist=21.1903  graph_dist=-1
+ 98       b  emb_dist=21.2187  graph_dist=-1
+182     xb6  emb_dist=21.2990  graph_dist=-1
+184     xb8  emb_dist=21.3175  graph_dist=2
+ 92       \  emb_dist=21.3236  graph_dist=1
+226     xe2  emb_dist=21.3481  graph_dist=2
+ 47       /  emb_dist=21.4160  graph_dist=-1
+197     xc5  emb_dist=21.4224  graph_dist=1
+100       d  emb_dist=21.4301  graph_dist=-1
+252     xfc  emb_dist=21.4429  graph_dist=-1
+245     xf5  emb_dist=21.4508  graph_dist=-1
+134     x86  emb_dist=21.4961  graph_dist=-1
+194     xc2  emb_dist=21.5013  graph_dist=-1
+ 95       _  emb_dist=21.5130  graph_dist=-1
+225     xe1  emb_dist=21.5232  graph_dist=-1
+237     xed  emb_dist=21.5778  graph_dist=-1
+233     xe9  emb_dist=21.5937  graph_dist=-1
+220     xdc  emb_dist=21.6070  graph_dist=2
+167     xa7  emb_dist=21.6565  graph_dist=-1
+212     xd4  emb_dist=21.6608  graph_dist=-1
+255     xff  emb_dist=21.6765  graph_dist=-1
+222     xde  emb_dist=21.7064  graph_dist=-1
+ 43       +  emb_dist=21.7082  graph_dist=-1
+143     x8f  emb_dist=21.7097  graph_dist=-1
+177     xb1  emb_dist=21.7514  graph_dist=-1
+140     x8c  emb_dist=21.7566  graph_dist=-1
+228     xe4  emb_dist=21.7619  graph_dist=-1
+152     x98  emb_dist=21.8245  graph_dist=-1
+ 33       !  emb_dist=21.8585  graph_dist=-1
+190     xbe  emb_dist=21.8661  graph_dist=-1
+ 15     x0f  emb_dist=21.9641  graph_dist=-1
+ 49       1  emb_dist=21.9712  graph_dist=-1
+ 91       [  emb_dist=21.9789  graph_dist=2
+166     xa6  emb_dist=21.9839  graph_dist=-1
+240     xf0  emb_dist=21.9852  graph_dist=-1
+104       h  emb_dist=21.9875  graph_dist=-1
+ 80       P  emb_dist=21.9941  graph_dist=-1
+ 39       '  emb_dist=21.9976  graph_dist=-1
+ 38       &  emb_dist=22.0037  graph_dist=-1
+149     x95  emb_dist=22.0064  graph_dist=-1
+224     xe0  emb_dist=22.0119  graph_dist=-1
+246     xf6  emb_dist=22.0131  graph_dist=-1
+111       o  emb_dist=22.0157  graph_dist=-1
+133     x85  emb_dist=22.0164  graph_dist=-1
+ 59       ;  emb_dist=22.0177  graph_dist=1
+ 94       ^  emb_dist=22.0526  graph_dist=-1
+115       s  emb_dist=22.0596  graph_dist=2
+  2     x02  emb_dist=22.0608  graph_dist=-1
+145     x91  emb_dist=22.0655  graph_dist=-1
+  3     x03  emb_dist=22.0841  graph_dist=-1
+ 44       ,  emb_dist=22.1151  graph_dist=-1
+164     xa4  emb_dist=22.1220  graph_dist=-1
+148     x94  emb_dist=22.1331  graph_dist=-1
+153     x99  emb_dist=22.1548  graph_dist=-1
+ 60       <  emb_dist=22.1603  graph_dist=2
+249     xf9  emb_dist=22.1641  graph_dist=-1
+ 74       J  emb_dist=22.1662  graph_dist=-1
+132     x84  emb_dist=22.1919  graph_dist=-1
+ 81       Q  emb_dist=22.2059  graph_dist=-1

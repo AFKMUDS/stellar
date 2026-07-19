@@ -1,0 +1,1524 @@
+{
+  "ckpt": "C:\\Programming\\Programming_Projects\\stellar\\checkpoints\\rap_wordmap.pt",
+  "manifold_pt": "C:\\Programming\\Programming_Projects\\Duck\\duck_semantic_manifold_full_bw2.pt",
+  "basis_tier": "deep_operators",
+  "group_count": 12,
+  "mean_within_primitive_cos": 0.9999847165530636,
+  "mean_within_state_cos": 0.9170230043431123,
+  "mean_cross_primitive_cos": 0.999955773000803,
+  "mean_cross_state_cos": 0.8990326837326089,
+  "groups": [
+    {
+      "grounding": [
+        "act",
+        "legal"
+      ],
+      "primitive_score": 0.7579533877293522,
+      "words": [
+        {
+          "word": "acquiring",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            110,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "arranging",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            108,
+            110,
+            100
+          ]
+        },
+        {
+          "word": "blending",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            110,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "branching",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            108,
+            110,
+            100
+          ]
+        },
+        {
+          "word": "breaking",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            110,
+            101,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "brushing",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            108,
+            110,
+            100
+          ]
+        },
+        {
+          "word": "burning",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            101,
+            115,
+            108,
+            110,
+            100
+          ]
+        },
+        {
+          "word": "buying",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            110,
+            101,
+            108,
+            100
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999466304268155,
+      "within_state_cos": 0.9931299494845527,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "any",
+        "agent"
+      ],
+      "primitive_score": 0.7541615065377061,
+      "words": [
+        {
+          "word": "antiflatulent",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            97,
+            104,
+            114,
+            115,
+            111
+          ]
+        },
+        {
+          "word": "antifungal",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            97,
+            105,
+            100,
+            115,
+            103,
+            111
+          ]
+        },
+        {
+          "word": "antimycotic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            115,
+            101,
+            111,
+            114
+          ]
+        },
+        {
+          "word": "emmenagogue",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            110,
+            108,
+            116,
+            100,
+            99
+          ]
+        },
+        {
+          "word": "fungicide",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            99,
+            100,
+            116
+          ]
+        },
+        {
+          "word": "fungicides",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            115,
+            105,
+            44,
+            97,
+            108
+          ]
+        },
+        {
+          "word": "lactifuge",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            116,
+            100,
+            99
+          ]
+        },
+        {
+          "word": "lactogen",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            100,
+            103,
+            101,
+            116,
+            97,
+            105,
+            115
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.999976287995066,
+      "within_state_cos": 0.8952973101820264,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "move",
+        "about"
+      ],
+      "primitive_score": 0.7449149530429069,
+      "words": [
+        {
+          "word": "gadded",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            114,
+            97,
+            100,
+            115,
+            108
+          ]
+        },
+        {
+          "word": "gadding",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            110,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "gades",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            115,
+            105,
+            114,
+            108,
+            44
+          ]
+        },
+        {
+          "word": "gallivant",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            104,
+            97,
+            114,
+            111,
+            115
+          ]
+        },
+        {
+          "word": "gallivanted",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            105,
+            101,
+            97,
+            114,
+            100,
+            108,
+            115
+          ]
+        },
+        {
+          "word": "gallivanting",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            101,
+            115,
+            110,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "gallivants",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            111,
+            116,
+            114,
+            97,
+            44
+          ]
+        },
+        {
+          "word": "maunder",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            101,
+            32,
+            97,
+            105,
+            111,
+            116,
+            115,
+            117
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999921194144658,
+      "within_state_cos": 0.9021088927984238,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "about",
+        "move"
+      ],
+      "primitive_score": 0.726426358222643,
+      "words": [
+        {
+          "word": "about",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            97,
+            114,
+            104,
+            115,
+            108
+          ]
+        },
+        {
+          "word": "asked",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            114,
+            100,
+            108,
+            97,
+            115
+          ]
+        },
+        {
+          "word": "asks",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            116,
+            44,
+            115,
+            105,
+            108,
+            117
+          ]
+        },
+        {
+          "word": "enquire",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            108,
+            115,
+            110,
+            99,
+            100,
+            116
+          ]
+        },
+        {
+          "word": "enquired",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            105,
+            101,
+            97,
+            114,
+            100,
+            115,
+            108
+          ]
+        },
+        {
+          "word": "enquires",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            44,
+            115,
+            105,
+            97,
+            108
+          ]
+        },
+        {
+          "word": "enquiring",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            110,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "explore",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            108,
+            110,
+            115,
+            99,
+            100,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999954934631076,
+      "within_state_cos": 0.9023664253098624,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "make",
+        "mess"
+      ],
+      "primitive_score": 0.7252202726766539,
+      "words": [
+        {
+          "word": "bobbled",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            114,
+            97,
+            100,
+            108,
+            115
+          ]
+        },
+        {
+          "word": "bobbling",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            101,
+            115,
+            108,
+            110,
+            100
+          ]
+        },
+        {
+          "word": "bodge",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            108,
+            115,
+            110,
+            116,
+            100,
+            99
+          ]
+        },
+        {
+          "word": "bollix",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            101,
+            32,
+            97,
+            105,
+            115,
+            111,
+            116,
+            108
+          ]
+        },
+        {
+          "word": "bollixed",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            105,
+            101,
+            114,
+            97,
+            100,
+            108,
+            115
+          ]
+        },
+        {
+          "word": "bollixes",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            115,
+            44,
+            105,
+            108,
+            97
+          ]
+        },
+        {
+          "word": "bollixing",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            110,
+            108,
+            101,
+            100
+          ]
+        },
+        {
+          "word": "botched",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            97,
+            114,
+            100,
+            115,
+            108
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999820611306599,
+      "within_state_cos": 0.9062916828053338,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "make",
+        "less"
+      ],
+      "primitive_score": 0.7199000512659001,
+      "words": [
+        {
+          "word": "abated",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            114,
+            97,
+            100,
+            108,
+            115
+          ]
+        },
+        {
+          "word": "abates",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            105,
+            115,
+            44,
+            114,
+            97
+          ]
+        },
+        {
+          "word": "abating",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            110,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "angioscope",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            108,
+            110,
+            115,
+            100,
+            99,
+            116
+          ]
+        },
+        {
+          "word": "attemper",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            101,
+            32,
+            97,
+            105,
+            111,
+            116,
+            115,
+            117
+          ]
+        },
+        {
+          "word": "attempered",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            97,
+            114,
+            100,
+            115,
+            108
+          ]
+        },
+        {
+          "word": "attempering",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            108,
+            110,
+            100
+          ]
+        },
+        {
+          "word": "attempers",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            111,
+            105,
+            116,
+            97,
+            114,
+            117
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999990995441165,
+      "within_state_cos": 0.900923707655498,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "act",
+        "making"
+      ],
+      "primitive_score": 0.7195154962886898,
+      "words": [
+        {
+          "word": "adventuresome",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            108,
+            116,
+            100,
+            99
+          ]
+        },
+        {
+          "word": "adventurous",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            116,
+            105,
+            114,
+            97,
+            115,
+            44
+          ]
+        },
+        {
+          "word": "beautification",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            103,
+            100,
+            101,
+            116,
+            97,
+            115,
+            105
+          ]
+        },
+        {
+          "word": "beautifications",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            44,
+            101,
+            115,
+            105,
+            108,
+            46
+          ]
+        },
+        {
+          "word": "bootlegging",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            110,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "broadening",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            116,
+            115,
+            101,
+            110,
+            108,
+            100
+          ]
+        },
+        {
+          "word": "broadenings",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            44,
+            105,
+            115,
+            97,
+            108
+          ]
+        },
+        {
+          "word": "broom",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            110,
+            32,
+            115,
+            108,
+            114,
+            116,
+            100,
+            109
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999323487281799,
+      "within_state_cos": 0.8787505477666855,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "relating",
+        "having"
+      ],
+      "primitive_score": 0.7042929967378543,
+      "words": [
+        {
+          "word": "acanthotic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            101,
+            115,
+            111,
+            114
+          ]
+        },
+        {
+          "word": "agraphic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            110,
+            115,
+            108,
+            101,
+            97,
+            99
+          ]
+        },
+        {
+          "word": "algorithmic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            115,
+            101,
+            97,
+            105
+          ]
+        },
+        {
+          "word": "allantois",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            116,
+            105,
+            115,
+            44,
+            108,
+            97
+          ]
+        },
+        {
+          "word": "allergenic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            115,
+            101,
+            97,
+            111
+          ]
+        },
+        {
+          "word": "apian",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            100,
+            103,
+            101,
+            105,
+            116,
+            115,
+            97
+          ]
+        },
+        {
+          "word": "arbitrative",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            108,
+            115,
+            110,
+            99,
+            100,
+            116
+          ]
+        },
+        {
+          "word": "autodidactic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            110,
+            115,
+            108,
+            101,
+            111,
+            97
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999985013689313,
+      "within_state_cos": 0.9155570055757251,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "any",
+        "various"
+      ],
+      "primitive_score": 0.6981660168299588,
+      "words": [
+        {
+          "word": "abalone",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            108,
+            115,
+            110,
+            116,
+            100,
+            99
+          ]
+        },
+        {
+          "word": "abalones",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            115,
+            105,
+            44,
+            108,
+            97
+          ]
+        },
+        {
+          "word": "acacias",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            116,
+            105,
+            115,
+            108,
+            44,
+            117
+          ]
+        },
+        {
+          "word": "acanthocephalan",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            103,
+            100,
+            101,
+            105,
+            116,
+            97,
+            111
+          ]
+        },
+        {
+          "word": "acanthopterygian",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            100,
+            103,
+            101,
+            116,
+            105,
+            97,
+            115
+          ]
+        },
+        {
+          "word": "acid",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            105,
+            101,
+            108,
+            100,
+            97,
+            115,
+            121
+          ]
+        },
+        {
+          "word": "acids",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            116,
+            105,
+            97,
+            115,
+            111,
+            44
+          ]
+        },
+        {
+          "word": "aconite",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            108,
+            110,
+            115,
+            100,
+            99,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999955998999732,
+      "within_state_cos": 0.87874636054039,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "relating",
+        "containing"
+      ],
+      "primitive_score": 0.6923005105802278,
+      "words": [
+        {
+          "word": "acetic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            110,
+            108,
+            115,
+            101,
+            111,
+            114
+          ]
+        },
+        {
+          "word": "albuminous",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            105,
+            115,
+            44,
+            97,
+            108
+          ]
+        },
+        {
+          "word": "alkalic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            115,
+            101,
+            105,
+            97
+          ]
+        },
+        {
+          "word": "alkaline",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            116,
+            100,
+            99
+          ]
+        },
+        {
+          "word": "astrocytic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            115,
+            101,
+            111,
+            114
+          ]
+        },
+        {
+          "word": "augitic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            115,
+            101,
+            111,
+            114
+          ]
+        },
+        {
+          "word": "aurous",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            44,
+            105,
+            115,
+            114,
+            97
+          ]
+        },
+        {
+          "word": "auxinic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            115,
+            101,
+            114,
+            99
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999993188040597,
+      "within_state_cos": 0.9309077284165791,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "relating",
+        "resembling"
+      ],
+      "primitive_score": 0.690629188150994,
+      "words": [
+        {
+          "word": "anthracitic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            101,
+            108,
+            115,
+            111,
+            97
+          ]
+        },
+        {
+          "word": "araneidal",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            105,
+            97,
+            100,
+            115,
+            103,
+            111
+          ]
+        },
+        {
+          "word": "araneidan",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            103,
+            101,
+            105,
+            100,
+            97,
+            116,
+            111
+          ]
+        },
+        {
+          "word": "archangelic",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            116,
+            32,
+            110,
+            108,
+            115,
+            101,
+            97,
+            105
+          ]
+        },
+        {
+          "word": "archangelical",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            97,
+            105,
+            100,
+            115,
+            103,
+            108
+          ]
+        },
+        {
+          "word": "arundinaceous",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            105,
+            44,
+            115,
+            97,
+            114
+          ]
+        },
+        {
+          "word": "asteroidal",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            101,
+            97,
+            105,
+            100,
+            115,
+            103,
+            111
+          ]
+        },
+        {
+          "word": "atheromatous",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            116,
+            101,
+            44,
+            105,
+            115,
+            114,
+            97
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999997126204627,
+      "within_state_cos": 0.90646131336689,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    },
+    {
+      "grounding": [
+        "capable",
+        "being"
+      ],
+      "primitive_score": 0.6832552146639792,
+      "words": [
+        {
+          "word": "abatable",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            116,
+            100,
+            99
+          ]
+        },
+        {
+          "word": "abdicable",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            110,
+            108,
+            99,
+            100,
+            116
+          ]
+        },
+        {
+          "word": "abolishable",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            100,
+            116,
+            99
+          ]
+        },
+        {
+          "word": "absorbable",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            100,
+            116,
+            99
+          ]
+        },
+        {
+          "word": "accessible",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            100,
+            116,
+            99
+          ]
+        },
+        {
+          "word": "acknowledgeable",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            110,
+            108,
+            99,
+            116,
+            100
+          ]
+        },
+        {
+          "word": "acquirable",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            116,
+            100,
+            99
+          ]
+        },
+        {
+          "word": "actable",
+          "top_primitive": 3,
+          "top_logit_ids": [
+            32,
+            114,
+            115,
+            108,
+            110,
+            116,
+            100,
+            99
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999994252409253,
+      "within_state_cos": 0.9937351282153811,
+      "top_primitive_hist": {
+        "3": 8
+      }
+    }
+  ]
+}

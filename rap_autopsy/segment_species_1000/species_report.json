@@ -1,0 +1,417 @@
+{
+  "checkpoint": "C:\\Programming\\Programming_Projects\\stellar\\checkpoints1\\rap_v0_step009000.pt",
+  "dataset": "C:\\Programming\\Programming_Projects\\stellar\\natural_reasoning_train.jsonl",
+  "num_prompts": 1000,
+  "num_segments": 12649,
+  "generation": {
+    "max_gen": 64,
+    "temperature": 0.8,
+    "top_k": 50,
+    "greedy": false,
+    "seed": 17
+  },
+  "clustering": {
+    "selected_k": 2,
+    "selected_silhouette": 0.31308429870221044,
+    "candidates": [
+      {
+        "k": 2,
+        "inertia": 389021.46875,
+        "silhouette": 0.31308429870221044
+      },
+      {
+        "k": 3,
+        "inertia": 360615.90625,
+        "silhouette": 0.3010717573155913
+      },
+      {
+        "k": 4,
+        "inertia": 340036.25,
+        "silhouette": 0.2788890820356331
+      },
+      {
+        "k": 5,
+        "inertia": 320862.6875,
+        "silhouette": 0.16092657956515458
+      },
+      {
+        "k": 6,
+        "inertia": 299110.78125,
+        "silhouette": 0.241288299802115
+      },
+      {
+        "k": 7,
+        "inertia": 291693.4375,
+        "silhouette": 0.16177722942627146
+      },
+      {
+        "k": 8,
+        "inertia": 271614.46875,
+        "silhouette": 0.20016383694626178
+      },
+      {
+        "k": 9,
+        "inertia": 263909.6875,
+        "silhouette": 0.20572958443969008
+      },
+      {
+        "k": 10,
+        "inertia": 251620.46875,
+        "silhouette": 0.20767231739046915
+      },
+      {
+        "k": 11,
+        "inertia": 236111.640625,
+        "silhouette": 0.22075868861530745
+      },
+      {
+        "k": 12,
+        "inertia": 230080.71875,
+        "silhouette": 0.21705876331267748
+      }
+    ],
+    "current_primitive_excluded_from_features": true,
+    "feature_names": [
+      "log_duration",
+      "state_drift",
+      "state_norm_delta",
+      "entropy_drift",
+      "mean_entropy",
+      "mean_confidence",
+      "min_confidence",
+      "retrieval_hits",
+      "retrieval_count",
+      "retrieval_hit_rate",
+      "mean_retrieval_norm",
+      "mean_graph_distance",
+      "mean_chosen_probability",
+      "byte_class_0",
+      "byte_class_1",
+      "byte_class_2",
+      "byte_class_3",
+      "byte_class_4",
+      "byte_class_5",
+      "byte_class_6",
+      "state_direction_rp_0",
+      "state_direction_rp_1",
+      "state_direction_rp_2",
+      "state_direction_rp_3",
+      "state_direction_rp_4",
+      "state_direction_rp_5",
+      "state_direction_rp_6",
+      "state_direction_rp_7",
+      "state_direction_rp_8",
+      "state_direction_rp_9",
+      "state_direction_rp_10",
+      "state_direction_rp_11",
+      "state_direction_rp_12",
+      "state_direction_rp_13",
+      "state_direction_rp_14",
+      "state_direction_rp_15",
+      "previous_primitive_0",
+      "previous_primitive_1",
+      "previous_primitive_2",
+      "previous_primitive_3",
+      "previous_primitive_4",
+      "previous_primitive_5",
+      "previous_primitive_6",
+      "previous_primitive_7",
+      "previous_primitive_8",
+      "next_primitive_0",
+      "next_primitive_1",
+      "next_primitive_2",
+      "next_primitive_3",
+      "next_primitive_4",
+      "next_primitive_5",
+      "next_primitive_6",
+      "next_primitive_7",
+      "next_primitive_8"
+    ],
+    "pca_explained_variance_ratio": [
+      0.30103182792663574,
+      0.07658648490905762
+    ]
+  },
+  "species": [
+    {
+      "cluster": 0,
+      "count": 6335,
+      "primitive_distribution": {
+        "0": 1,
+        "2": 2,
+        "6": 6326,
+        "7": 6
+      },
+      "mean_duration": 1.0222573007103395,
+      "mean_state_drift": 22.632853985660738,
+      "mean_state_norm_delta": 1.3774834838361372,
+      "mean_entropy_drift": 0.000181651545436338,
+      "mean_confidence": 0.9988689034887126,
+      "mean_retrieval_hit_rate": 0.0,
+      "mean_retrieval_norm": 0.0,
+      "byte_class_distribution": [
+        0.9655484557151794,
+        0.0,
+        0.015153907239437103,
+        0.019297555088996887,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exemplars": [
+        {
+          "segment_id": 12240,
+          "prompt_id": 968,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 12373,
+          "prompt_id": 980,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 587,
+          "prompt_id": 56,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 9621,
+          "prompt_id": 767,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 5978,
+          "prompt_id": 456,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 544,
+          "prompt_id": 53,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 6857,
+          "prompt_id": 524,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 12178,
+          "prompt_id": 960,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        }
+      ]
+    },
+    {
+      "cluster": 1,
+      "count": 6314,
+      "primitive_distribution": {
+        "0": 7,
+        "2": 6298,
+        "6": 6,
+        "7": 3
+      },
+      "mean_duration": 4.644282546721571,
+      "mean_state_drift": 23.286281044512638,
+      "mean_state_norm_delta": -1.2859050968533874,
+      "mean_entropy_drift": -0.007865058115095011,
+      "mean_confidence": 0.9959201760936544,
+      "mean_retrieval_hit_rate": 0.1820041285818231,
+      "mean_retrieval_norm": 3.1710392483929795,
+      "byte_class_distribution": [
+        0.0,
+        0.08113817870616913,
+        0.6350487470626831,
+        0.1877165287733078,
+        0.09609825909137726,
+        0.0,
+        0.0
+      ],
+      "exemplars": [
+        {
+          "segment_id": 9073,
+          "prompt_id": 716,
+          "primitive": 2,
+          "duration": 5,
+          "text": "other",
+          "byte_labels": [
+            "o",
+            "t",
+            "h",
+            "e",
+            "r"
+          ]
+        },
+        {
+          "segment_id": 7540,
+          "prompt_id": 580,
+          "primitive": 2,
+          "duration": 6,
+          "text": "BoBks�",
+          "byte_labels": [
+            "B",
+            "o",
+            "B",
+            "k",
+            "s",
+            "x80"
+          ]
+        },
+        {
+          "segment_id": 4614,
+          "prompt_id": 351,
+          "primitive": 2,
+          "duration": 5,
+          "text": "form�",
+          "byte_labels": [
+            "f",
+            "o",
+            "r",
+            "m",
+            "x80"
+          ]
+        },
+        {
+          "segment_id": 3640,
+          "prompt_id": 279,
+          "primitive": 2,
+          "duration": 4,
+          "text": "many",
+          "byte_labels": [
+            "m",
+            "a",
+            "n",
+            "y"
+          ]
+        },
+        {
+          "segment_id": 10098,
+          "prompt_id": 807,
+          "primitive": 2,
+          "duration": 9,
+          "text": "simplify�",
+          "byte_labels": [
+            "s",
+            "i",
+            "m",
+            "p",
+            "l",
+            "i",
+            "f",
+            "y",
+            "x81"
+          ]
+        },
+        {
+          "segment_id": 1246,
+          "prompt_id": 112,
+          "primitive": 2,
+          "duration": 4,
+          "text": "into",
+          "byte_labels": [
+            "i",
+            "n",
+            "t",
+            "o"
+          ]
+        },
+        {
+          "segment_id": 899,
+          "prompt_id": 80,
+          "primitive": 2,
+          "duration": 8,
+          "text": "viscaps�",
+          "byte_labels": [
+            "v",
+            "i",
+            "s",
+            "c",
+            "a",
+            "p",
+            "s",
+            "x81"
+          ]
+        },
+        {
+          "segment_id": 9135,
+          "prompt_id": 724,
+          "primitive": 2,
+          "duration": 8,
+          "text": "Maviary�",
+          "byte_labels": [
+            "M",
+            "a",
+            "v",
+            "i",
+            "a",
+            "r",
+            "y",
+            "x80"
+          ]
+        }
+      ]
+    }
+  ],
+  "species_transitions": [
+    {
+      "src": 0,
+      "dst": 1,
+      "count": 6277
+    },
+    {
+      "src": 1,
+      "dst": 0,
+      "count": 5592
+    },
+    {
+      "src": 1,
+      "dst": 1,
+      "count": 32
+    }
+  ],
+  "primitive_segment_counts": {
+    "6": 6332,
+    "2": 6300,
+    "7": 9,
+    "0": 8
+  }
+}

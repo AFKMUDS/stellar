@@ -1,0 +1,864 @@
+{
+  "data": "natural_reasoning_train.jsonl",
+  "mode": "jsonl",
+  "charset_size": 48,
+  "reserved_bytes": [
+    128,
+    129,
+    130
+  ],
+  "ascii_cost": 374980.0,
+  "greedy_cost": 226395.0,
+  "optimized_cost": 187737.0,
+  "improvement_vs_ascii": 0.4993412982025708,
+  "top_chars": [
+    {
+      "char": " ",
+      "count": 14066,
+      "byte": 79
+    },
+    {
+      "char": "e",
+      "count": 8589,
+      "byte": 175
+    },
+    {
+      "char": "t",
+      "count": 6468,
+      "byte": 80
+    },
+    {
+      "char": "a",
+      "count": 5650,
+      "byte": 242
+    },
+    {
+      "char": "i",
+      "count": 5645,
+      "byte": 176
+    },
+    {
+      "char": "n",
+      "count": 5496,
+      "byte": 13
+    },
+    {
+      "char": "o",
+      "count": 5182,
+      "byte": 97
+    },
+    {
+      "char": "s",
+      "count": 4826,
+      "byte": 88
+    },
+    {
+      "char": "r",
+      "count": 4343,
+      "byte": 245
+    },
+    {
+      "char": "h",
+      "count": 2862,
+      "byte": 10
+    },
+    {
+      "char": "c",
+      "count": 2759,
+      "byte": 12
+    },
+    {
+      "char": "l",
+      "count": 2686,
+      "byte": 243
+    },
+    {
+      "char": "d",
+      "count": 2396,
+      "byte": 177
+    },
+    {
+      "char": "u",
+      "count": 2087,
+      "byte": 26
+    },
+    {
+      "char": "f",
+      "count": 1833,
+      "byte": 158
+    },
+    {
+      "char": "p",
+      "count": 1716,
+      "byte": 244
+    },
+    {
+      "char": "m",
+      "count": 1656,
+      "byte": 78
+    },
+    {
+      "char": "g",
+      "count": 1248,
+      "byte": 14
+    },
+    {
+      "char": "w",
+      "count": 979,
+      "byte": 174
+    },
+    {
+      "char": "v",
+      "count": 876,
+      "byte": 95
+    },
+    {
+      "char": "y",
+      "count": 844,
+      "byte": 81
+    },
+    {
+      "char": "b",
+      "count": 836,
+      "byte": 229
+    },
+    {
+      "char": "\n",
+      "count": 800,
+      "byte": 118
+    },
+    {
+      "char": ".",
+      "count": 696,
+      "byte": 117
+    },
+    {
+      "char": ",",
+      "count": 683,
+      "byte": 241
+    },
+    {
+      "char": "$",
+      "count": 594,
+      "byte": 157
+    },
+    {
+      "char": "\\",
+      "count": 564,
+      "byte": 11
+    },
+    {
+      "char": "x",
+      "count": 542,
+      "byte": 94
+    },
+    {
+      "char": ":",
+      "count": 442,
+      "byte": 110
+    },
+    {
+      "char": "A",
+      "count": 354,
+      "byte": 137
+    },
+    {
+      "char": "(",
+      "count": 311,
+      "byte": 161
+    },
+    {
+      "char": ")",
+      "count": 311,
+      "byte": 160
+    },
+    {
+      "char": "{",
+      "count": 282,
+      "byte": 22
+    },
+    {
+      "char": "}",
+      "count": 282,
+      "byte": 208
+    },
+    {
+      "char": "1",
+      "count": 235,
+      "byte": 163
+    },
+    {
+      "char": "0",
+      "count": 232,
+      "byte": 92
+    },
+    {
+      "char": "k",
+      "count": 223,
+      "byte": 47
+    },
+    {
+      "char": "q",
+      "count": 222,
+      "byte": 27
+    },
+    {
+      "char": "Q",
+      "count": 213,
+      "byte": 228
+    },
+    {
+      "char": "2",
+      "count": 203,
+      "byte": 59
+    }
+  ],
+  "ascii_top_pairs": [
+    {
+      "pair": "e ",
+      "count": 2663,
+      "src_byte": 101,
+      "dst_byte": 32,
+      "move_cost": 6.0
+    },
+    {
+      "pair": " t",
+      "count": 2083,
+      "src_byte": 32,
+      "dst_byte": 116,
+      "move_cost": 5.0
+    },
+    {
+      "pair": "th",
+      "count": 1803,
+      "src_byte": 116,
+      "dst_byte": 104,
+      "move_cost": 4.0
+    },
+    {
+      "pair": " a",
+      "count": 1736,
+      "src_byte": 32,
+      "dst_byte": 97,
+      "move_cost": 5.0
+    },
+    {
+      "pair": "he",
+      "count": 1600,
+      "src_byte": 104,
+      "dst_byte": 101,
+      "move_cost": 3.0
+    },
+    {
+      "pair": "s ",
+      "count": 1567,
+      "src_byte": 115,
+      "dst_byte": 32,
+      "move_cost": 6.0
+    },
+    {
+      "pair": "on",
+      "count": 1388,
+      "src_byte": 111,
+      "dst_byte": 110,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "in",
+      "count": 1348,
+      "src_byte": 105,
+      "dst_byte": 110,
+      "move_cost": 5.0
+    },
+    {
+      "pair": "ti",
+      "count": 1292,
+      "src_byte": 116,
+      "dst_byte": 105,
+      "move_cost": 4.0
+    },
+    {
+      "pair": "an",
+      "count": 1215,
+      "src_byte": 97,
+      "dst_byte": 110,
+      "move_cost": 5.0
+    },
+    {
+      "pair": "er",
+      "count": 1211,
+      "src_byte": 101,
+      "dst_byte": 114,
+      "move_cost": 4.0
+    },
+    {
+      "pair": "at",
+      "count": 1087,
+      "src_byte": 97,
+      "dst_byte": 116,
+      "move_cost": 5.0
+    },
+    {
+      "pair": "n ",
+      "count": 1070,
+      "src_byte": 110,
+      "dst_byte": 32,
+      "move_cost": 4.0
+    },
+    {
+      "pair": "d ",
+      "count": 1065,
+      "src_byte": 100,
+      "dst_byte": 32,
+      "move_cost": 5.0
+    },
+    {
+      "pair": " o",
+      "count": 978,
+      "src_byte": 32,
+      "dst_byte": 111,
+      "move_cost": 3.0
+    },
+    {
+      "pair": "es",
+      "count": 916,
+      "src_byte": 101,
+      "dst_byte": 115,
+      "move_cost": 4.0
+    },
+    {
+      "pair": " i",
+      "count": 896,
+      "src_byte": 32,
+      "dst_byte": 105,
+      "move_cost": 7.0
+    },
+    {
+      "pair": "re",
+      "count": 890,
+      "src_byte": 114,
+      "dst_byte": 101,
+      "move_cost": 4.0
+    },
+    {
+      "pair": "io",
+      "count": 885,
+      "src_byte": 105,
+      "dst_byte": 111,
+      "move_cost": 5.0
+    },
+    {
+      "pair": "t ",
+      "count": 846,
+      "src_byte": 116,
+      "dst_byte": 32,
+      "move_cost": 5.0
+    }
+  ],
+  "optimized_top_pairs": [
+    {
+      "pair": "e ",
+      "count": 2663,
+      "src_byte": 175,
+      "dst_byte": 79,
+      "move_cost": 2.0
+    },
+    {
+      "pair": " t",
+      "count": 2083,
+      "src_byte": 79,
+      "dst_byte": 80,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "th",
+      "count": 1803,
+      "src_byte": 80,
+      "dst_byte": 10,
+      "move_cost": 1.0
+    },
+    {
+      "pair": " a",
+      "count": 1736,
+      "src_byte": 79,
+      "dst_byte": 242,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "he",
+      "count": 1600,
+      "src_byte": 10,
+      "dst_byte": 175,
+      "move_cost": 2.0
+    },
+    {
+      "pair": "s ",
+      "count": 1567,
+      "src_byte": 88,
+      "dst_byte": 79,
+      "move_cost": 2.0
+    },
+    {
+      "pair": "on",
+      "count": 1388,
+      "src_byte": 97,
+      "dst_byte": 13,
+      "move_cost": 2.0
+    },
+    {
+      "pair": "in",
+      "count": 1348,
+      "src_byte": 176,
+      "dst_byte": 13,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "ti",
+      "count": 1292,
+      "src_byte": 80,
+      "dst_byte": 176,
+      "move_cost": 2.0
+    },
+    {
+      "pair": "an",
+      "count": 1215,
+      "src_byte": 242,
+      "dst_byte": 13,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "er",
+      "count": 1211,
+      "src_byte": 175,
+      "dst_byte": 245,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "at",
+      "count": 1087,
+      "src_byte": 242,
+      "dst_byte": 80,
+      "move_cost": 2.0
+    },
+    {
+      "pair": "n ",
+      "count": 1070,
+      "src_byte": 13,
+      "dst_byte": 79,
+      "move_cost": 2.0
+    },
+    {
+      "pair": "d ",
+      "count": 1065,
+      "src_byte": 177,
+      "dst_byte": 79,
+      "move_cost": 2.0
+    },
+    {
+      "pair": " o",
+      "count": 978,
+      "src_byte": 79,
+      "dst_byte": 97,
+      "move_cost": 2.0
+    },
+    {
+      "pair": "es",
+      "count": 916,
+      "src_byte": 175,
+      "dst_byte": 88,
+      "move_cost": 2.0
+    },
+    {
+      "pair": " i",
+      "count": 896,
+      "src_byte": 79,
+      "dst_byte": 176,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "re",
+      "count": 890,
+      "src_byte": 245,
+      "dst_byte": 175,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "io",
+      "count": 885,
+      "src_byte": 176,
+      "dst_byte": 97,
+      "move_cost": 1.0
+    },
+    {
+      "pair": "t ",
+      "count": 846,
+      "src_byte": 80,
+      "dst_byte": 79,
+      "move_cost": 1.0
+    }
+  ],
+  "ascii_mapping": {
+    " ": 32,
+    "e": 101,
+    "t": 116,
+    "a": 97,
+    "i": 105,
+    "n": 110,
+    "o": 111,
+    "s": 115,
+    "r": 114,
+    "h": 104,
+    "c": 99,
+    "l": 108,
+    "d": 100,
+    "u": 117,
+    "f": 102,
+    "p": 112,
+    "m": 109,
+    "g": 103,
+    "w": 119,
+    "v": 118,
+    "y": 121,
+    "b": 98,
+    "\n": 10,
+    ".": 46,
+    ",": 44,
+    "$": 36,
+    "\\": 92,
+    "x": 120,
+    ":": 58,
+    "A": 65,
+    "(": 40,
+    ")": 41,
+    "{": 123,
+    "}": 125,
+    "1": 49,
+    "0": 48,
+    "k": 107,
+    "q": 113,
+    "Q": 81,
+    "2": 50,
+    "-": 45,
+    "T": 84,
+    "_": 95,
+    "=": 61,
+    "C": 67,
+    "P": 80,
+    "^": 94,
+    "S": 83
+  },
+  "optimized_mapping": {
+    " ": 79,
+    "e": 175,
+    "t": 80,
+    "a": 242,
+    "i": 176,
+    "n": 13,
+    "o": 97,
+    "s": 88,
+    "r": 245,
+    "h": 10,
+    "c": 12,
+    "l": 243,
+    "d": 177,
+    "u": 26,
+    "f": 158,
+    "p": 244,
+    "m": 78,
+    "g": 14,
+    "w": 174,
+    "v": 95,
+    "y": 81,
+    "b": 229,
+    "\n": 118,
+    ".": 117,
+    ",": 241,
+    "$": 157,
+    "\\": 11,
+    "x": 94,
+    ":": 110,
+    "A": 137,
+    "(": 161,
+    ")": 160,
+    "{": 22,
+    "}": 208,
+    "1": 163,
+    "0": 92,
+    "k": 47,
+    "q": 27,
+    "Q": 228,
+    "2": 59,
+    "-": 138,
+    "T": 19,
+    "_": 233,
+    "=": 98,
+    "C": 196,
+    "P": 235,
+    "^": 236,
+    "S": 20
+  },
+  "history": [
+    {
+      "iter": 0.0,
+      "cost": 226395.0
+    },
+    {
+      "iter": 1.0,
+      "cost": 226395.0,
+      "best_cost": 226395.0
+    },
+    {
+      "iter": 100.0,
+      "cost": 204735.0,
+      "best_cost": 204735.0
+    },
+    {
+      "iter": 200.0,
+      "cost": 199613.0,
+      "best_cost": 199613.0
+    },
+    {
+      "iter": 300.0,
+      "cost": 195180.0,
+      "best_cost": 195180.0
+    },
+    {
+      "iter": 400.0,
+      "cost": 194942.0,
+      "best_cost": 194942.0
+    },
+    {
+      "iter": 500.0,
+      "cost": 193784.0,
+      "best_cost": 193784.0
+    },
+    {
+      "iter": 600.0,
+      "cost": 193415.0,
+      "best_cost": 193415.0
+    },
+    {
+      "iter": 700.0,
+      "cost": 192984.0,
+      "best_cost": 192984.0
+    },
+    {
+      "iter": 800.0,
+      "cost": 192237.0,
+      "best_cost": 192237.0
+    },
+    {
+      "iter": 900.0,
+      "cost": 191051.0,
+      "best_cost": 191051.0
+    },
+    {
+      "iter": 1000.0,
+      "cost": 191051.0,
+      "best_cost": 191051.0
+    },
+    {
+      "iter": 1100.0,
+      "cost": 190513.0,
+      "best_cost": 190513.0
+    },
+    {
+      "iter": 1200.0,
+      "cost": 190335.0,
+      "best_cost": 190335.0
+    },
+    {
+      "iter": 1300.0,
+      "cost": 190088.0,
+      "best_cost": 190088.0
+    },
+    {
+      "iter": 1400.0,
+      "cost": 189257.0,
+      "best_cost": 189257.0
+    },
+    {
+      "iter": 1500.0,
+      "cost": 189257.0,
+      "best_cost": 189257.0
+    },
+    {
+      "iter": 1600.0,
+      "cost": 189129.0,
+      "best_cost": 189129.0
+    },
+    {
+      "iter": 1700.0,
+      "cost": 189053.0,
+      "best_cost": 189053.0
+    },
+    {
+      "iter": 1800.0,
+      "cost": 188555.0,
+      "best_cost": 188555.0
+    },
+    {
+      "iter": 1900.0,
+      "cost": 188027.0,
+      "best_cost": 188027.0
+    },
+    {
+      "iter": 2000.0,
+      "cost": 187737.0,
+      "best_cost": 187737.0
+    }
+  ],
+  "sample_text": "Question:\nWhat is gravity?\n\nAnswer:\nGravity is the attraction between masses.",
+  "sample_ascii_bytes": [
+    81,
+    117,
+    101,
+    115,
+    116,
+    105,
+    111,
+    110,
+    58,
+    10,
+    104,
+    97,
+    116,
+    32,
+    105,
+    115,
+    32,
+    103,
+    114,
+    97,
+    118,
+    105,
+    116,
+    121,
+    10,
+    10,
+    65,
+    110,
+    115,
+    119,
+    101,
+    114,
+    58,
+    10,
+    114,
+    97,
+    118,
+    105,
+    116,
+    121,
+    32,
+    105,
+    115,
+    32,
+    116,
+    104,
+    101,
+    32,
+    97,
+    116,
+    116,
+    114,
+    97,
+    99,
+    116,
+    105,
+    111,
+    110,
+    32,
+    98,
+    101,
+    116,
+    119,
+    101,
+    101,
+    110,
+    32,
+    109,
+    97,
+    115,
+    115,
+    101,
+    115,
+    46
+  ],
+  "sample_optimized_bytes": [
+    228,
+    26,
+    175,
+    88,
+    80,
+    176,
+    97,
+    13,
+    110,
+    118,
+    10,
+    242,
+    80,
+    79,
+    176,
+    88,
+    79,
+    14,
+    245,
+    242,
+    95,
+    176,
+    80,
+    81,
+    118,
+    118,
+    137,
+    13,
+    88,
+    174,
+    175,
+    245,
+    110,
+    118,
+    245,
+    242,
+    95,
+    176,
+    80,
+    81,
+    79,
+    176,
+    88,
+    79,
+    80,
+    10,
+    175,
+    79,
+    242,
+    80,
+    80,
+    245,
+    242,
+    12,
+    80,
+    176,
+    97,
+    13,
+    79,
+    229,
+    175,
+    80,
+    174,
+    175,
+    175,
+    13,
+    79,
+    78,
+    242,
+    88,
+    88,
+    175,
+    88,
+    117
+  ]
+}

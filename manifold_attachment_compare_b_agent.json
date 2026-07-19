@@ -1,0 +1,1524 @@
+{
+  "ckpt": "C:\\Programming\\Programming_Projects\\stellar\\checkpoints1\\b.pt",
+  "manifold_pt": "C:\\Programming\\Programming_Projects\\Duck\\duck_semantic_manifold_full_bw2.pt",
+  "basis_tier": "agent_role_operators",
+  "group_count": 12,
+  "mean_within_primitive_cos": 0.9906839983803885,
+  "mean_within_state_cos": 0.29860298829485793,
+  "mean_cross_primitive_cos": 0.9880166784719084,
+  "mean_cross_state_cos": 0.2199451984833462,
+  "groups": [
+    {
+      "grounding": [
+        "person",
+        "suffering"
+      ],
+      "primitive_score": 0.771626062990821,
+      "words": [
+        {
+          "word": "amnesiac",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            121,
+            44,
+            46,
+            99,
+            116,
+            117,
+            41
+          ]
+        },
+        {
+          "word": "amnesiacs",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            101,
+            32,
+            44,
+            46,
+            99,
+            104,
+            125,
+            105
+          ]
+        },
+        {
+          "word": "amnesic",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            97,
+            46,
+            41,
+            101,
+            125,
+            117
+          ]
+        },
+        {
+          "word": "amnesics",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            105,
+            101,
+            99,
+            97
+          ]
+        },
+        {
+          "word": "anorectic",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            44,
+            104,
+            46,
+            107,
+            101,
+            105
+          ]
+        },
+        {
+          "word": "anorexic",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            116,
+            97,
+            115,
+            99,
+            44,
+            104,
+            105
+          ]
+        },
+        {
+          "word": "anorexics",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            105,
+            111,
+            41,
+            58
+          ]
+        },
+        {
+          "word": "asthmatic",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            97,
+            105,
+            115,
+            44,
+            46,
+            39,
+            107
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9961253596203667,
+      "within_state_cos": 0.3971211300896747,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "someone",
+        "employed"
+      ],
+      "primitive_score": 0.7656021504936897,
+      "words": [
+        {
+          "word": "astrogate",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            115,
+            46,
+            100,
+            45,
+            109,
+            108
+          ]
+        },
+        {
+          "word": "astrogated",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            41,
+            58,
+            47,
+            45
+          ]
+        },
+        {
+          "word": "astrogating",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            115,
+            41,
+            39,
+            101,
+            108
+          ]
+        },
+        {
+          "word": "bellboy",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            101,
+            111,
+            32,
+            115,
+            108,
+            105,
+            39,
+            100
+          ]
+        },
+        {
+          "word": "bellboys",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            46,
+            44,
+            116,
+            101,
+            39,
+            104,
+            119
+          ]
+        },
+        {
+          "word": "bellhop",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            97,
+            108,
+            32,
+            114,
+            104,
+            101,
+            112
+          ]
+        },
+        {
+          "word": "bellhops",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            101,
+            105,
+            32,
+            111,
+            44,
+            121,
+            46,
+            116
+          ]
+        },
+        {
+          "word": "bellman",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            100,
+            110,
+            116,
+            115,
+            99,
+            105,
+            121
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9966937686715808,
+      "within_state_cos": 0.16738677483850292,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "someone",
+        "whose"
+      ],
+      "primitive_score": 0.7646230596899724,
+      "words": [
+        {
+          "word": "adman",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            32,
+            121,
+            110,
+            105,
+            108,
+            100,
+            115
+          ]
+        },
+        {
+          "word": "admen",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            100,
+            115,
+            97,
+            32,
+            99,
+            111,
+            121
+          ]
+        },
+        {
+          "word": "advertiser",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            44,
+            39,
+            46,
+            41,
+            102,
+            118
+          ]
+        },
+        {
+          "word": "advertisers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            104,
+            41,
+            109,
+            116
+          ]
+        },
+        {
+          "word": "advertizer",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            46,
+            44,
+            39,
+            41,
+            109,
+            116
+          ]
+        },
+        {
+          "word": "bearer",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            121,
+            105,
+            44,
+            115,
+            46,
+            111,
+            41
+          ]
+        },
+        {
+          "word": "bearers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            116,
+            41,
+            104,
+            58
+          ]
+        },
+        {
+          "word": "brainworker",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            101,
+            39,
+            105,
+            46,
+            44,
+            110
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9970638517822538,
+      "within_state_cos": 0.32441083514796837,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "someone",
+        "drives"
+      ],
+      "primitive_score": 0.7368362326118133,
+      "words": [
+        {
+          "word": "automobilist",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            105,
+            32,
+            111,
+            114,
+            44,
+            121,
+            109,
+            101
+          ]
+        },
+        {
+          "word": "automobilists",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            99,
+            39,
+            58,
+            125,
+            95
+          ]
+        },
+        {
+          "word": "boatman",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            110,
+            32,
+            121,
+            108,
+            97,
+            116,
+            111,
+            99
+          ]
+        },
+        {
+          "word": "boatmen",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            99,
+            97,
+            32,
+            100,
+            110,
+            115,
+            101
+          ]
+        },
+        {
+          "word": "busman",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            99,
+            44,
+            46,
+            108,
+            45,
+            115,
+            116
+          ]
+        },
+        {
+          "word": "busmen",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            99,
+            32,
+            100,
+            115,
+            44,
+            97,
+            111
+          ]
+        },
+        {
+          "word": "cabbies",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            125,
+            39,
+            45,
+            41,
+            99
+          ]
+        },
+        {
+          "word": "cabby",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            105,
+            44,
+            39,
+            46,
+            45,
+            108,
+            99
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9925402573176793,
+      "within_state_cos": 0.27877334744802545,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "someone",
+        "engages"
+      ],
+      "primitive_score": 0.7359860979091725,
+      "words": [
+        {
+          "word": "arb",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            105,
+            111,
+            97,
+            121,
+            32,
+            108,
+            115,
+            98
+          ]
+        },
+        {
+          "word": "arbitrager",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            44,
+            105,
+            46,
+            39,
+            41,
+            97
+          ]
+        },
+        {
+          "word": "arbitragers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            104,
+            39,
+            116,
+            117,
+            58
+          ]
+        },
+        {
+          "word": "arbitrageur",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            101,
+            97,
+            121,
+            111,
+            105,
+            32,
+            44,
+            46
+          ]
+        },
+        {
+          "word": "arbs",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            116,
+            44,
+            111,
+            46,
+            104,
+            39,
+            47
+          ]
+        },
+        {
+          "word": "arguer",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            115,
+            32,
+            44,
+            46,
+            39,
+            41,
+            125,
+            97
+          ]
+        },
+        {
+          "word": "arguers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            41,
+            39,
+            101,
+            125,
+            47
+          ]
+        },
+        {
+          "word": "bacchanal",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            105,
+            46,
+            115,
+            111,
+            101,
+            97
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9933700689247676,
+      "within_state_cos": 0.3042522362832512,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "someone",
+        "makes"
+      ],
+      "primitive_score": 0.7203260104155785,
+      "words": [
+        {
+          "word": "altruist",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            111,
+            44,
+            114,
+            105,
+            104,
+            101,
+            46
+          ]
+        },
+        {
+          "word": "altruists",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            58,
+            104,
+            99,
+            125
+          ]
+        },
+        {
+          "word": "bidder",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            44,
+            46,
+            39,
+            105,
+            45,
+            58
+          ]
+        },
+        {
+          "word": "bidders",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            58,
+            41,
+            47,
+            45
+          ]
+        },
+        {
+          "word": "blunderer",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            110,
+            109,
+            105,
+            115,
+            111,
+            97,
+            112
+          ]
+        },
+        {
+          "word": "blunderers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            105,
+            44,
+            111,
+            101,
+            32,
+            46,
+            116,
+            121
+          ]
+        },
+        {
+          "word": "bootlegger",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            115,
+            46,
+            41,
+            39,
+            101,
+            45
+          ]
+        },
+        {
+          "word": "bootleggers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            41,
+            116,
+            39,
+            117,
+            112
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9870507546833583,
+      "within_state_cos": 0.3156891228365047,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "someone",
+        "communicates"
+      ],
+      "primitive_score": 0.718204975442818,
+      "words": [
+        {
+          "word": "allegoriser",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            115,
+            41,
+            125,
+            121
+          ]
+        },
+        {
+          "word": "allegorizer",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            44,
+            46,
+            39,
+            41,
+            121,
+            45
+          ]
+        },
+        {
+          "word": "bawler",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            115,
+            32,
+            44,
+            39,
+            46,
+            97,
+            105,
+            103
+          ]
+        },
+        {
+          "word": "bawlers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            116,
+            101,
+            39,
+            104,
+            41
+          ]
+        },
+        {
+          "word": "bellower",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            44,
+            46,
+            39,
+            45,
+            101,
+            99
+          ]
+        },
+        {
+          "word": "bellowers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            58,
+            125,
+            41,
+            117
+          ]
+        },
+        {
+          "word": "correspondent",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            108,
+            105,
+            115,
+            97,
+            44,
+            46,
+            45
+          ]
+        },
+        {
+          "word": "correspondents",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            41,
+            97,
+            47,
+            58,
+            39
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.998448982834816,
+      "within_state_cos": 0.3324575118188347,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "worker",
+        "having"
+      ],
+      "primitive_score": 0.7125314237527367,
+      "words": [
+        {
+          "word": "artisan",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            32,
+            103,
+            99,
+            121,
+            101,
+            100,
+            115
+          ]
+        },
+        {
+          "word": "artisans",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            101,
+            39,
+            46,
+            105,
+            121,
+            104
+          ]
+        },
+        {
+          "word": "draftsman",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            100,
+            110,
+            45,
+            99,
+            44,
+            121,
+            46
+          ]
+        },
+        {
+          "word": "draftsmen",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            99,
+            32,
+            100,
+            115,
+            110,
+            111,
+            104
+          ]
+        },
+        {
+          "word": "draftsperson",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            105,
+            46,
+            39,
+            44,
+            97,
+            45,
+            102
+          ]
+        },
+        {
+          "word": "draughtsman",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            110,
+            100,
+            99,
+            44,
+            46,
+            121,
+            115
+          ]
+        },
+        {
+          "word": "draughtsmen",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            99,
+            100,
+            115,
+            32,
+            107,
+            110,
+            101
+          ]
+        },
+        {
+          "word": "engraver",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            115,
+            121,
+            105,
+            44,
+            97,
+            32,
+            111,
+            101
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9931860246828624,
+      "within_state_cos": 0.3581445664167404,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "person",
+        "human"
+      ],
+      "primitive_score": 0.7044288117145614,
+      "words": [
+        {
+          "word": "affluent",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            41,
+            105,
+            97,
+            44,
+            101,
+            108
+          ]
+        },
+        {
+          "word": "affluents",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            41,
+            58,
+            125,
+            39,
+            47
+          ]
+        },
+        {
+          "word": "agora",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            103,
+            108,
+            109,
+            115,
+            112,
+            98,
+            102
+          ]
+        },
+        {
+          "word": "agorae",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            100,
+            115,
+            114,
+            32,
+            108,
+            110,
+            116,
+            112
+          ]
+        },
+        {
+          "word": "agoras",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            101,
+            116,
+            104,
+            115,
+            105,
+            32,
+            121,
+            99
+          ]
+        },
+        {
+          "word": "asper",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            105,
+            39,
+            44,
+            46,
+            109,
+            45
+          ]
+        },
+        {
+          "word": "aurar",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            121,
+            99,
+            105,
+            32,
+            44,
+            101,
+            46,
+            97
+          ]
+        },
+        {
+          "word": "avos",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            105,
+            121,
+            101,
+            32,
+            116,
+            104,
+            99,
+            111
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9933949389628002,
+      "within_state_cos": 0.2072824818481292,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "someone",
+        "travels"
+      ],
+      "primitive_score": 0.7041122887063839,
+      "words": [
+        {
+          "word": "cheapjack",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            101,
+            105,
+            45,
+            97,
+            44,
+            46
+          ]
+        },
+        {
+          "word": "costermonger",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            115,
+            97,
+            110,
+            45,
+            109
+          ]
+        },
+        {
+          "word": "excursionist",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            105,
+            44,
+            46,
+            114,
+            121,
+            111,
+            39
+          ]
+        },
+        {
+          "word": "excursionists",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            99,
+            39,
+            58,
+            104,
+            125
+          ]
+        },
+        {
+          "word": "explorers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            104,
+            46,
+            101,
+            105,
+            121,
+            39
+          ]
+        },
+        {
+          "word": "flier",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            115,
+            32,
+            44,
+            101,
+            39,
+            97,
+            46,
+            45
+          ]
+        },
+        {
+          "word": "fliers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            41,
+            125,
+            116,
+            45
+          ]
+        },
+        {
+          "word": "globetrotter",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            105,
+            44,
+            109,
+            46,
+            45,
+            99
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9870067238807678,
+      "within_state_cos": 0.26579360011965036,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "someone",
+        "walks"
+      ],
+      "primitive_score": 0.6855160995618904,
+      "words": [
+        {
+          "word": "amblers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            101,
+            46,
+            116,
+            39,
+            104,
+            111
+          ]
+        },
+        {
+          "word": "noctambulist",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            114,
+            32,
+            111,
+            101,
+            97,
+            115,
+            44,
+            39
+          ]
+        },
+        {
+          "word": "plodder",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            105,
+            32,
+            115,
+            101,
+            45,
+            111,
+            46,
+            103
+          ]
+        },
+        {
+          "word": "plodders",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            116,
+            101,
+            41,
+            104
+          ]
+        },
+        {
+          "word": "reeler",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            115,
+            32,
+            44,
+            46,
+            39,
+            105,
+            109,
+            41
+          ]
+        },
+        {
+          "word": "reelers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            116,
+            39,
+            104,
+            101,
+            41
+          ]
+        },
+        {
+          "word": "saunterer",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            97,
+            103,
+            99,
+            115,
+            112,
+            116,
+            109,
+            111
+          ]
+        },
+        {
+          "word": "saunterers",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            116,
+            97,
+            112,
+            104,
+            101,
+            121,
+            32,
+            105
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9757310897111893,
+      "within_state_cos": 0.3407904064016683,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    },
+    {
+      "grounding": [
+        "manner",
+        "person"
+      ],
+      "primitive_score": 0.677806948740887,
+      "words": [
+        {
+          "word": "bilingually",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            111,
+            39,
+            45,
+            112,
+            115
+          ]
+        },
+        {
+          "word": "cerebrally",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            111,
+            39,
+            41,
+            125,
+            45
+          ]
+        },
+        {
+          "word": "compulsively",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            45,
+            101,
+            111,
+            41
+          ]
+        },
+        {
+          "word": "conservatively",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            58,
+            39,
+            45,
+            41,
+            111
+          ]
+        },
+        {
+          "word": "crackpot",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            97,
+            104,
+            101,
+            32,
+            115,
+            105,
+            114,
+            111
+          ]
+        },
+        {
+          "word": "crackpots",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            105,
+            39,
+            116,
+            108,
+            41
+          ]
+        },
+        {
+          "word": "declaim",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            115,
+            44,
+            46,
+            101,
+            97,
+            39,
+            58
+          ]
+        },
+        {
+          "word": "declaimed",
+          "top_primitive": 2,
+          "top_logit_ids": [
+            32,
+            44,
+            46,
+            39,
+            41,
+            45,
+            47,
+            101
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9775961594922202,
+      "within_state_cos": 0.2911338462893452,
+      "top_primitive_hist": {
+        "2": 8
+      }
+    }
+  ]
+}

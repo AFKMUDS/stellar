@@ -1,0 +1,372 @@
+{
+  "checkpoint": "C:\\Programming\\Programming_Projects\\stellar\\checkpoints1\\rap_v0_step009000.pt",
+  "dataset": "C:\\Programming\\Programming_Projects\\stellar\\natural_reasoning_train.jsonl",
+  "num_prompts": 10,
+  "num_segments": 94,
+  "generation": {
+    "max_gen": 32,
+    "temperature": 0.8,
+    "top_k": 50,
+    "greedy": false,
+    "seed": 17
+  },
+  "clustering": {
+    "selected_k": 2,
+    "selected_silhouette": 0.3104750600960316,
+    "candidates": [
+      {
+        "k": 2,
+        "inertia": 2506.5009765625,
+        "silhouette": 0.3104750600960316
+      },
+      {
+        "k": 3,
+        "inertia": 2262.9091796875,
+        "silhouette": 0.2705816585752875
+      },
+      {
+        "k": 4,
+        "inertia": 2017.5341796875,
+        "silhouette": 0.2800512491592188
+      },
+      {
+        "k": 5,
+        "inertia": 1859.57568359375,
+        "silhouette": 0.1705806971140581
+      },
+      {
+        "k": 6,
+        "inertia": 1760.803466796875,
+        "silhouette": 0.20723428561170693
+      }
+    ],
+    "current_primitive_excluded_from_features": true,
+    "feature_names": [
+      "log_duration",
+      "state_drift",
+      "state_norm_delta",
+      "entropy_drift",
+      "mean_entropy",
+      "mean_confidence",
+      "min_confidence",
+      "retrieval_hits",
+      "retrieval_count",
+      "retrieval_hit_rate",
+      "mean_retrieval_norm",
+      "mean_graph_distance",
+      "mean_chosen_probability",
+      "byte_class_0",
+      "byte_class_1",
+      "byte_class_2",
+      "byte_class_3",
+      "byte_class_4",
+      "byte_class_5",
+      "byte_class_6",
+      "state_direction_rp_0",
+      "state_direction_rp_1",
+      "state_direction_rp_2",
+      "state_direction_rp_3",
+      "state_direction_rp_4",
+      "state_direction_rp_5",
+      "state_direction_rp_6",
+      "state_direction_rp_7",
+      "state_direction_rp_8",
+      "state_direction_rp_9",
+      "state_direction_rp_10",
+      "state_direction_rp_11",
+      "state_direction_rp_12",
+      "state_direction_rp_13",
+      "state_direction_rp_14",
+      "state_direction_rp_15",
+      "previous_primitive_0",
+      "previous_primitive_1",
+      "previous_primitive_2",
+      "previous_primitive_3",
+      "previous_primitive_4",
+      "previous_primitive_5",
+      "previous_primitive_6",
+      "previous_primitive_7",
+      "previous_primitive_8",
+      "next_primitive_0",
+      "next_primitive_1",
+      "next_primitive_2",
+      "next_primitive_3",
+      "next_primitive_4",
+      "next_primitive_5",
+      "next_primitive_6",
+      "next_primitive_7",
+      "next_primitive_8"
+    ],
+    "pca_explained_variance_ratio": [
+      0.3320450782775879,
+      0.09075640887022018
+    ]
+  },
+  "species": [
+    {
+      "cluster": 0,
+      "count": 49,
+      "primitive_distribution": {
+        "6": 49
+      },
+      "mean_duration": 1.0,
+      "mean_state_drift": 22.630914921663244,
+      "mean_state_norm_delta": 1.3099327476657168,
+      "mean_entropy_drift": 0.0,
+      "mean_confidence": 0.9976133473065435,
+      "mean_retrieval_hit_rate": 0.0,
+      "mean_retrieval_norm": 0.0,
+      "byte_class_distribution": [
+        0.918367326259613,
+        0.0,
+        0.020408162847161293,
+        0.06122449040412903,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exemplars": [
+        {
+          "segment_id": 15,
+          "prompt_id": 1,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 29,
+          "prompt_id": 3,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 31,
+          "prompt_id": 3,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 68,
+          "prompt_id": 7,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 17,
+          "prompt_id": 1,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 46,
+          "prompt_id": 5,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 55,
+          "prompt_id": 6,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        },
+        {
+          "segment_id": 48,
+          "prompt_id": 5,
+          "primitive": 6,
+          "duration": 1,
+          "text": " ",
+          "byte_labels": [
+            "sp"
+          ]
+        }
+      ]
+    },
+    {
+      "cluster": 1,
+      "count": 45,
+      "primitive_distribution": {
+        "2": 45
+      },
+      "mean_duration": 4.111111111111111,
+      "mean_state_drift": 23.266458384195964,
+      "mean_state_norm_delta": -1.1743709988064237,
+      "mean_entropy_drift": -0.0016118867609509954,
+      "mean_confidence": 0.9977978331556357,
+      "mean_retrieval_hit_rate": 0.1684664101330768,
+      "mean_retrieval_norm": 2.978983145102641,
+      "byte_class_distribution": [
+        0.0,
+        0.07666666805744171,
+        0.6566923260688782,
+        0.13101410865783691,
+        0.1356269121170044,
+        0.0,
+        0.0
+      ],
+      "exemplars": [
+        {
+          "segment_id": 30,
+          "prompt_id": 3,
+          "primitive": 2,
+          "duration": 6,
+          "text": "field�",
+          "byte_labels": [
+            "f",
+            "i",
+            "e",
+            "l",
+            "d",
+            "x80"
+          ]
+        },
+        {
+          "segment_id": 14,
+          "prompt_id": 1,
+          "primitive": 2,
+          "duration": 6,
+          "text": "Their�",
+          "byte_labels": [
+            "T",
+            "h",
+            "e",
+            "i",
+            "r",
+            "x82"
+          ]
+        },
+        {
+          "segment_id": 32,
+          "prompt_id": 3,
+          "primitive": 2,
+          "duration": 3,
+          "text": "(A�",
+          "byte_labels": [
+            "(",
+            "A",
+            "x80"
+          ]
+        },
+        {
+          "segment_id": 47,
+          "prompt_id": 5,
+          "primitive": 2,
+          "duration": 9,
+          "text": "muscles�)",
+          "byte_labels": [
+            "m",
+            "u",
+            "s",
+            "c",
+            "l",
+            "e",
+            "s",
+            "x80",
+            ")"
+          ]
+        },
+        {
+          "segment_id": 16,
+          "prompt_id": 1,
+          "primitive": 2,
+          "duration": 5,
+          "text": "each�",
+          "byte_labels": [
+            "e",
+            "a",
+            "c",
+            "h",
+            "x80"
+          ]
+        },
+        {
+          "segment_id": 22,
+          "prompt_id": 1,
+          "primitive": 2,
+          "duration": 7,
+          "text": "slits�,",
+          "byte_labels": [
+            "s",
+            "l",
+            "i",
+            "t",
+            "s",
+            "x80",
+            ","
+          ]
+        },
+        {
+          "segment_id": 36,
+          "prompt_id": 3,
+          "primitive": 2,
+          "duration": 5,
+          "text": "mole�",
+          "byte_labels": [
+            "m",
+            "o",
+            "l",
+            "e",
+            "x80"
+          ]
+        },
+        {
+          "segment_id": 91,
+          "prompt_id": 9,
+          "primitive": 2,
+          "duration": 6,
+          "text": "(any�,",
+          "byte_labels": [
+            "(",
+            "a",
+            "n",
+            "y",
+            "x80",
+            ","
+          ]
+        }
+      ]
+    }
+  ],
+  "species_transitions": [
+    {
+      "src": 0,
+      "dst": 1,
+      "count": 45
+    },
+    {
+      "src": 1,
+      "dst": 0,
+      "count": 41
+    }
+  ],
+  "primitive_segment_counts": {
+    "6": 49,
+    "2": 45
+  }
+}

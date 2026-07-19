@@ -1,0 +1,2745 @@
+{
+  "config": {
+    "steps": 8000,
+    "agents": 32768,
+    "device": "cuda",
+    "seed": 7,
+    "decay": 0.9992,
+    "state_lr": 0.02,
+    "edge_lr": 0.06,
+    "pair_lr": 0.04,
+    "trigram_lr": 0.03,
+    "tempo_lr": 0.002,
+    "tempo_gain": 1.2,
+    "coupling_gain": 0.7,
+    "resonance_gain": 0.7,
+    "motif_gain": 1.6,
+    "novelty_gain": 1.0,
+    "temperature": 0.9,
+    "macro_threshold": 5000.0,
+    "macro_gain": 1.5,
+    "max_macros": 8,
+    "motif_switch_prob": 0.001,
+    "noise_frac": 0.15,
+    "anchor_span": 16,
+    "tempo_mode": "weird",
+    "phase_mode": "staggered",
+    "amplitude_mode": "spiky",
+    "report_every": 800,
+    "out": "substrate_tempo_primitives_report_v2_weird.json"
+  },
+  "final": {
+    "step": 8000,
+    "state_entropy": 5.351076126098633,
+    "primitive_entropy": 2.3227272033691406,
+    "edge_dominance": 0.2965239882469177,
+    "expected_state_mass": 0.6050489795462956,
+    "chain_reuse_ratio": 0.9999937415122986,
+    "chain_dominance": 0.24830317497253418,
+    "macro_count": 7,
+    "state_mass": 817828.625,
+    "edge_mass": 394387.96875,
+    "pair_mass": 262926.6875,
+    "trigram_mass": 197193.3125,
+    "active_state_count": 256,
+    "active_edge_count": 3540,
+    "active_trigram_count": 1263,
+    "support_locality_mean_hamming": 3.7662723064422607,
+    "motif_distribution": {
+      "inc_chain": 0.1666259765625,
+      "dec_chain": 0.171173095703125,
+      "xor_toggle": 0.172698974609375,
+      "rotate_left": 0.1729736328125,
+      "flip0_pulse": 0.166534423828125,
+      "noise": 0.149993896484375
+    },
+    "tempo_vector": [
+      0.018943846225738525,
+      0.1257326453924179,
+      0.24631617963314056,
+      -0.13929210603237152,
+      -0.13604769110679626,
+      0.09714375436306,
+      0.24026550352573395,
+      0.1750914603471756,
+      -0.2799907922744751,
+      -0.2639305293560028,
+      0.27559390664100647,
+      -0.15336503088474274,
+      -0.17946068942546844,
+      0.33468544483184814
+    ],
+    "phase_offsets": [
+      0.05940793454647064,
+      0.41908717155456543,
+      0.9113684296607971,
+      1.3152316808700562,
+      1.838578224182129,
+      2.2186808586120605,
+      2.6937780380249023,
+      3.1095688343048096,
+      3.6450161933898926,
+      4.015643119812012,
+      4.515763282775879,
+      4.908679962158203,
+      5.386830806732178,
+      5.803070545196533
+    ],
+    "top_states": [
+      {
+        "state": 170,
+        "energy": 7724.8291015625
+      },
+      {
+        "state": 162,
+        "energy": 7598.5986328125
+      },
+      {
+        "state": 138,
+        "energy": 7411.18798828125
+      },
+      {
+        "state": 160,
+        "energy": 7313.251953125
+      },
+      {
+        "state": 168,
+        "energy": 7297.65087890625
+      },
+      {
+        "state": 85,
+        "energy": 7077.4619140625
+      },
+      {
+        "state": 172,
+        "energy": 6963.47509765625
+      },
+      {
+        "state": 42,
+        "energy": 6938.3330078125
+      },
+      {
+        "state": 133,
+        "energy": 6918.28076171875
+      },
+      {
+        "state": 139,
+        "energy": 6882.63037109375
+      },
+      {
+        "state": 81,
+        "energy": 6881.4443359375
+      },
+      {
+        "state": 136,
+        "energy": 6856.80712890625
+      }
+    ],
+    "top_primitives": [
+      {
+        "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+        "usage": 8287423.0
+      },
+      {
+        "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+        "usage": 6639957.0
+      },
+      {
+        "primitive": "macro(xor20->xor20->xor20)",
+        "usage": 4750418.0
+      },
+      {
+        "primitive": "macro(rotl1->rotl1->rotl1)",
+        "usage": 4446188.5
+      },
+      {
+        "primitive": "macro(inc->inc->inc)",
+        "usage": 4171832.0
+      },
+      {
+        "primitive": "macro(rotr1->rotr1->rotr1)",
+        "usage": 3159288.25
+      },
+      {
+        "primitive": "macro(dec->dec->dec)",
+        "usage": 2863105.5
+      },
+      {
+        "primitive": "flip_bit_1",
+        "usage": 1632156.0
+      }
+    ],
+    "proto_words": [
+      {
+        "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+        "strength": 48963.7265625
+      },
+      {
+        "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+        "strength": 37740.7109375
+      },
+      {
+        "chain": "xor20->xor20->xor20",
+        "strength": 27040.0234375
+      },
+      {
+        "chain": "rotl1->rotl1->rotl1",
+        "strength": 25272.642578125
+      },
+      {
+        "chain": "inc->inc->inc",
+        "strength": 23657.611328125
+      },
+      {
+        "chain": "rotr1->rotr1->rotr1",
+        "strength": 18243.7109375
+      },
+      {
+        "chain": "dec->dec->dec",
+        "strength": 16272.6171875
+      },
+      {
+        "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+        "strength": 0.22236661612987518
+      },
+      {
+        "chain": "keep->flip_bit_2->flip_bit_1",
+        "strength": 0.13128603994846344
+      },
+      {
+        "chain": "flip_bit_1->xor20->xor20",
+        "strength": 0.07965987920761108
+      },
+      {
+        "chain": "rotr1->rotl1->rotl1",
+        "strength": 0.07310112565755844
+      },
+      {
+        "chain": "keep->flip_bit_1->flip_bit_1",
+        "strength": 0.05158209428191185
+      }
+    ],
+    "macro_sequences": [
+      [
+        "flip_bit_1",
+        "flip_bit_1",
+        "flip_bit_1"
+      ],
+      [
+        "flip_bit_0",
+        "flip_bit_0",
+        "flip_bit_0"
+      ],
+      [
+        "xor20",
+        "xor20",
+        "xor20"
+      ],
+      [
+        "rotl1",
+        "rotl1",
+        "rotl1"
+      ],
+      [
+        "inc",
+        "inc",
+        "inc"
+      ],
+      [
+        "rotr1",
+        "rotr1",
+        "rotr1"
+      ],
+      [
+        "dec",
+        "dec",
+        "dec"
+      ]
+    ]
+  },
+  "history": [
+    {
+      "step": 1,
+      "state_entropy": 4.944382667541504,
+      "primitive_entropy": 2.3117141723632812,
+      "edge_dominance": 0.36902326345443726,
+      "expected_state_mass": 0.7553710771062466,
+      "chain_reuse_ratio": 0.0,
+      "chain_dominance": 0.0,
+      "macro_count": 0,
+      "state_mass": 655.3599853515625,
+      "edge_mass": 1966.0802001953125,
+      "pair_mass": 9.999999717180685e-10,
+      "trigram_mass": 9.999999717180685e-10,
+      "active_state_count": 256,
+      "active_edge_count": 2732,
+      "active_trigram_count": 0,
+      "support_locality_mean_hamming": 3.8158860206604004,
+      "motif_distribution": {
+        "inc_chain": 0.1693115234375,
+        "dec_chain": 0.170928955078125,
+        "xor_toggle": 0.170166015625,
+        "rotate_left": 0.169921875,
+        "flip0_pulse": 0.169677734375,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        5.245366878625646e-07,
+        -0.16186951100826263,
+        -0.6463846564292908,
+        -0.11262112855911255,
+        0.2976611852645874,
+        -0.021135227754712105,
+        0.03776253014802933,
+        -0.068881556391716,
+        -1.0072035789489746,
+        -0.4545848071575165,
+        -1.2648565769195557,
+        -0.40437641739845276,
+        -0.6592167615890503,
+        -0.11683009564876556
+      ],
+      "phase_offsets": [
+        0.0022601697128266096,
+        0.4475591778755188,
+        0.898501455783844,
+        1.3449722528457642,
+        1.7968742847442627,
+        2.242957830429077,
+        2.6929209232330322,
+        3.140070915222168,
+        3.5924599170684814,
+        4.038339614868164,
+        4.489276885986328,
+        4.935648441314697,
+        5.385902404785156,
+        5.8329596519470215
+      ],
+      "top_states": [
+        {
+          "state": 87,
+          "energy": 12.880002975463867
+        },
+        {
+          "state": 83,
+          "energy": 12.340004920959473
+        },
+        {
+          "state": 85,
+          "energy": 12.260003089904785
+        },
+        {
+          "state": 89,
+          "energy": 11.860008239746094
+        },
+        {
+          "state": 81,
+          "energy": 11.740005493164062
+        },
+        {
+          "state": 91,
+          "energy": 9.380008697509766
+        },
+        {
+          "state": 93,
+          "energy": 9.060001373291016
+        },
+        {
+          "state": 79,
+          "energy": 8.880011558532715
+        },
+        {
+          "state": 45,
+          "energy": 8.180002212524414
+        },
+        {
+          "state": 47,
+          "energy": 8.039999008178711
+        },
+        {
+          "state": 82,
+          "energy": 7.879998683929443
+        },
+        {
+          "state": 196,
+          "energy": 7.659998416900635
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "flip_bit_0",
+          "usage": 6145.0
+        },
+        {
+          "primitive": "inc",
+          "usage": 5548.0
+        },
+        {
+          "primitive": "xor20",
+          "usage": 4529.0
+        },
+        {
+          "primitive": "rotl1",
+          "usage": 4340.0
+        },
+        {
+          "primitive": "dec",
+          "usage": 3151.0
+        },
+        {
+          "primitive": "rotr1",
+          "usage": 1940.0
+        },
+        {
+          "primitive": "keep",
+          "usage": 1489.0
+        },
+        {
+          "primitive": "flip_bit_3",
+          "usage": 1327.0
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "keep->keep->flip_bit_6",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->flip_bit_5",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->flip_bit_3",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->flip_bit_4",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->flip_bit_0",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->keep",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->flip_bit_1",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->flip_bit_2",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->xor20",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->dec",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->flip_bit_7",
+          "strength": 0.0
+        },
+        {
+          "chain": "keep->keep->inc",
+          "strength": 0.0
+        }
+      ],
+      "macro_sequences": []
+    },
+    {
+      "step": 800,
+      "state_entropy": 5.386075973510742,
+      "primitive_entropy": 2.374147653579712,
+      "edge_dominance": 0.32416123151779175,
+      "expected_state_mass": 0.5633596808448414,
+      "chain_reuse_ratio": 0.9964489340782166,
+      "chain_dominance": 0.2301529049873352,
+      "macro_count": 7,
+      "state_mass": 387350.78125,
+      "edge_mass": 222070.0625,
+      "pair_mass": 147355.1875,
+      "trigram_mass": 109997.3125,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.419504165649414,
+      "motif_distribution": {
+        "inc_chain": 0.1688232421875,
+        "dec_chain": 0.1717529296875,
+        "xor_toggle": 0.17193603515625,
+        "rotate_left": 0.16998291015625,
+        "flip0_pulse": 0.167510986328125,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.018232187256217003,
+        0.12505725026130676,
+        0.24599133431911469,
+        -0.17012859880924225,
+        -0.23260271549224854,
+        0.18827496469020844,
+        -0.22806794941425323,
+        -0.2758069336414337,
+        0.23715075850486755,
+        -0.3011527359485626,
+        0.2756015658378601,
+        -0.13625772297382355,
+        -0.007820893079042435,
+        0.04960513859987259
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 3813.4853515625
+        },
+        {
+          "state": 202,
+          "energy": 3739.91259765625
+        },
+        {
+          "state": 197,
+          "energy": 3644.724365234375
+        },
+        {
+          "state": 203,
+          "energy": 3531.544189453125
+        },
+        {
+          "state": 199,
+          "energy": 3459.99169921875
+        },
+        {
+          "state": 165,
+          "energy": 3454.669921875
+        },
+        {
+          "state": 196,
+          "energy": 3418.52978515625
+        },
+        {
+          "state": 164,
+          "energy": 3406.950927734375
+        },
+        {
+          "state": 85,
+          "energy": 3402.568603515625
+        },
+        {
+          "state": 171,
+          "energy": 3379.220703125
+        },
+        {
+          "state": 166,
+          "energy": 3364.28271484375
+        },
+        {
+          "state": 160,
+          "energy": 3351.999267578125
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 3834030.75
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 3060224.75
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 2165883.25
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 2021804.625
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 1895962.75
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 1414561.875
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 1273903.875
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 853661.875
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 25316.201171875
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 20138.13671875
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 15104.75390625
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 14222.685546875
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 13508.6083984375
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 10929.171875
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 10052.54296875
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 70.73765563964844
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 41.7636833190918
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 25.34078025817871
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 23.25429344177246
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 16.408864974975586
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 1600,
+      "state_entropy": 5.379143238067627,
+      "primitive_entropy": 2.341604471206665,
+      "edge_dominance": 0.2998708188533783,
+      "expected_state_mass": 0.5778033605735167,
+      "chain_reuse_ratio": 0.9986403584480286,
+      "chain_dominance": 0.24103081226348877,
+      "macro_count": 7,
+      "state_mass": 591543.375,
+      "edge_mass": 303978.1875,
+      "pair_mass": 202288.09375,
+      "trigram_mass": 151442.40625,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.6078970432281494,
+      "motif_distribution": {
+        "inc_chain": 0.17156982421875,
+        "dec_chain": 0.16851806640625,
+        "xor_toggle": 0.1708984375,
+        "rotate_left": 0.169219970703125,
+        "flip0_pulse": 0.1697998046875,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.018273305147886276,
+        0.1250598281621933,
+        0.24601882696151733,
+        0.2658610939979553,
+        0.23116625845432281,
+        -0.0028284236323088408,
+        -0.25724276900291443,
+        -0.25555235147476196,
+        -0.3338395059108734,
+        0.16603831946849823,
+        -0.27308356761932373,
+        0.2896485924720764,
+        0.3409014642238617,
+        -0.06247568503022194
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 5643.185546875
+        },
+        {
+          "state": 202,
+          "energy": 5390.71240234375
+        },
+        {
+          "state": 164,
+          "energy": 5279.70654296875
+        },
+        {
+          "state": 162,
+          "energy": 5236.31884765625
+        },
+        {
+          "state": 165,
+          "energy": 5132.6357421875
+        },
+        {
+          "state": 197,
+          "energy": 5117.41015625
+        },
+        {
+          "state": 85,
+          "energy": 5093.12890625
+        },
+        {
+          "state": 166,
+          "energy": 5048.50048828125
+        },
+        {
+          "state": 160,
+          "energy": 4986.32666015625
+        },
+        {
+          "state": 203,
+          "energy": 4968.18212890625
+        },
+        {
+          "state": 171,
+          "energy": 4965.29736328125
+        },
+        {
+          "state": 168,
+          "energy": 4957.78173828125
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 5947482.0
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 4757981.0
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 3391856.75
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 3170837.75
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 2974495.5
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 2241280.0
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2026920.625
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1221904.75
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 36502.28515625
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 28495.189453125
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 20765.32421875
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 19492.423828125
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 18352.76953125
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 14425.017578125
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 13027.1015625
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 37.28944396972656
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 22.015771865844727
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 13.358438491821289
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 12.258536338806152
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 8.649964332580566
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 2400,
+      "state_entropy": 5.371039867401123,
+      "primitive_entropy": 2.3313252925872803,
+      "edge_dominance": 0.29021793603897095,
+      "expected_state_mass": 0.5879453920472637,
+      "chain_reuse_ratio": 0.9993733763694763,
+      "chain_dominance": 0.24487459659576416,
+      "macro_count": 7,
+      "state_mass": 699183.875,
+      "edge_mass": 347025.625,
+      "pair_mass": 231159.859375,
+      "trigram_mass": 173225.5625,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.6608164310455322,
+      "motif_distribution": {
+        "inc_chain": 0.16925048828125,
+        "dec_chain": 0.17041015625,
+        "xor_toggle": 0.17041015625,
+        "rotate_left": 0.169647216796875,
+        "flip0_pulse": 0.1702880859375,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.018527774140238762,
+        0.1251794993877411,
+        0.24612300097942352,
+        -0.13925035297870636,
+        -0.2806854844093323,
+        -0.19887225329875946,
+        0.06864093244075775,
+        0.10579021275043488,
+        0.11038625240325928,
+        0.22109390795230865,
+        0.09123409539461136,
+        0.2025316208600998,
+        0.09097739309072495,
+        -0.12540675699710846
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 6455.81640625
+        },
+        {
+          "state": 162,
+          "energy": 6241.4765625
+        },
+        {
+          "state": 164,
+          "energy": 6179.775390625
+        },
+        {
+          "state": 202,
+          "energy": 6082.37353515625
+        },
+        {
+          "state": 168,
+          "energy": 6039.1748046875
+        },
+        {
+          "state": 160,
+          "energy": 5939.390625
+        },
+        {
+          "state": 165,
+          "energy": 5909.14306640625
+        },
+        {
+          "state": 138,
+          "energy": 5903.2626953125
+        },
+        {
+          "state": 171,
+          "energy": 5871.63623046875
+        },
+        {
+          "state": 85,
+          "energy": 5851.6591796875
+        },
+        {
+          "state": 174,
+          "energy": 5773.40771484375
+        },
+        {
+          "state": 166,
+          "energy": 5697.79736328125
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 7060940.5
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 5653368.5
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 4037576.25
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 3776654.75
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 3543426.5
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 2678146.5
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2425280.25
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1416673.75
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 42418.5390625
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 32888.33203125
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 23765.8515625
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 22267.263671875
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 20894.9921875
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 16236.0771484375
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 14552.9755859375
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 19.65717887878418
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 11.605659484863281
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 7.0419230461120605
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 6.462114334106445
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 4.559844017028809
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 3200,
+      "state_entropy": 5.364811420440674,
+      "primitive_entropy": 2.3268442153930664,
+      "edge_dominance": 0.28973251581192017,
+      "expected_state_mass": 0.5943922733928464,
+      "chain_reuse_ratio": 0.999690055847168,
+      "chain_dominance": 0.24652087688446045,
+      "macro_count": 7,
+      "state_mass": 755926.875,
+      "edge_mass": 369552.0625,
+      "pair_mass": 246269.03125,
+      "trigram_mass": 184625.71875,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.721606492996216,
+      "motif_distribution": {
+        "inc_chain": 0.16802978515625,
+        "dec_chain": 0.17047119140625,
+        "xor_toggle": 0.1717529296875,
+        "rotate_left": 0.16998291015625,
+        "flip0_pulse": 0.169769287109375,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.0182704608887434,
+        0.12501493096351624,
+        0.2460728883743286,
+        -0.07005612552165985,
+        0.08273065835237503,
+        -0.30683761835098267,
+        0.1571921557188034,
+        0.17807801067829132,
+        0.13398905098438263,
+        0.03560173138976097,
+        -0.17775727808475494,
+        -0.11021724343299866,
+        -0.20283977687358856,
+        0.015974560752511024
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 6801.78076171875
+        },
+        {
+          "state": 162,
+          "energy": 6751.384765625
+        },
+        {
+          "state": 164,
+          "energy": 6495.732421875
+        },
+        {
+          "state": 160,
+          "energy": 6475.73583984375
+        },
+        {
+          "state": 168,
+          "energy": 6456.4580078125
+        },
+        {
+          "state": 138,
+          "energy": 6397.43505859375
+        },
+        {
+          "state": 202,
+          "energy": 6345.796875
+        },
+        {
+          "state": 174,
+          "energy": 6334.80126953125
+        },
+        {
+          "state": 85,
+          "energy": 6300.11181640625
+        },
+        {
+          "state": 171,
+          "energy": 6223.21533203125
+        },
+        {
+          "state": 165,
+          "energy": 6185.60986328125
+        },
+        {
+          "state": 172,
+          "energy": 6128.67724609375
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 7648678.0
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 6125848.5
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 4378392.5
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 4096390.5
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 3843610.0
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 2908864.0
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2635299.25
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1518570.125
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 45514.09375
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 35190.02734375
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 25334.943359375
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 23718.7890625
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 22226.884765625
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 17178.091796875
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 15356.6533203125
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 10.3623046875
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 6.117945194244385
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 3.712160110473633
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 3.406510829925537
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 2.403728485107422
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 4000,
+      "state_entropy": 5.359893798828125,
+      "primitive_entropy": 2.324882984161377,
+      "edge_dominance": 0.29165786504745483,
+      "expected_state_mass": 0.5986410702446684,
+      "chain_reuse_ratio": 0.9998418092727661,
+      "chain_dominance": 0.2472355216741562,
+      "macro_count": 7,
+      "state_mass": 785839.0,
+      "edge_mass": 381678.75,
+      "pair_mass": 254401.859375,
+      "trigram_mass": 190761.265625,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.7557530403137207,
+      "motif_distribution": {
+        "inc_chain": 0.16497802734375,
+        "dec_chain": 0.171295166015625,
+        "xor_toggle": 0.171417236328125,
+        "rotate_left": 0.173004150390625,
+        "flip0_pulse": 0.1693115234375,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.018524929881095886,
+        0.12513457238674164,
+        0.24594606459140778,
+        0.027237532660365105,
+        -0.18643613159656525,
+        -0.29093456268310547,
+        0.23787055909633636,
+        0.18985383212566376,
+        -0.16449512541294098,
+        -0.19563435018062592,
+        -0.03878878802061081,
+        -0.17297382652759552,
+        -0.1691771000623703,
+        -0.23436576128005981
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 7106.76611328125
+        },
+        {
+          "state": 162,
+          "energy": 7013.82666015625
+        },
+        {
+          "state": 138,
+          "energy": 6871.72021484375
+        },
+        {
+          "state": 85,
+          "energy": 6727.126953125
+        },
+        {
+          "state": 168,
+          "energy": 6689.3603515625
+        },
+        {
+          "state": 174,
+          "energy": 6678.0693359375
+        },
+        {
+          "state": 160,
+          "energy": 6669.33251953125
+        },
+        {
+          "state": 164,
+          "energy": 6650.34130859375
+        },
+        {
+          "state": 172,
+          "energy": 6555.013671875
+        },
+        {
+          "state": 165,
+          "energy": 6514.427734375
+        },
+        {
+          "state": 171,
+          "energy": 6448.6220703125
+        },
+        {
+          "state": 139,
+          "energy": 6426.02099609375
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 7957933.5
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 6373770.0
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 4558149.0
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 4264355.0
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 4002648.25
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 3029160.25
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2744545.75
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1572854.875
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 47162.9609375
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 36437.65234375
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 26159.259765625
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 24501.4453125
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 22905.197265625
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 17714.494140625
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 15824.2509765625
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 5.462512016296387
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 3.225086212158203
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 1.9568727016448975
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 1.7957507371902466
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 1.2671303749084473
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 4800,
+      "state_entropy": 5.3559370040893555,
+      "primitive_entropy": 2.3237600326538086,
+      "edge_dominance": 0.29320916533470154,
+      "expected_state_mass": 0.6016270907023188,
+      "chain_reuse_ratio": 0.9999178647994995,
+      "chain_dominance": 0.2476351261138916,
+      "macro_count": 7,
+      "state_mass": 801607.125,
+      "edge_mass": 387872.4375,
+      "pair_mass": 258556.546875,
+      "trigram_mass": 193896.28125,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.7583720684051514,
+      "motif_distribution": {
+        "inc_chain": 0.16668701171875,
+        "dec_chain": 0.169403076171875,
+        "xor_toggle": 0.172393798828125,
+        "rotate_left": 0.173828125,
+        "flip0_pulse": 0.167694091796875,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.018779391422867775,
+        0.12525422871112823,
+        0.24620631337165833,
+        -0.2208123505115509,
+        -0.01909831166267395,
+        -0.1897554248571396,
+        -0.11424794048070908,
+        0.03173177316784859,
+        0.1930847316980362,
+        -0.2373417168855667,
+        0.09858206659555435,
+        -0.20829899609088898,
+        -0.10138632357120514,
+        0.13862080872058868
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 7315.88525390625
+        },
+        {
+          "state": 138,
+          "energy": 7186.1513671875
+        },
+        {
+          "state": 162,
+          "energy": 7124.30419921875
+        },
+        {
+          "state": 168,
+          "energy": 6859.06005859375
+        },
+        {
+          "state": 85,
+          "energy": 6800.47509765625
+        },
+        {
+          "state": 164,
+          "energy": 6756.12646484375
+        },
+        {
+          "state": 172,
+          "energy": 6743.08740234375
+        },
+        {
+          "state": 160,
+          "energy": 6721.962890625
+        },
+        {
+          "state": 174,
+          "energy": 6705.423828125
+        },
+        {
+          "state": 139,
+          "energy": 6651.7607421875
+        },
+        {
+          "state": 165,
+          "energy": 6650.68408203125
+        },
+        {
+          "state": 171,
+          "energy": 6601.12744140625
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 8121516.5
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 6504851.5
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 4652524.5
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 4354270.0
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 4085833.0
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 3093646.25
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2803100.0
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1600915.5
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 48015.53125
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 37083.6796875
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 26605.328125
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 24872.876953125
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 23282.392578125
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 17965.125
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 16041.826171875
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 2.8795716762542725
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 1.7001094818115234
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 1.0315685272216797
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 0.9466328620910645
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 0.6679689884185791
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 5600,
+      "state_entropy": 5.353745460510254,
+      "primitive_entropy": 2.32321834564209,
+      "edge_dominance": 0.29414674639701843,
+      "expected_state_mass": 0.6032635578695719,
+      "chain_reuse_ratio": 0.9999572038650513,
+      "chain_dominance": 0.24781587719917297,
+      "macro_count": 7,
+      "state_mass": 809919.375,
+      "edge_mass": 391193.5625,
+      "pair_mass": 260784.0625,
+      "trigram_mass": 195576.953125,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.7583720684051514,
+      "motif_distribution": {
+        "inc_chain": 0.172332763671875,
+        "dec_chain": 0.166534423828125,
+        "xor_toggle": 0.16998291015625,
+        "rotate_left": 0.16943359375,
+        "flip0_pulse": 0.171722412109375,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.01903383992612362,
+        0.12577494978904724,
+        0.2461562305688858,
+        0.30754926800727844,
+        0.03648848086595535,
+        -0.07776989787817001,
+        -0.32119664549827576,
+        -0.32481691241264343,
+        -0.2543375492095947,
+        0.2473873794078827,
+        -0.09785033762454987,
+        0.17453604936599731,
+        0.2702063024044037,
+        -0.2546323537826538
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 7502.4814453125
+        },
+        {
+          "state": 138,
+          "energy": 7224.85205078125
+        },
+        {
+          "state": 168,
+          "energy": 7143.537109375
+        },
+        {
+          "state": 162,
+          "energy": 7137.75537109375
+        },
+        {
+          "state": 85,
+          "energy": 6952.86865234375
+        },
+        {
+          "state": 133,
+          "energy": 6823.25537109375
+        },
+        {
+          "state": 139,
+          "energy": 6787.119140625
+        },
+        {
+          "state": 172,
+          "energy": 6779.5380859375
+        },
+        {
+          "state": 164,
+          "energy": 6769.09619140625
+        },
+        {
+          "state": 160,
+          "energy": 6738.5791015625
+        },
+        {
+          "state": 171,
+          "energy": 6702.16650390625
+        },
+        {
+          "state": 165,
+          "energy": 6664.8828125
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 8207674.5
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 6573622.5
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 4701890.0
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 4401722.5
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 4130016.25
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 3127385.0
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2833675.5
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1615778.5
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 48467.07421875
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 37434.1015625
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 26851.87109375
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 25067.068359375
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 23471.1875
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 18104.8359375
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 16165.255859375
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 1.5179705619812012
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 0.8962161540985107
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 0.5437923669815063
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 0.49901941418647766
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 0.35212117433547974
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 6400,
+      "state_entropy": 5.352429389953613,
+      "primitive_entropy": 2.3229386806488037,
+      "edge_dominance": 0.29490959644317627,
+      "expected_state_mass": 0.6041693034495298,
+      "chain_reuse_ratio": 0.9999775886535645,
+      "chain_dominance": 0.24785363674163818,
+      "macro_count": 7,
+      "state_mass": 814301.1875,
+      "edge_mass": 392949.625,
+      "pair_mass": 261961.8125,
+      "trigram_mass": 196465.734375,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.7626562118530273,
+      "motif_distribution": {
+        "inc_chain": 0.170684814453125,
+        "dec_chain": 0.168609619140625,
+        "xor_toggle": 0.169677734375,
+        "rotate_left": 0.168670654296875,
+        "flip0_pulse": 0.17236328125,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.018434928730130196,
+        0.12549346685409546,
+        0.2461061179637909,
+        -0.1701250821352005,
+        -0.07065735012292862,
+        -0.0034744672011584044,
+        0.010186591185629368,
+        -0.1831672340631485,
+        0.0772722139954567,
+        0.16560187935829163,
+        0.31187039613723755,
+        0.30107763409614563,
+        0.2279406636953354,
+        0.2660004198551178
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 7630.43212890625
+        },
+        {
+          "state": 168,
+          "energy": 7441.67724609375
+        },
+        {
+          "state": 138,
+          "energy": 7250.23779296875
+        },
+        {
+          "state": 162,
+          "energy": 7118.12353515625
+        },
+        {
+          "state": 85,
+          "energy": 7060.99951171875
+        },
+        {
+          "state": 133,
+          "energy": 6941.56396484375
+        },
+        {
+          "state": 42,
+          "energy": 6908.30517578125
+        },
+        {
+          "state": 139,
+          "energy": 6902.6923828125
+        },
+        {
+          "state": 172,
+          "energy": 6896.19091796875
+        },
+        {
+          "state": 160,
+          "energy": 6862.802734375
+        },
+        {
+          "state": 164,
+          "energy": 6832.0615234375
+        },
+        {
+          "state": 136,
+          "energy": 6736.56982421875
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 8253441.0
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 6610804.5
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 4728551.0
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 4426563.0
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 4151583.25
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 3144651.25
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2850205.25
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1623266.625
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 48694.74609375
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 37590.8671875
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 26962.7578125
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 25174.67578125
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 23622.427734375
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 18194.052734375
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 16218.0068359375
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 0.8002009391784668
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 0.4724413752555847
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 0.28666114807128906
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 0.26305896043777466
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 0.18562114238739014
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 7200,
+      "state_entropy": 5.351511001586914,
+      "primitive_entropy": 2.322753429412842,
+      "edge_dominance": 0.29606103897094727,
+      "expected_state_mass": 0.6048303981332606,
+      "chain_reuse_ratio": 0.9999882578849792,
+      "chain_dominance": 0.24814169108867645,
+      "macro_count": 7,
+      "state_mass": 816611.0,
+      "edge_mass": 393821.4375,
+      "pair_mass": 262546.8125,
+      "trigram_mass": 196907.203125,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.7634994983673096,
+      "motif_distribution": {
+        "inc_chain": 0.171478271484375,
+        "dec_chain": 0.169219970703125,
+        "xor_toggle": 0.168060302734375,
+        "rotate_left": 0.1717529296875,
+        "flip0_pulse": 0.16949462890625,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.017835965380072594,
+        0.1252119094133377,
+        0.24636626243591309,
+        0.2659487724304199,
+        0.25249961018562317,
+        0.04109961539506912,
+        0.13696669042110443,
+        0.146325945854187,
+        0.22787383198738098,
+        0.00796050950884819,
+        -0.1897854506969452,
+        -0.051194604486227036,
+        -0.1649768203496933,
+        -0.21257232129573822
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 7652.98193359375
+        },
+        {
+          "state": 138,
+          "energy": 7339.07958984375
+        },
+        {
+          "state": 168,
+          "energy": 7301.10400390625
+        },
+        {
+          "state": 162,
+          "energy": 7293.5087890625
+        },
+        {
+          "state": 160,
+          "energy": 7077.2744140625
+        },
+        {
+          "state": 85,
+          "energy": 7058.5498046875
+        },
+        {
+          "state": 42,
+          "energy": 7040.7548828125
+        },
+        {
+          "state": 133,
+          "energy": 6963.1064453125
+        },
+        {
+          "state": 139,
+          "energy": 6949.54296875
+        },
+        {
+          "state": 172,
+          "energy": 6890.99951171875
+        },
+        {
+          "state": 136,
+          "energy": 6834.12353515625
+        },
+        {
+          "state": 174,
+          "energy": 6757.29345703125
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 8276024.5
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 6630560.0
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 4742920.0
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 4439219.5
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 4165101.0
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 3154264.75
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2858658.75
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1628753.0
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 48860.88671875
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 37668.84765625
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 27011.701171875
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 25244.447265625
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 23637.740234375
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 18225.765625
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 16253.498046875
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 0.42182689905166626
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 0.24904832243919373
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 0.15111379325389862
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 0.138671875
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 0.09785047173500061
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    },
+    {
+      "step": 8000,
+      "state_entropy": 5.351076126098633,
+      "primitive_entropy": 2.3227272033691406,
+      "edge_dominance": 0.2965239882469177,
+      "expected_state_mass": 0.6050489795462956,
+      "chain_reuse_ratio": 0.9999937415122986,
+      "chain_dominance": 0.24830317497253418,
+      "macro_count": 7,
+      "state_mass": 817828.625,
+      "edge_mass": 394387.96875,
+      "pair_mass": 262926.6875,
+      "trigram_mass": 197193.3125,
+      "active_state_count": 256,
+      "active_edge_count": 3540,
+      "active_trigram_count": 1263,
+      "support_locality_mean_hamming": 3.7662723064422607,
+      "motif_distribution": {
+        "inc_chain": 0.1666259765625,
+        "dec_chain": 0.171173095703125,
+        "xor_toggle": 0.172698974609375,
+        "rotate_left": 0.1729736328125,
+        "flip0_pulse": 0.166534423828125,
+        "noise": 0.149993896484375
+      },
+      "tempo_vector": [
+        0.018943846225738525,
+        0.1257326453924179,
+        0.24631617963314056,
+        -0.13929210603237152,
+        -0.13604769110679626,
+        0.09714375436306,
+        0.24026550352573395,
+        0.1750914603471756,
+        -0.2799907922744751,
+        -0.2639305293560028,
+        0.27559390664100647,
+        -0.15336503088474274,
+        -0.17946068942546844,
+        0.33468544483184814
+      ],
+      "phase_offsets": [
+        0.05940793454647064,
+        0.41908717155456543,
+        0.9113684296607971,
+        1.3152316808700562,
+        1.838578224182129,
+        2.2186808586120605,
+        2.6937780380249023,
+        3.1095688343048096,
+        3.6450161933898926,
+        4.015643119812012,
+        4.515763282775879,
+        4.908679962158203,
+        5.386830806732178,
+        5.803070545196533
+      ],
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 7724.8291015625
+        },
+        {
+          "state": 162,
+          "energy": 7598.5986328125
+        },
+        {
+          "state": 138,
+          "energy": 7411.18798828125
+        },
+        {
+          "state": 160,
+          "energy": 7313.251953125
+        },
+        {
+          "state": 168,
+          "energy": 7297.65087890625
+        },
+        {
+          "state": 85,
+          "energy": 7077.4619140625
+        },
+        {
+          "state": 172,
+          "energy": 6963.47509765625
+        },
+        {
+          "state": 42,
+          "energy": 6938.3330078125
+        },
+        {
+          "state": 133,
+          "energy": 6918.28076171875
+        },
+        {
+          "state": 139,
+          "energy": 6882.63037109375
+        },
+        {
+          "state": 81,
+          "energy": 6881.4443359375
+        },
+        {
+          "state": 136,
+          "energy": 6856.80712890625
+        }
+      ],
+      "top_primitives": [
+        {
+          "primitive": "macro(flip_bit_1->flip_bit_1->flip_bit_1)",
+          "usage": 8287423.0
+        },
+        {
+          "primitive": "macro(flip_bit_0->flip_bit_0->flip_bit_0)",
+          "usage": 6639957.0
+        },
+        {
+          "primitive": "macro(xor20->xor20->xor20)",
+          "usage": 4750418.0
+        },
+        {
+          "primitive": "macro(rotl1->rotl1->rotl1)",
+          "usage": 4446188.5
+        },
+        {
+          "primitive": "macro(inc->inc->inc)",
+          "usage": 4171832.0
+        },
+        {
+          "primitive": "macro(rotr1->rotr1->rotr1)",
+          "usage": 3159288.25
+        },
+        {
+          "primitive": "macro(dec->dec->dec)",
+          "usage": 2863105.5
+        },
+        {
+          "primitive": "flip_bit_1",
+          "usage": 1632156.0
+        }
+      ],
+      "proto_words": [
+        {
+          "chain": "flip_bit_1->flip_bit_1->flip_bit_1",
+          "strength": 48963.7265625
+        },
+        {
+          "chain": "flip_bit_0->flip_bit_0->flip_bit_0",
+          "strength": 37740.7109375
+        },
+        {
+          "chain": "xor20->xor20->xor20",
+          "strength": 27040.0234375
+        },
+        {
+          "chain": "rotl1->rotl1->rotl1",
+          "strength": 25272.642578125
+        },
+        {
+          "chain": "inc->inc->inc",
+          "strength": 23657.611328125
+        },
+        {
+          "chain": "rotr1->rotr1->rotr1",
+          "strength": 18243.7109375
+        },
+        {
+          "chain": "dec->dec->dec",
+          "strength": 16272.6171875
+        },
+        {
+          "chain": "flip_bit_2->flip_bit_1->flip_bit_1",
+          "strength": 0.22236661612987518
+        },
+        {
+          "chain": "keep->flip_bit_2->flip_bit_1",
+          "strength": 0.13128603994846344
+        },
+        {
+          "chain": "flip_bit_1->xor20->xor20",
+          "strength": 0.07965987920761108
+        },
+        {
+          "chain": "rotr1->rotl1->rotl1",
+          "strength": 0.07310112565755844
+        },
+        {
+          "chain": "keep->flip_bit_1->flip_bit_1",
+          "strength": 0.05158209428191185
+        }
+      ],
+      "macro_sequences": [
+        [
+          "flip_bit_1",
+          "flip_bit_1",
+          "flip_bit_1"
+        ],
+        [
+          "flip_bit_0",
+          "flip_bit_0",
+          "flip_bit_0"
+        ],
+        [
+          "xor20",
+          "xor20",
+          "xor20"
+        ],
+        [
+          "rotl1",
+          "rotl1",
+          "rotl1"
+        ],
+        [
+          "inc",
+          "inc",
+          "inc"
+        ],
+        [
+          "rotr1",
+          "rotr1",
+          "rotr1"
+        ],
+        [
+          "dec",
+          "dec",
+          "dec"
+        ]
+      ]
+    }
+  ]
+}

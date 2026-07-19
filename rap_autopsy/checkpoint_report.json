@@ -1,0 +1,296 @@
+{
+  "checkpoint_path": "C:\\Programming\\Programming_Projects\\stellar\\checkpoints1\\rap_v0_step009000.pt",
+  "checkpoint_type": "<class 'dict'>",
+  "top_level_keys": [
+    "cfg",
+    "state_dict",
+    "optimizer_state_dict",
+    "step"
+  ],
+  "total_parameters": 4750898,
+  "tensor_count": 21,
+  "tensors": [
+    {
+      "name": "prim_A",
+      "shape": [
+        8,
+        512,
+        512
+      ],
+      "dtype": "torch.float32",
+      "numel": 2097152,
+      "mean": -4.650398750527529e-07,
+      "std": 0.03318376466631889,
+      "min": -0.40069377422332764,
+      "max": 0.5371686816215515,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "prim_B",
+      "shape": [
+        8,
+        512,
+        256
+      ],
+      "dtype": "torch.float32",
+      "numel": 1048576,
+      "mean": 2.9605911549879238e-05,
+      "std": 0.027113059535622597,
+      "min": -0.1948126256465912,
+      "max": 0.20059137046337128,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "prim_bias",
+      "shape": [
+        8,
+        512
+      ],
+      "dtype": "torch.float32",
+      "numel": 4096,
+      "mean": 3.7891069951001555e-05,
+      "std": 0.008875591680407524,
+      "min": -0.03356480970978737,
+      "max": 0.0329778827726841,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "bit_reverse_lut",
+      "shape": [
+        256
+      ],
+      "dtype": "torch.int64",
+      "numel": 256
+    },
+    {
+      "name": "tok_emb.weight",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "torch.float32",
+      "numel": 65536,
+      "mean": -0.0036500999704003334,
+      "std": 0.9912824630737305,
+      "min": -4.169758319854736,
+      "max": 4.425086975097656,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "numeric_proj.weight",
+      "shape": [
+        256,
+        3
+      ],
+      "dtype": "torch.float32",
+      "numel": 768,
+      "mean": 0.016229940578341484,
+      "std": 0.354385107755661,
+      "min": -0.6815594434738159,
+      "max": 0.6839700937271118,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "numeric_proj.bias",
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float32",
+      "numel": 256,
+      "mean": -0.0013695759698748589,
+      "std": 0.3425290882587433,
+      "min": -0.5627373456954956,
+      "max": 0.5777623653411865,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "aux_digit_head.weight",
+      "shape": [
+        10,
+        512
+      ],
+      "dtype": "torch.float32",
+      "numel": 5120,
+      "mean": 0.0010555103654041886,
+      "std": 0.0665404424071312,
+      "min": -0.24051763117313385,
+      "max": 0.22049205005168915,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "aux_digit_head.bias",
+      "shape": [
+        10
+      ],
+      "dtype": "torch.float32",
+      "numel": 10,
+      "mean": -0.01715511456131935,
+      "std": 0.029207931831479073,
+      "min": -0.04875994101166725,
+      "max": 0.03319487348198891,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "aux_hi_nibble_head.weight",
+      "shape": [
+        16,
+        512
+      ],
+      "dtype": "torch.float32",
+      "numel": 8192,
+      "mean": 0.0015593833522871137,
+      "std": 0.09204131364822388,
+      "min": -0.38542166352272034,
+      "max": 0.43160387873649597,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "aux_hi_nibble_head.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32",
+      "numel": 16,
+      "mean": -0.034813668578863144,
+      "std": 0.04477044194936752,
+      "min": -0.08540335297584534,
+      "max": 0.08309022337198257,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "aux_lo_nibble_head.weight",
+      "shape": [
+        16,
+        512
+      ],
+      "dtype": "torch.float32",
+      "numel": 8192,
+      "mean": 0.0010633940109983087,
+      "std": 0.11932527273893356,
+      "min": -0.4682367742061615,
+      "max": 0.38411611318588257,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "aux_lo_nibble_head.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32",
+      "numel": 16,
+      "mean": -0.00972923543304205,
+      "std": 0.03379485756158829,
+      "min": -0.055780719965696335,
+      "max": 0.0688852071762085,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "controller.0.weight",
+      "shape": [
+        512,
+        1280
+      ],
+      "dtype": "torch.float32",
+      "numel": 655360,
+      "mean": 1.834308022807818e-05,
+      "std": 0.02371024899184704,
+      "min": -0.15991632640361786,
+      "max": 0.13459157943725586,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "controller.0.bias",
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float32",
+      "numel": 512,
+      "mean": -0.0014657783322036266,
+      "std": 0.02548188716173172,
+      "min": -0.05344431847333908,
+      "max": 0.05811913684010506,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "controller.2.weight",
+      "shape": [
+        8,
+        512
+      ],
+      "dtype": "torch.float32",
+      "numel": 4096,
+      "mean": -0.011107632890343666,
+      "std": 0.0392855741083622,
+      "min": -0.15600302815437317,
+      "max": 0.11437086015939713,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "controller.2.bias",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "numel": 8,
+      "mean": -0.0281924307346344,
+      "std": 0.03529813140630722,
+      "min": -0.08285176753997803,
+      "max": 0.045298583805561066,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "slice_gate.0.weight",
+      "shape": [
+        512,
+        1280
+      ],
+      "dtype": "torch.float32",
+      "numel": 655360,
+      "mean": -0.0007805963978171349,
+      "std": 0.05492715165019035,
+      "min": -0.4817671775817871,
+      "max": 0.36828699707984924,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "slice_gate.0.bias",
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float32",
+      "numel": 512,
+      "mean": 0.03578996658325195,
+      "std": 0.026334041729569435,
+      "min": -0.08313290774822235,
+      "max": 0.11128346621990204,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "out.weight",
+      "shape": [
+        256,
+        768
+      ],
+      "dtype": "torch.float32",
+      "numel": 196608,
+      "mean": 0.0006499352748505771,
+      "std": 0.05269660800695419,
+      "min": -0.5126791000366211,
+      "max": 0.5710180997848511,
+      "zero_fraction": 0.0
+    },
+    {
+      "name": "out.bias",
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float32",
+      "numel": 256,
+      "mean": -0.03801373392343521,
+      "std": 0.03250766918063164,
+      "min": -0.1060735210776329,
+      "max": 0.057936351746320724,
+      "zero_fraction": 0.0
+    }
+  ]
+}

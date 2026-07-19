@@ -1,0 +1,5081 @@
+{
+  "config": {
+    "steps": 20000,
+    "agents": 32768,
+    "device": "cuda",
+    "seed": 7,
+    "decay": 0.999,
+    "edge_lr": 0.08,
+    "state_lr": 0.02,
+    "pair_lr": 0.05,
+    "motif_switch_prob": 0.0005,
+    "motif_reset_prob": 0.002,
+    "anchor_span": 16,
+    "expected_horizon": 8,
+    "noise_frac": 0.1,
+    "report_every": 1000,
+    "out": "substrate_dynamics_report_v3_bloom_seek.json"
+  },
+  "final": {
+    "step": 20000,
+    "state_entropy": 5.442085266113281,
+    "edge_dominance": 0.4126330316066742,
+    "expected_state_mass": 0.70834587796273,
+    "state_mass": 655368.4375,
+    "edge_mass": 2621477.5,
+    "pair_mass": 1638420.75,
+    "active_state_count": 256,
+    "active_edge_count": 3584,
+    "support_locality_mean_hamming": 3.8614957332611084,
+    "motif_distribution": {
+      "inc_chain": 0.180816650390625,
+      "dec_chain": 0.1793212890625,
+      "xor_toggle": 0.176727294921875,
+      "rotate_left": 0.1798095703125,
+      "flip0_pulse": 0.183319091796875,
+      "noise": 0.100006103515625
+    },
+    "top_states": [
+      {
+        "state": 169,
+        "energy": 6949.7958984375
+      },
+      {
+        "state": 166,
+        "energy": 6841.11376953125
+      },
+      {
+        "state": 170,
+        "energy": 6840.80126953125
+      },
+      {
+        "state": 85,
+        "energy": 6400.62890625
+      },
+      {
+        "state": 134,
+        "energy": 6232.5322265625
+      },
+      {
+        "state": 160,
+        "energy": 6105.21923828125
+      },
+      {
+        "state": 163,
+        "energy": 5999.81689453125
+      },
+      {
+        "state": 172,
+        "energy": 5864.93017578125
+      },
+      {
+        "state": 175,
+        "energy": 5854.85009765625
+      },
+      {
+        "state": 128,
+        "energy": 5511.25537109375
+      },
+      {
+        "state": 137,
+        "energy": 5430.68798828125
+      },
+      {
+        "state": 131,
+        "energy": 5429.7314453125
+      },
+      {
+        "state": 138,
+        "energy": 5359.0517578125
+      },
+      {
+        "state": 143,
+        "energy": 5309.57958984375
+      },
+      {
+        "state": 140,
+        "energy": 5293.2666015625
+      },
+      {
+        "state": 69,
+        "energy": 5243.1806640625
+      }
+    ],
+    "top_edges": [
+      {
+        "src": 128,
+        "op": "xor20",
+        "strength": 14858.6337890625
+      },
+      {
+        "src": 160,
+        "op": "xor20",
+        "strength": 14824.765625
+      },
+      {
+        "src": 170,
+        "op": "rotl1",
+        "strength": 14787.7734375
+      },
+      {
+        "src": 85,
+        "op": "rotl1",
+        "strength": 14747.0947265625
+      },
+      {
+        "src": 137,
+        "op": "xor20",
+        "strength": 14746.20703125
+      },
+      {
+        "src": 169,
+        "op": "xor20",
+        "strength": 14710.2294921875
+      },
+      {
+        "src": 131,
+        "op": "xor20",
+        "strength": 14546.0009765625
+      },
+      {
+        "src": 163,
+        "op": "xor20",
+        "strength": 14509.2060546875
+      },
+      {
+        "src": 143,
+        "op": "xor20",
+        "strength": 14376.6845703125
+      },
+      {
+        "src": 175,
+        "op": "xor20",
+        "strength": 14341.3408203125
+      },
+      {
+        "src": 140,
+        "op": "xor20",
+        "strength": 14246.599609375
+      },
+      {
+        "src": 172,
+        "op": "xor20",
+        "strength": 14210.931640625
+      },
+      {
+        "src": 134,
+        "op": "xor20",
+        "strength": 14147.9013671875
+      },
+      {
+        "src": 166,
+        "op": "xor20",
+        "strength": 14109.4921875
+      },
+      {
+        "src": 171,
+        "op": "rotl1",
+        "strength": 7775.736328125
+      },
+      {
+        "src": 174,
+        "op": "rotl1",
+        "strength": 7744.69091796875
+      }
+    ],
+    "top_macro_pairs": [
+      {
+        "prev_op": "rotl1",
+        "cur_op": "rotl1",
+        "strength": 294948.1875
+      },
+      {
+        "prev_op": "inc",
+        "cur_op": "inc",
+        "strength": 293767.25
+      },
+      {
+        "prev_op": "dec",
+        "cur_op": "dec",
+        "strength": 292514.21875
+      },
+      {
+        "prev_op": "xor20",
+        "cur_op": "xor20",
+        "strength": 285680.78125
+      },
+      {
+        "prev_op": "inc",
+        "cur_op": "flip_bit_0",
+        "strength": 149361.0
+      },
+      {
+        "prev_op": "flip_bit_0",
+        "cur_op": "inc",
+        "strength": 148454.875
+      },
+      {
+        "prev_op": "rotl1",
+        "cur_op": "inc",
+        "strength": 4168.77587890625
+      },
+      {
+        "prev_op": "inc",
+        "cur_op": "rotl1",
+        "strength": 3303.793212890625
+      },
+      {
+        "prev_op": "xor20",
+        "cur_op": "rotl1",
+        "strength": 2582.1298828125
+      },
+      {
+        "prev_op": "rotl1",
+        "cur_op": "xor20",
+        "strength": 2577.80712890625
+      },
+      {
+        "prev_op": "dec",
+        "cur_op": "rotl1",
+        "strength": 2549.5830078125
+      },
+      {
+        "prev_op": "rotl1",
+        "cur_op": "dec",
+        "strength": 2547.77197265625
+      }
+    ]
+  },
+  "history": [
+    {
+      "step": 1,
+      "state_entropy": 4.571665287017822,
+      "edge_dominance": 0.45741844177246094,
+      "expected_state_mass": 0.9575195824545528,
+      "state_mass": 655.3599853515625,
+      "edge_mass": 2621.439453125,
+      "pair_mass": 9.999999717180685e-10,
+      "active_state_count": 256,
+      "active_edge_count": 2201,
+      "support_locality_mean_hamming": 3.850308656692505,
+      "motif_distribution": {
+        "inc_chain": 0.17926025390625,
+        "dec_chain": 0.180389404296875,
+        "xor_toggle": 0.180816650390625,
+        "rotate_left": 0.1793212890625,
+        "flip0_pulse": 0.180206298828125,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 89,
+          "energy": 16.020002365112305
+        },
+        {
+          "state": 93,
+          "energy": 15.900014877319336
+        },
+        {
+          "state": 87,
+          "energy": 15.480005264282227
+        },
+        {
+          "state": 83,
+          "energy": 15.320015907287598
+        },
+        {
+          "state": 85,
+          "energy": 14.940007209777832
+        },
+        {
+          "state": 81,
+          "energy": 14.840004920959473
+        },
+        {
+          "state": 91,
+          "energy": 14.400009155273438
+        },
+        {
+          "state": 79,
+          "energy": 13.980013847351074
+        },
+        {
+          "state": 207,
+          "energy": 8.339999198913574
+        },
+        {
+          "state": 201,
+          "energy": 8.319998741149902
+        },
+        {
+          "state": 175,
+          "energy": 8.160001754760742
+        },
+        {
+          "state": 200,
+          "energy": 8.14000129699707
+        },
+        {
+          "state": 47,
+          "energy": 8.120000839233398
+        },
+        {
+          "state": 82,
+          "energy": 8.079999923706055
+        },
+        {
+          "state": 167,
+          "energy": 8.059999465942383
+        },
+        {
+          "state": 203,
+          "energy": 8.059999465942383
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 90,
+          "op": "dec",
+          "strength": 32.56000518798828
+        },
+        {
+          "src": 206,
+          "op": "flip_bit_0",
+          "strength": 32.23999786376953
+        },
+        {
+          "src": 200,
+          "op": "flip_bit_0",
+          "strength": 32.23999786376953
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 31.9999942779541
+        },
+        {
+          "src": 94,
+          "op": "dec",
+          "strength": 31.839994430541992
+        },
+        {
+          "src": 199,
+          "op": "inc",
+          "strength": 31.679994583129883
+        },
+        {
+          "src": 84,
+          "op": "dec",
+          "strength": 31.599994659423828
+        },
+        {
+          "src": 202,
+          "op": "flip_bit_0",
+          "strength": 31.43999481201172
+        },
+        {
+          "src": 46,
+          "op": "inc",
+          "strength": 31.359994888305664
+        },
+        {
+          "src": 88,
+          "op": "dec",
+          "strength": 31.359994888305664
+        },
+        {
+          "src": 135,
+          "op": "xor20",
+          "strength": 31.27999496459961
+        },
+        {
+          "src": 83,
+          "op": "dec",
+          "strength": 31.27999496459961
+        },
+        {
+          "src": 172,
+          "op": "rotl1",
+          "strength": 31.199995040893555
+        },
+        {
+          "src": 38,
+          "op": "inc",
+          "strength": 31.199995040893555
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 31.1199951171875
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 30.879995346069336
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "keep",
+          "cur_op": "flip_bit_6",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "flip_bit_5",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "flip_bit_3",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "flip_bit_4",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "flip_bit_0",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "keep",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "flip_bit_1",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "flip_bit_2",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "xor20",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "dec",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "flip_bit_7",
+          "strength": 0.0
+        },
+        {
+          "prev_op": "keep",
+          "cur_op": "inc",
+          "strength": 0.0
+        }
+      ]
+    },
+    {
+      "step": 1000,
+      "state_entropy": 5.441078186035156,
+      "edge_dominance": 0.41704261302948,
+      "expected_state_mass": 0.7103973768632461,
+      "state_mass": 414389.375,
+      "edge_mass": 1657557.5,
+      "pair_mass": 1035370.625,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.7648980617523193,
+      "motif_distribution": {
+        "inc_chain": 0.177886962890625,
+        "dec_chain": 0.181884765625,
+        "xor_toggle": 0.181182861328125,
+        "rotate_left": 0.1787109375,
+        "flip0_pulse": 0.180328369140625,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 169,
+          "energy": 4459.6650390625
+        },
+        {
+          "state": 170,
+          "energy": 4444.14306640625
+        },
+        {
+          "state": 166,
+          "energy": 4406.2080078125
+        },
+        {
+          "state": 85,
+          "energy": 4016.948486328125
+        },
+        {
+          "state": 134,
+          "energy": 3985.934326171875
+        },
+        {
+          "state": 163,
+          "energy": 3974.134521484375
+        },
+        {
+          "state": 175,
+          "energy": 3903.18310546875
+        },
+        {
+          "state": 160,
+          "energy": 3866.093505859375
+        },
+        {
+          "state": 172,
+          "energy": 3712.243408203125
+        },
+        {
+          "state": 131,
+          "energy": 3495.061767578125
+        },
+        {
+          "state": 137,
+          "energy": 3457.753662109375
+        },
+        {
+          "state": 143,
+          "energy": 3448.274658203125
+        },
+        {
+          "state": 128,
+          "energy": 3426.7197265625
+        },
+        {
+          "state": 138,
+          "energy": 3383.53173828125
+        },
+        {
+          "state": 162,
+          "energy": 3355.576171875
+        },
+        {
+          "state": 69,
+          "energy": 3286.56982421875
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 9882.4892578125
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 9862.7607421875
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 9854.0419921875
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 9833.1455078125
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 9821.2490234375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 9798.955078125
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 9604.09375
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 9573.560546875
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 9549.1650390625
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 9519.65625
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 9500.8232421875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 9466.8017578125
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 9149.8662109375
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 9117.7421875
+        },
+        {
+          "src": 130,
+          "op": "xor20",
+          "strength": 4996.95703125
+        },
+        {
+          "src": 162,
+          "op": "xor20",
+          "strength": 4945.56396484375
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 186198.53125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 186037.71875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 185724.046875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 183155.1875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 92821.453125
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 92367.796875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 2410.928955078125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 1982.7720947265625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 1587.5889892578125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 1586.538818359375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 1532.7265625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 1530.33984375
+        }
+      ]
+    },
+    {
+      "step": 2000,
+      "state_entropy": 5.440747261047363,
+      "edge_dominance": 0.4129205346107483,
+      "expected_state_mass": 0.709294746037953,
+      "state_mass": 566760.375,
+      "edge_mass": 2267043.0,
+      "pair_mass": 1416679.25,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.18048095703125,
+        "dec_chain": 0.17919921875,
+        "xor_toggle": 0.180877685546875,
+        "rotate_left": 0.18023681640625,
+        "flip0_pulse": 0.17919921875,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 6020.99072265625
+        },
+        {
+          "state": 169,
+          "energy": 5972.4521484375
+        },
+        {
+          "state": 170,
+          "energy": 5957.97265625
+        },
+        {
+          "state": 134,
+          "energy": 5495.3330078125
+        },
+        {
+          "state": 85,
+          "energy": 5464.0546875
+        },
+        {
+          "state": 163,
+          "energy": 5352.4287109375
+        },
+        {
+          "state": 160,
+          "energy": 5335.2900390625
+        },
+        {
+          "state": 172,
+          "energy": 5241.38720703125
+        },
+        {
+          "state": 175,
+          "energy": 5183.86279296875
+        },
+        {
+          "state": 128,
+          "energy": 4793.71484375
+        },
+        {
+          "state": 131,
+          "energy": 4785.33740234375
+        },
+        {
+          "state": 140,
+          "energy": 4697.00439453125
+        },
+        {
+          "state": 138,
+          "energy": 4683.373046875
+        },
+        {
+          "state": 137,
+          "energy": 4655.69287109375
+        },
+        {
+          "state": 143,
+          "energy": 4627.9140625
+        },
+        {
+          "state": 69,
+          "energy": 4557.11572265625
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 13201.7568359375
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 13177.4404296875
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 13163.205078125
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 13143.3779296875
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 13054.2900390625
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 13016.7197265625
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 12872.279296875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 12836.66796875
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 12835.0029296875
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 12813.052734375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 12800.0263671875
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 12782.52734375
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 12586.26953125
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 12552.3984375
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 6722.24609375
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 6703.38134765625
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 254631.765625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 253914.5625
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 253459.59375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 250557.15625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 127689.9296875
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 126996.7265625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3365.368896484375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 2702.343994140625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2181.45751953125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2180.06689453125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2126.893310546875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2123.766357421875
+        }
+      ]
+    },
+    {
+      "step": 3000,
+      "state_entropy": 5.4396538734436035,
+      "edge_dominance": 0.41289523243904114,
+      "expected_state_mass": 0.7099067538714063,
+      "state_mass": 622787.25,
+      "edge_mass": 2491151.5,
+      "pair_mass": 1556886.25,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.178680419921875,
+        "dec_chain": 0.17913818359375,
+        "xor_toggle": 0.179656982421875,
+        "rotate_left": 0.180511474609375,
+        "flip0_pulse": 0.1820068359375,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 6551.43408203125
+        },
+        {
+          "state": 169,
+          "energy": 6514.46240234375
+        },
+        {
+          "state": 170,
+          "energy": 6472.58837890625
+        },
+        {
+          "state": 134,
+          "energy": 6029.251953125
+        },
+        {
+          "state": 160,
+          "energy": 6002.60400390625
+        },
+        {
+          "state": 85,
+          "energy": 5939.2900390625
+        },
+        {
+          "state": 172,
+          "energy": 5816.248046875
+        },
+        {
+          "state": 163,
+          "energy": 5780.4365234375
+        },
+        {
+          "state": 175,
+          "energy": 5638.98974609375
+        },
+        {
+          "state": 128,
+          "energy": 5400.0087890625
+        },
+        {
+          "state": 140,
+          "energy": 5238.2626953125
+        },
+        {
+          "state": 131,
+          "energy": 5219.2978515625
+        },
+        {
+          "state": 138,
+          "energy": 5195.75048828125
+        },
+        {
+          "state": 137,
+          "energy": 5086.24072265625
+        },
+        {
+          "state": 143,
+          "energy": 5082.9072265625
+        },
+        {
+          "state": 69,
+          "energy": 5018.82470703125
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14868.33203125
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14829.841796875
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14487.5302734375
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14454.61328125
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14159.0927734375
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14123.2666015625
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 13923.525390625
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 13886.400390625
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 13821.458984375
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 13805.81640625
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 13793.8720703125
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 13768.98046875
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 13553.671875
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 13519.345703125
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7491.5283203125
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 7470.05908203125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 281864.8125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 278037.5
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 276804.1875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 276770.125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 140110.78125
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 139360.4375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3664.299072265625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 2932.6591796875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2353.98779296875
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2351.18310546875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2305.530029296875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2300.883544921875
+        }
+      ]
+    },
+    {
+      "step": 4000,
+      "state_entropy": 5.4395904541015625,
+      "edge_dominance": 0.41305580735206604,
+      "expected_state_mass": 0.7098635135938526,
+      "state_mass": 643388.25,
+      "edge_mass": 2573556.5,
+      "pair_mass": 1608440.75,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8614957332611084,
+      "motif_distribution": {
+        "inc_chain": 0.18133544921875,
+        "dec_chain": 0.178375244140625,
+        "xor_toggle": 0.178924560546875,
+        "rotate_left": 0.17889404296875,
+        "flip0_pulse": 0.182464599609375,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 169,
+          "energy": 6874.08740234375
+        },
+        {
+          "state": 166,
+          "energy": 6822.39404296875
+        },
+        {
+          "state": 170,
+          "energy": 6679.2998046875
+        },
+        {
+          "state": 85,
+          "energy": 6220.91552734375
+        },
+        {
+          "state": 134,
+          "energy": 6205.30517578125
+        },
+        {
+          "state": 172,
+          "energy": 6049.94091796875
+        },
+        {
+          "state": 160,
+          "energy": 6004.4150390625
+        },
+        {
+          "state": 163,
+          "energy": 5955.37890625
+        },
+        {
+          "state": 175,
+          "energy": 5882.1181640625
+        },
+        {
+          "state": 140,
+          "energy": 5455.36474609375
+        },
+        {
+          "state": 128,
+          "energy": 5395.7294921875
+        },
+        {
+          "state": 137,
+          "energy": 5388.64306640625
+        },
+        {
+          "state": 131,
+          "energy": 5388.6357421875
+        },
+        {
+          "state": 143,
+          "energy": 5301.1337890625
+        },
+        {
+          "state": 138,
+          "energy": 5295.08984375
+        },
+        {
+          "state": 69,
+          "energy": 5178.03955078125
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 15120.7578125
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 15088.046875
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14809.12109375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14774.3662109375
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14629.892578125
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14594.6416015625
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14593.4267578125
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14558.9169921875
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14557.6455078125
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14519.5869140625
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14461.82421875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14426.7060546875
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14217.53515625
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14179.8916015625
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7796.44775390625
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 7777.30712890625
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 290697.375
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 286162.5625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 285508.375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 284924.40625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 145777.0625
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 144995.734375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4038.396484375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3202.6240234375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2536.061279296875
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2535.952880859375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2483.4140625
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2480.679443359375
+        }
+      ]
+    },
+    {
+      "step": 5000,
+      "state_entropy": 5.439178466796875,
+      "edge_dominance": 0.4125155210494995,
+      "expected_state_mass": 0.7095717663812275,
+      "state_mass": 650963.3125,
+      "edge_mass": 2603857.0,
+      "pair_mass": 1627397.125,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.17938232421875,
+        "dec_chain": 0.177978515625,
+        "xor_toggle": 0.1824951171875,
+        "rotate_left": 0.178192138671875,
+        "flip0_pulse": 0.18194580078125,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 169,
+          "energy": 6950.310546875
+        },
+        {
+          "state": 166,
+          "energy": 6941.484375
+        },
+        {
+          "state": 170,
+          "energy": 6868.08447265625
+        },
+        {
+          "state": 85,
+          "energy": 6353.908203125
+        },
+        {
+          "state": 134,
+          "energy": 6314.7353515625
+        },
+        {
+          "state": 172,
+          "energy": 6099.57568359375
+        },
+        {
+          "state": 163,
+          "energy": 6075.1083984375
+        },
+        {
+          "state": 160,
+          "energy": 6062.490234375
+        },
+        {
+          "state": 175,
+          "energy": 5985.85546875
+        },
+        {
+          "state": 140,
+          "energy": 5500.7421875
+        },
+        {
+          "state": 131,
+          "energy": 5486.49609375
+        },
+        {
+          "state": 128,
+          "energy": 5450.443359375
+        },
+        {
+          "state": 137,
+          "energy": 5443.05712890625
+        },
+        {
+          "state": 143,
+          "energy": 5411.42822265625
+        },
+        {
+          "state": 138,
+          "energy": 5387.84375
+        },
+        {
+          "state": 69,
+          "energy": 5219.1162109375
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 15184.38671875
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 15147.4794921875
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14920.0703125
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14918.06640625
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14897.3408203125
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14888.3740234375
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14878.630859375
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14858.4296875
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14748.2958984375
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14713.9951171875
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14703.5654296875
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14689.494140625
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14668.986328125
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14651.8564453125
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7659.15087890625
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 7633.3720703125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 292564.40625
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 291948.125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 288696.0
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 288449.78125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 147243.359375
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 146464.46875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3993.1484375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3168.931640625
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2546.123291015625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2539.6826171875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2465.391845703125
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2460.34716796875
+        }
+      ]
+    },
+    {
+      "step": 6000,
+      "state_entropy": 5.4395341873168945,
+      "edge_dominance": 0.41217344999313354,
+      "expected_state_mass": 0.7091566340620761,
+      "state_mass": 653748.6875,
+      "edge_mass": 2614998.5,
+      "pair_mass": 1634367.625,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.179351806640625,
+        "dec_chain": 0.17987060546875,
+        "xor_toggle": 0.1800537109375,
+        "rotate_left": 0.176483154296875,
+        "flip0_pulse": 0.184234619140625,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7028.439453125
+        },
+        {
+          "state": 169,
+          "energy": 6903.63916015625
+        },
+        {
+          "state": 170,
+          "energy": 6883.19873046875
+        },
+        {
+          "state": 134,
+          "energy": 6447.642578125
+        },
+        {
+          "state": 85,
+          "energy": 6386.1962890625
+        },
+        {
+          "state": 160,
+          "energy": 6175.8623046875
+        },
+        {
+          "state": 163,
+          "energy": 6102.36328125
+        },
+        {
+          "state": 172,
+          "energy": 6049.18505859375
+        },
+        {
+          "state": 175,
+          "energy": 6015.48828125
+        },
+        {
+          "state": 128,
+          "energy": 5576.40966796875
+        },
+        {
+          "state": 131,
+          "energy": 5533.18603515625
+        },
+        {
+          "state": 140,
+          "energy": 5496.94775390625
+        },
+        {
+          "state": 137,
+          "energy": 5456.4541015625
+        },
+        {
+          "state": 143,
+          "energy": 5424.07080078125
+        },
+        {
+          "state": 138,
+          "energy": 5400.92822265625
+        },
+        {
+          "state": 69,
+          "energy": 5249.02197265625
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 15214.22265625
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 15177.3837890625
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 15172.1962890625
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 15133.046875
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 15100.65234375
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 15067.544921875
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14985.5673828125
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14943.8232421875
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14890.35546875
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14874.5693359375
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14851.4130859375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14840.2880859375
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14752.814453125
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14712.3662109375
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7547.09619140625
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 7524.4794921875
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 294979.34375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 291409.5
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 290604.53125
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 289110.8125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 148322.671875
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 147564.1875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3918.202392578125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3117.923828125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2512.6552734375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2501.767822265625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2420.097412109375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2408.9970703125
+        }
+      ]
+    },
+    {
+      "step": 7000,
+      "state_entropy": 5.440581321716309,
+      "edge_dominance": 0.4115471839904785,
+      "expected_state_mass": 0.7089854439984247,
+      "state_mass": 654772.875,
+      "edge_mass": 2619095.0,
+      "pair_mass": 1636930.25,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.177764892578125,
+        "dec_chain": 0.1822509765625,
+        "xor_toggle": 0.1793212890625,
+        "rotate_left": 0.179534912109375,
+        "flip0_pulse": 0.181121826171875,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7037.4443359375
+        },
+        {
+          "state": 170,
+          "energy": 6881.1171875
+        },
+        {
+          "state": 169,
+          "energy": 6810.05908203125
+        },
+        {
+          "state": 134,
+          "energy": 6458.32666015625
+        },
+        {
+          "state": 85,
+          "energy": 6320.86083984375
+        },
+        {
+          "state": 160,
+          "energy": 6198.3759765625
+        },
+        {
+          "state": 163,
+          "energy": 6127.44921875
+        },
+        {
+          "state": 175,
+          "energy": 5986.72607421875
+        },
+        {
+          "state": 172,
+          "energy": 5837.77001953125
+        },
+        {
+          "state": 128,
+          "energy": 5578.63623046875
+        },
+        {
+          "state": 131,
+          "energy": 5481.974609375
+        },
+        {
+          "state": 138,
+          "energy": 5466.80322265625
+        },
+        {
+          "state": 143,
+          "energy": 5356.86865234375
+        },
+        {
+          "state": 137,
+          "energy": 5330.65673828125
+        },
+        {
+          "state": 69,
+          "energy": 5326.14599609375
+        },
+        {
+          "state": 140,
+          "energy": 5310.32373046875
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 15242.3525390625
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 15205.7255859375
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 15160.921875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 15128.1533203125
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14837.72265625
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14801.41015625
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14670.197265625
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14634.3916015625
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14461.2109375
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14425.509765625
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14422.2529296875
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14418.4716796875
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14391.0205078125
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14382.888671875
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7655.46484375
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 7623.42626953125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 292702.3125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 292582.25
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 292058.65625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 290058.6875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 148416.546875
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 147540.34375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4124.49072265625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3279.36572265625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2625.643798828125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2625.03271484375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2540.65234375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2537.315673828125
+        }
+      ]
+    },
+    {
+      "step": 8000,
+      "state_entropy": 5.439897537231445,
+      "edge_dominance": 0.4111443758010864,
+      "expected_state_mass": 0.7097635930581105,
+      "state_mass": 655149.4375,
+      "edge_mass": 2620601.25,
+      "pair_mass": 1637872.875,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.17742919921875,
+        "dec_chain": 0.181732177734375,
+        "xor_toggle": 0.180999755859375,
+        "rotate_left": 0.18023681640625,
+        "flip0_pulse": 0.179595947265625,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7045.07080078125
+        },
+        {
+          "state": 170,
+          "energy": 7005.17626953125
+        },
+        {
+          "state": 169,
+          "energy": 6883.85400390625
+        },
+        {
+          "state": 85,
+          "energy": 6464.5625
+        },
+        {
+          "state": 134,
+          "energy": 6454.50244140625
+        },
+        {
+          "state": 160,
+          "energy": 6120.9501953125
+        },
+        {
+          "state": 163,
+          "energy": 6096.99169921875
+        },
+        {
+          "state": 175,
+          "energy": 6025.0068359375
+        },
+        {
+          "state": 172,
+          "energy": 5862.05517578125
+        },
+        {
+          "state": 128,
+          "energy": 5504.578125
+        },
+        {
+          "state": 138,
+          "energy": 5455.29150390625
+        },
+        {
+          "state": 131,
+          "energy": 5422.03759765625
+        },
+        {
+          "state": 143,
+          "energy": 5392.9716796875
+        },
+        {
+          "state": 137,
+          "energy": 5386.0244140625
+        },
+        {
+          "state": 140,
+          "energy": 5294.36279296875
+        },
+        {
+          "state": 69,
+          "energy": 5279.16650390625
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 15152.263671875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 15118.0732421875
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14978.3623046875
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14940.408203125
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14903.2626953125
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14863.8291015625
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14850.8544921875
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14817.517578125
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14696.1171875
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14659.482421875
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14615.5537109375
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14581.244140625
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14398.9189453125
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14359.794921875
+        },
+        {
+          "src": 138,
+          "op": "xor20",
+          "strength": 7617.37548828125
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7617.0009765625
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 295006.875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 294028.4375
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 293693.34375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 287866.5
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 147467.203125
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 146619.859375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4004.83447265625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3191.145751953125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2583.511474609375
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2583.483642578125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2508.623046875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2498.9208984375
+        }
+      ]
+    },
+    {
+      "step": 9000,
+      "state_entropy": 5.439827919006348,
+      "edge_dominance": 0.41077345609664917,
+      "expected_state_mass": 0.7095114971416189,
+      "state_mass": 655287.875,
+      "edge_mass": 2621155.5,
+      "pair_mass": 1638218.25,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.17999267578125,
+        "dec_chain": 0.180999755859375,
+        "xor_toggle": 0.179656982421875,
+        "rotate_left": 0.1781005859375,
+        "flip0_pulse": 0.181243896484375,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7086.25634765625
+        },
+        {
+          "state": 170,
+          "energy": 6990.5244140625
+        },
+        {
+          "state": 169,
+          "energy": 6857.11279296875
+        },
+        {
+          "state": 134,
+          "energy": 6550.1328125
+        },
+        {
+          "state": 85,
+          "energy": 6434.412109375
+        },
+        {
+          "state": 163,
+          "energy": 6088.64697265625
+        },
+        {
+          "state": 160,
+          "energy": 6025.8349609375
+        },
+        {
+          "state": 172,
+          "energy": 5998.5302734375
+        },
+        {
+          "state": 175,
+          "energy": 5932.69091796875
+        },
+        {
+          "state": 138,
+          "energy": 5508.62939453125
+        },
+        {
+          "state": 131,
+          "energy": 5475.04833984375
+        },
+        {
+          "state": 128,
+          "energy": 5415.07421875
+        },
+        {
+          "state": 140,
+          "energy": 5406.35888671875
+        },
+        {
+          "state": 137,
+          "energy": 5387.27783203125
+        },
+        {
+          "state": 143,
+          "energy": 5347.44580078125
+        },
+        {
+          "state": 69,
+          "energy": 5291.388671875
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 15345.1162109375
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 15311.2490234375
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14818.0400390625
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14794.27734375
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14780.7490234375
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14760.1142578125
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14759.8447265625
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14719.4423828125
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14596.474609375
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14596.181640625
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14562.2314453125
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14558.390625
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14540.3544921875
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14499.6357421875
+        },
+        {
+          "src": 138,
+          "op": "xor20",
+          "strength": 7604.7607421875
+        },
+        {
+          "src": 170,
+          "op": "xor20",
+          "strength": 7590.44189453125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 294183.625
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 293698.65625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 293639.84375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 289762.375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 147452.65625
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 146618.34375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3933.355224609375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3141.44970703125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2537.71728515625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2528.870849609375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2461.751953125
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2451.24951171875
+        }
+      ]
+    },
+    {
+      "step": 10000,
+      "state_entropy": 5.440030097961426,
+      "edge_dominance": 0.4107687473297119,
+      "expected_state_mass": 0.7095835255446586,
+      "state_mass": 655338.8125,
+      "edge_mass": 2621359.0,
+      "pair_mass": 1638346.875,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.1787109375,
+        "dec_chain": 0.182037353515625,
+        "xor_toggle": 0.1781005859375,
+        "rotate_left": 0.180694580078125,
+        "flip0_pulse": 0.180450439453125,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 6975.552734375
+        },
+        {
+          "state": 170,
+          "energy": 6924.0244140625
+        },
+        {
+          "state": 169,
+          "energy": 6876.79150390625
+        },
+        {
+          "state": 134,
+          "energy": 6445.04931640625
+        },
+        {
+          "state": 85,
+          "energy": 6382.22998046875
+        },
+        {
+          "state": 172,
+          "energy": 6068.33642578125
+        },
+        {
+          "state": 160,
+          "energy": 6023.44873046875
+        },
+        {
+          "state": 163,
+          "energy": 6008.720703125
+        },
+        {
+          "state": 175,
+          "energy": 5911.54052734375
+        },
+        {
+          "state": 138,
+          "energy": 5477.76318359375
+        },
+        {
+          "state": 140,
+          "energy": 5461.99609375
+        },
+        {
+          "state": 131,
+          "energy": 5432.86962890625
+        },
+        {
+          "state": 128,
+          "energy": 5431.78173828125
+        },
+        {
+          "state": 137,
+          "energy": 5404.21142578125
+        },
+        {
+          "state": 143,
+          "energy": 5366.6083984375
+        },
+        {
+          "state": 69,
+          "energy": 5327.48388671875
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14984.4912109375
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14949.8837890625
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14884.4990234375
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14848.6806640625
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14671.181640625
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14642.0693359375
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14640.7607421875
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14633.712890625
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14607.6611328125
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14605.533203125
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14591.6318359375
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14583.6044921875
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14557.029296875
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14548.33203125
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7783.77734375
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 7758.580078125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 294948.34375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 294531.125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 292350.625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 289866.125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 146814.5
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 146013.53125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4149.2724609375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3303.206787109375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2643.261474609375
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2640.878173828125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2579.756591796875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2569.069091796875
+        }
+      ]
+    },
+    {
+      "step": 11000,
+      "state_entropy": 5.440243721008301,
+      "edge_dominance": 0.411884069442749,
+      "expected_state_mass": 0.7096300015640319,
+      "state_mass": 655357.5,
+      "edge_mass": 2621434.0,
+      "pair_mass": 1638394.625,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.179107666015625,
+        "dec_chain": 0.179595947265625,
+        "xor_toggle": 0.17816162109375,
+        "rotate_left": 0.18353271484375,
+        "flip0_pulse": 0.179595947265625,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7120.83935546875
+        },
+        {
+          "state": 169,
+          "energy": 6887.66845703125
+        },
+        {
+          "state": 170,
+          "energy": 6884.259765625
+        },
+        {
+          "state": 134,
+          "energy": 6516.513671875
+        },
+        {
+          "state": 85,
+          "energy": 6360.10791015625
+        },
+        {
+          "state": 160,
+          "energy": 6108.64501953125
+        },
+        {
+          "state": 175,
+          "energy": 6008.384765625
+        },
+        {
+          "state": 172,
+          "energy": 5970.60791015625
+        },
+        {
+          "state": 163,
+          "energy": 5932.7041015625
+        },
+        {
+          "state": 128,
+          "energy": 5478.4130859375
+        },
+        {
+          "state": 138,
+          "energy": 5452.14892578125
+        },
+        {
+          "state": 143,
+          "energy": 5407.8671875
+        },
+        {
+          "state": 140,
+          "energy": 5392.7548828125
+        },
+        {
+          "state": 131,
+          "energy": 5389.07275390625
+        },
+        {
+          "state": 137,
+          "energy": 5349.78564453125
+        },
+        {
+          "state": 69,
+          "energy": 5323.62646484375
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 15287.9404296875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 15250.8046875
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14866.115234375
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14829.8779296875
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14824.0654296875
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14786.6328125
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14765.0263671875
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14730.3056640625
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14617.41015625
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14583.5654296875
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14519.375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14475.9248046875
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14473.7900390625
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14435.744140625
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7766.431640625
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 7741.59130859375
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 297356.96875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 294498.65625
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 290289.03125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 289275.6875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 147203.609375
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 146424.40625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4031.913330078125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3221.949951171875
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2568.70068359375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2560.809326171875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2535.623779296875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2530.9443359375
+        }
+      ]
+    },
+    {
+      "step": 12000,
+      "state_entropy": 5.439750671386719,
+      "edge_dominance": 0.41216376423835754,
+      "expected_state_mass": 0.7099079901161853,
+      "state_mass": 655364.375,
+      "edge_mass": 2621461.5,
+      "pair_mass": 1638412.375,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.839506149291992,
+      "motif_distribution": {
+        "inc_chain": 0.179718017578125,
+        "dec_chain": 0.180389404296875,
+        "xor_toggle": 0.180328369140625,
+        "rotate_left": 0.181549072265625,
+        "flip0_pulse": 0.178009033203125,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7021.9013671875
+        },
+        {
+          "state": 169,
+          "energy": 6925.25927734375
+        },
+        {
+          "state": 170,
+          "energy": 6804.05859375
+        },
+        {
+          "state": 134,
+          "energy": 6380.654296875
+        },
+        {
+          "state": 85,
+          "energy": 6321.5615234375
+        },
+        {
+          "state": 160,
+          "energy": 6121.912109375
+        },
+        {
+          "state": 163,
+          "energy": 6101.4833984375
+        },
+        {
+          "state": 172,
+          "energy": 6035.1435546875
+        },
+        {
+          "state": 175,
+          "energy": 5970.60546875
+        },
+        {
+          "state": 131,
+          "energy": 5583.7958984375
+        },
+        {
+          "state": 128,
+          "energy": 5509.2685546875
+        },
+        {
+          "state": 138,
+          "energy": 5447.751953125
+        },
+        {
+          "state": 140,
+          "energy": 5446.75146484375
+        },
+        {
+          "state": 143,
+          "energy": 5394.93994140625
+        },
+        {
+          "state": 137,
+          "energy": 5359.43603515625
+        },
+        {
+          "state": 69,
+          "energy": 5325.9951171875
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 15185.880859375
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 15147.046875
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14976.0107421875
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14937.4765625
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14897.2685546875
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14861.6484375
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14828.5107421875
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14788.1708984375
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14777.65234375
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14740.8466796875
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14554.923828125
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14520.0927734375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14514.203125
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14487.7294921875
+        },
+        {
+          "src": 162,
+          "op": "rotl1",
+          "strength": 7838.474609375
+        },
+        {
+          "src": 138,
+          "op": "rotl1",
+          "strength": 7832.25439453125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 298042.75
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 293277.0625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 291886.28125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 291325.6875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 145850.109375
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 145088.265625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3953.264892578125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3156.8408203125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2520.724365234375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2517.750732421875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2471.6123046875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2465.685546875
+        }
+      ]
+    },
+    {
+      "step": 13000,
+      "state_entropy": 5.438981533050537,
+      "edge_dominance": 0.411449134349823,
+      "expected_state_mass": 0.7102030236493445,
+      "state_mass": 655367.0,
+      "edge_mass": 2621471.75,
+      "pair_mass": 1638418.5,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.1810302734375,
+        "dec_chain": 0.1812744140625,
+        "xor_toggle": 0.180389404296875,
+        "rotate_left": 0.1815185546875,
+        "flip0_pulse": 0.17578125,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 6958.9560546875
+        },
+        {
+          "state": 170,
+          "energy": 6862.2548828125
+        },
+        {
+          "state": 169,
+          "energy": 6843.49853515625
+        },
+        {
+          "state": 134,
+          "energy": 6340.04052734375
+        },
+        {
+          "state": 85,
+          "energy": 6326.45654296875
+        },
+        {
+          "state": 160,
+          "energy": 6147.14453125
+        },
+        {
+          "state": 163,
+          "energy": 6103.01025390625
+        },
+        {
+          "state": 172,
+          "energy": 6054.88818359375
+        },
+        {
+          "state": 175,
+          "energy": 5968.5263671875
+        },
+        {
+          "state": 128,
+          "energy": 5558.65478515625
+        },
+        {
+          "state": 138,
+          "energy": 5529.865234375
+        },
+        {
+          "state": 131,
+          "energy": 5529.4287109375
+        },
+        {
+          "state": 140,
+          "energy": 5468.67138671875
+        },
+        {
+          "state": 143,
+          "energy": 5396.28662109375
+        },
+        {
+          "state": 69,
+          "energy": 5358.46435546875
+        },
+        {
+          "state": 137,
+          "energy": 5297.748046875
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 15110.1220703125
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 15070.53125
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 15036.30859375
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14996.6865234375
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14982.2919921875
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14947.2021484375
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14784.0791015625
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14747.7001953125
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14574.5654296875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14539.2958984375
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14502.8935546875
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14470.45703125
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14278.2822265625
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14238.986328125
+        },
+        {
+          "src": 138,
+          "op": "rotl1",
+          "strength": 7919.79052734375
+        },
+        {
+          "src": 162,
+          "op": "rotl1",
+          "strength": 7914.2314453125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 297298.875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 294033.34375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 292396.46875
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 292345.6875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 144665.5625
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 143788.09375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4150.6298828125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3323.445556640625
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2651.654296875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2649.42724609375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2596.892578125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2589.205810546875
+        }
+      ]
+    },
+    {
+      "step": 14000,
+      "state_entropy": 5.439091682434082,
+      "edge_dominance": 0.41153034567832947,
+      "expected_state_mass": 0.7101104284368531,
+      "state_mass": 655367.875,
+      "edge_mass": 2621475.25,
+      "pair_mass": 1638420.5,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.1810302734375,
+        "dec_chain": 0.180908203125,
+        "xor_toggle": 0.18096923828125,
+        "rotate_left": 0.17889404296875,
+        "flip0_pulse": 0.178192138671875,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7031.7607421875
+        },
+        {
+          "state": 169,
+          "energy": 6948.54052734375
+        },
+        {
+          "state": 170,
+          "energy": 6862.14208984375
+        },
+        {
+          "state": 134,
+          "energy": 6349.62939453125
+        },
+        {
+          "state": 85,
+          "energy": 6340.3125
+        },
+        {
+          "state": 160,
+          "energy": 6159.5693359375
+        },
+        {
+          "state": 175,
+          "energy": 6094.63232421875
+        },
+        {
+          "state": 172,
+          "energy": 6023.3212890625
+        },
+        {
+          "state": 163,
+          "energy": 6015.47998046875
+        },
+        {
+          "state": 128,
+          "energy": 5528.73046875
+        },
+        {
+          "state": 143,
+          "energy": 5503.52978515625
+        },
+        {
+          "state": 138,
+          "energy": 5494.91943359375
+        },
+        {
+          "state": 140,
+          "energy": 5454.703125
+        },
+        {
+          "state": 131,
+          "energy": 5374.67822265625
+        },
+        {
+          "state": 69,
+          "energy": 5353.3544921875
+        },
+        {
+          "state": 137,
+          "energy": 5339.89599609375
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 15264.2119140625
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 15226.1181640625
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 15051.939453125
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 15020.484375
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 15017.9130859375
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14982.6806640625
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14650.908203125
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14611.818359375
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14493.4609375
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14471.8720703125
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14454.8115234375
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14437.2451171875
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14436.4658203125
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14400.1611328125
+        },
+        {
+          "src": 166,
+          "op": "rotl1",
+          "strength": 7839.77392578125
+        },
+        {
+          "src": 77,
+          "op": "rotl1",
+          "strength": 7813.6220703125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 296662.28125
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 294279.4375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 293059.5
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 293048.6875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 144367.078125
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 143525.546875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4074.98974609375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3269.327392578125
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2603.547607421875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2595.45263671875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2532.830322265625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2532.519775390625
+        }
+      ]
+    },
+    {
+      "step": 15000,
+      "state_entropy": 5.439743518829346,
+      "edge_dominance": 0.4111979901790619,
+      "expected_state_mass": 0.7091386693664211,
+      "state_mass": 655368.25,
+      "edge_mass": 2621476.5,
+      "pair_mass": 1638420.0,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.180419921875,
+        "dec_chain": 0.181915283203125,
+        "xor_toggle": 0.184661865234375,
+        "rotate_left": 0.175048828125,
+        "flip0_pulse": 0.177947998046875,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7057.6455078125
+        },
+        {
+          "state": 169,
+          "energy": 7030.064453125
+        },
+        {
+          "state": 170,
+          "energy": 6857.14990234375
+        },
+        {
+          "state": 134,
+          "energy": 6394.63232421875
+        },
+        {
+          "state": 85,
+          "energy": 6332.96240234375
+        },
+        {
+          "state": 160,
+          "energy": 6133.64208984375
+        },
+        {
+          "state": 163,
+          "energy": 6061.16845703125
+        },
+        {
+          "state": 175,
+          "energy": 6003.7861328125
+        },
+        {
+          "state": 172,
+          "energy": 5948.46728515625
+        },
+        {
+          "state": 128,
+          "energy": 5547.421875
+        },
+        {
+          "state": 131,
+          "energy": 5472.224609375
+        },
+        {
+          "state": 143,
+          "energy": 5439.1328125
+        },
+        {
+          "state": 137,
+          "energy": 5437.55712890625
+        },
+        {
+          "state": 138,
+          "energy": 5418.96484375
+        },
+        {
+          "state": 140,
+          "energy": 5396.47705078125
+        },
+        {
+          "state": 69,
+          "energy": 5298.07568359375
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 15141.2880859375
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 15104.5498046875
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14993.9541015625
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14957.90625
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14883.2333984375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14846.6982421875
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14836.482421875
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14801.4755859375
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14801.4375
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14796.0830078125
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14760.3447265625
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14759.599609375
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14475.5654296875
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14440.4873046875
+        },
+        {
+          "src": 166,
+          "op": "rotl1",
+          "strength": 7787.40869140625
+        },
+        {
+          "src": 77,
+          "op": "rotl1",
+          "strength": 7765.2529296875
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 295013.75
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 294369.65625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 293670.125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 292059.0
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 145502.921875
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 144685.125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3986.75341796875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3194.318115234375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2560.6552734375
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2560.62744140625
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2481.3701171875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2475.994873046875
+        }
+      ]
+    },
+    {
+      "step": 16000,
+      "state_entropy": 5.439565181732178,
+      "edge_dominance": 0.4109746217727661,
+      "expected_state_mass": 0.7093212080915562,
+      "state_mass": 655368.375,
+      "edge_mass": 2621477.25,
+      "pair_mass": 1638420.25,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8509862422943115,
+      "motif_distribution": {
+        "inc_chain": 0.183258056640625,
+        "dec_chain": 0.178924560546875,
+        "xor_toggle": 0.181549072265625,
+        "rotate_left": 0.17657470703125,
+        "flip0_pulse": 0.1796875,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7058.7080078125
+        },
+        {
+          "state": 169,
+          "energy": 7032.72412109375
+        },
+        {
+          "state": 170,
+          "energy": 6783.0712890625
+        },
+        {
+          "state": 134,
+          "energy": 6453.26318359375
+        },
+        {
+          "state": 85,
+          "energy": 6271.16552734375
+        },
+        {
+          "state": 160,
+          "energy": 6198.35595703125
+        },
+        {
+          "state": 163,
+          "energy": 6187.951171875
+        },
+        {
+          "state": 175,
+          "energy": 6099.044921875
+        },
+        {
+          "state": 172,
+          "energy": 6022.8701171875
+        },
+        {
+          "state": 131,
+          "energy": 5615.06298828125
+        },
+        {
+          "state": 128,
+          "energy": 5610.25439453125
+        },
+        {
+          "state": 143,
+          "energy": 5536.35107421875
+        },
+        {
+          "state": 137,
+          "energy": 5495.67236328125
+        },
+        {
+          "state": 140,
+          "energy": 5448.78564453125
+        },
+        {
+          "state": 138,
+          "energy": 5387.2998046875
+        },
+        {
+          "state": 69,
+          "energy": 5238.2021484375
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 15313.068359375
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 15289.583984375
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 15282.5029296875
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 15278.16796875
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 15250.5576171875
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 15245.662109375
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 15036.861328125
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 15001.712890625
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14973.916015625
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14937.34375
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14900.544921875
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14862.861328125
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14249.2900390625
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14214.271484375
+        },
+        {
+          "src": 166,
+          "op": "rotl1",
+          "strength": 7612.30859375
+        },
+        {
+          "src": 77,
+          "op": "rotl1",
+          "strength": 7594.22607421875
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 296465.9375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 294677.875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 293599.96875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 290488.15625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 145650.75
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 144843.828125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3893.66357421875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3119.822021484375
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2505.158935546875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2503.458740234375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2430.296630859375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2429.167236328125
+        }
+      ]
+    },
+    {
+      "step": 17000,
+      "state_entropy": 5.441020965576172,
+      "edge_dominance": 0.4119686484336853,
+      "expected_state_mass": 0.7084858000662605,
+      "state_mass": 655368.375,
+      "edge_mass": 2621477.5,
+      "pair_mass": 1638421.625,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8509862422943115,
+      "motif_distribution": {
+        "inc_chain": 0.185272216796875,
+        "dec_chain": 0.178924560546875,
+        "xor_toggle": 0.178253173828125,
+        "rotate_left": 0.17620849609375,
+        "flip0_pulse": 0.18133544921875,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 169,
+          "energy": 7124.4208984375
+        },
+        {
+          "state": 166,
+          "energy": 7033.30908203125
+        },
+        {
+          "state": 170,
+          "energy": 6768.03564453125
+        },
+        {
+          "state": 134,
+          "energy": 6357.4677734375
+        },
+        {
+          "state": 85,
+          "energy": 6282.88134765625
+        },
+        {
+          "state": 163,
+          "energy": 6072.24560546875
+        },
+        {
+          "state": 160,
+          "energy": 6065.640625
+        },
+        {
+          "state": 175,
+          "energy": 6035.13134765625
+        },
+        {
+          "state": 172,
+          "energy": 5964.5380859375
+        },
+        {
+          "state": 137,
+          "energy": 5527.97021484375
+        },
+        {
+          "state": 128,
+          "energy": 5498.8994140625
+        },
+        {
+          "state": 131,
+          "energy": 5492.16455078125
+        },
+        {
+          "state": 143,
+          "energy": 5438.84765625
+        },
+        {
+          "state": 140,
+          "energy": 5379.1640625
+        },
+        {
+          "state": 138,
+          "energy": 5348.45849609375
+        },
+        {
+          "state": 53,
+          "energy": 5231.857421875
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 15207.958984375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 15167.5712890625
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14954.6494140625
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14918.3212890625
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14898.9404296875
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14859.970703125
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14849.396484375
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14811.4306640625
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14702.46484375
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14668.35546875
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14659.1328125
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14625.47265625
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14266.6884765625
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14232.66796875
+        },
+        {
+          "src": 166,
+          "op": "rotl1",
+          "strength": 7783.72119140625
+        },
+        {
+          "src": 77,
+          "op": "rotl1",
+          "strength": 7767.55517578125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 297641.71875
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 292914.8125
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 291612.9375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 290245.6875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 146583.59375
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 145802.171875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4130.31201171875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3300.437744140625
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2605.884521484375
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2604.841796875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2529.43505859375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2528.404052734375
+        }
+      ]
+    },
+    {
+      "step": 18000,
+      "state_entropy": 5.440978527069092,
+      "edge_dominance": 0.4136383533477783,
+      "expected_state_mass": 0.7087123226009797,
+      "state_mass": 655368.4375,
+      "edge_mass": 2621477.75,
+      "pair_mass": 1638423.5,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.18304443359375,
+        "dec_chain": 0.17694091796875,
+        "xor_toggle": 0.177215576171875,
+        "rotate_left": 0.181243896484375,
+        "flip0_pulse": 0.181549072265625,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 166,
+          "energy": 7042.77734375
+        },
+        {
+          "state": 169,
+          "energy": 7031.5263671875
+        },
+        {
+          "state": 170,
+          "energy": 6875.94482421875
+        },
+        {
+          "state": 134,
+          "energy": 6396.67724609375
+        },
+        {
+          "state": 85,
+          "energy": 6356.3671875
+        },
+        {
+          "state": 160,
+          "energy": 6115.1015625
+        },
+        {
+          "state": 163,
+          "energy": 6027.86865234375
+        },
+        {
+          "state": 172,
+          "energy": 5974.853515625
+        },
+        {
+          "state": 175,
+          "energy": 5843.6748046875
+        },
+        {
+          "state": 128,
+          "energy": 5522.7001953125
+        },
+        {
+          "state": 137,
+          "energy": 5505.7314453125
+        },
+        {
+          "state": 131,
+          "energy": 5428.8427734375
+        },
+        {
+          "state": 138,
+          "energy": 5427.76904296875
+        },
+        {
+          "state": 140,
+          "energy": 5391.88232421875
+        },
+        {
+          "state": 69,
+          "energy": 5296.92041015625
+        },
+        {
+          "state": 143,
+          "energy": 5254.43115234375
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 15112.2919921875
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 15072.0625
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14977.9326171875
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14967.9306640625
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14941.203125
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14934.099609375
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14707.751953125
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14701.2939453125
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14675.0224609375
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14663.0009765625
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14607.9658203125
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14570.81640625
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14230.65625
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14199.09765625
+        },
+        {
+          "src": 138,
+          "op": "rotl1",
+          "strength": 7642.1474609375
+        },
+        {
+          "src": 162,
+          "op": "rotl1",
+          "strength": 7638.392578125
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 298281.5
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 293540.25
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 289817.59375
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 289424.6875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 147469.15625
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 146707.59375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4051.09228515625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3243.335693359375
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2527.2685546875
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2523.289306640625
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2470.33203125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2466.166015625
+        }
+      ]
+    },
+    {
+      "step": 19000,
+      "state_entropy": 5.441094398498535,
+      "edge_dominance": 0.41307130455970764,
+      "expected_state_mass": 0.7083644942434093,
+      "state_mass": 655368.375,
+      "edge_mass": 2621477.75,
+      "pair_mass": 1638422.5,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8451426029205322,
+      "motif_distribution": {
+        "inc_chain": 0.1800537109375,
+        "dec_chain": 0.18145751953125,
+        "xor_toggle": 0.1748046875,
+        "rotate_left": 0.17962646484375,
+        "flip0_pulse": 0.184051513671875,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 170,
+          "energy": 6979.86572265625
+        },
+        {
+          "state": 166,
+          "energy": 6928.4794921875
+        },
+        {
+          "state": 169,
+          "energy": 6904.91650390625
+        },
+        {
+          "state": 85,
+          "energy": 6502.783203125
+        },
+        {
+          "state": 134,
+          "energy": 6363.8984375
+        },
+        {
+          "state": 160,
+          "energy": 6177.44970703125
+        },
+        {
+          "state": 172,
+          "energy": 6034.10107421875
+        },
+        {
+          "state": 163,
+          "energy": 5892.791015625
+        },
+        {
+          "state": 175,
+          "energy": 5823.3662109375
+        },
+        {
+          "state": 128,
+          "energy": 5568.9150390625
+        },
+        {
+          "state": 140,
+          "energy": 5481.6982421875
+        },
+        {
+          "state": 138,
+          "energy": 5443.10205078125
+        },
+        {
+          "state": 137,
+          "energy": 5431.16796875
+        },
+        {
+          "state": 131,
+          "energy": 5319.4873046875
+        },
+        {
+          "state": 69,
+          "energy": 5274.421875
+        },
+        {
+          "state": 143,
+          "energy": 5258.73388671875
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 15237.078125
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 15198.3203125
+        },
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 15096.1865234375
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 15060.271484375
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14988.6806640625
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14954.505859375
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14745.6474609375
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14708.82421875
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14677.04296875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14642.0478515625
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14171.751953125
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14134.498046875
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14082.603515625
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14045.2978515625
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7781.2919921875
+        },
+        {
+          "src": 138,
+          "op": "rotl1",
+          "strength": 7765.85791015625
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 295276.40625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 294900.40625
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 291317.15625
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 287400.1875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 148750.71875
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 147994.125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 3952.150146484375
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3158.38671875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2474.93212890625
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2473.3857421875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2431.3232421875
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2426.494384765625
+        }
+      ]
+    },
+    {
+      "step": 20000,
+      "state_entropy": 5.442085266113281,
+      "edge_dominance": 0.4126330316066742,
+      "expected_state_mass": 0.70834587796273,
+      "state_mass": 655368.4375,
+      "edge_mass": 2621477.5,
+      "pair_mass": 1638420.75,
+      "active_state_count": 256,
+      "active_edge_count": 3584,
+      "support_locality_mean_hamming": 3.8614957332611084,
+      "motif_distribution": {
+        "inc_chain": 0.180816650390625,
+        "dec_chain": 0.1793212890625,
+        "xor_toggle": 0.176727294921875,
+        "rotate_left": 0.1798095703125,
+        "flip0_pulse": 0.183319091796875,
+        "noise": 0.100006103515625
+      },
+      "top_states": [
+        {
+          "state": 169,
+          "energy": 6949.7958984375
+        },
+        {
+          "state": 166,
+          "energy": 6841.11376953125
+        },
+        {
+          "state": 170,
+          "energy": 6840.80126953125
+        },
+        {
+          "state": 85,
+          "energy": 6400.62890625
+        },
+        {
+          "state": 134,
+          "energy": 6232.5322265625
+        },
+        {
+          "state": 160,
+          "energy": 6105.21923828125
+        },
+        {
+          "state": 163,
+          "energy": 5999.81689453125
+        },
+        {
+          "state": 172,
+          "energy": 5864.93017578125
+        },
+        {
+          "state": 175,
+          "energy": 5854.85009765625
+        },
+        {
+          "state": 128,
+          "energy": 5511.25537109375
+        },
+        {
+          "state": 137,
+          "energy": 5430.68798828125
+        },
+        {
+          "state": 131,
+          "energy": 5429.7314453125
+        },
+        {
+          "state": 138,
+          "energy": 5359.0517578125
+        },
+        {
+          "state": 143,
+          "energy": 5309.57958984375
+        },
+        {
+          "state": 140,
+          "energy": 5293.2666015625
+        },
+        {
+          "state": 69,
+          "energy": 5243.1806640625
+        }
+      ],
+      "top_edges": [
+        {
+          "src": 128,
+          "op": "xor20",
+          "strength": 14858.6337890625
+        },
+        {
+          "src": 160,
+          "op": "xor20",
+          "strength": 14824.765625
+        },
+        {
+          "src": 170,
+          "op": "rotl1",
+          "strength": 14787.7734375
+        },
+        {
+          "src": 85,
+          "op": "rotl1",
+          "strength": 14747.0947265625
+        },
+        {
+          "src": 137,
+          "op": "xor20",
+          "strength": 14746.20703125
+        },
+        {
+          "src": 169,
+          "op": "xor20",
+          "strength": 14710.2294921875
+        },
+        {
+          "src": 131,
+          "op": "xor20",
+          "strength": 14546.0009765625
+        },
+        {
+          "src": 163,
+          "op": "xor20",
+          "strength": 14509.2060546875
+        },
+        {
+          "src": 143,
+          "op": "xor20",
+          "strength": 14376.6845703125
+        },
+        {
+          "src": 175,
+          "op": "xor20",
+          "strength": 14341.3408203125
+        },
+        {
+          "src": 140,
+          "op": "xor20",
+          "strength": 14246.599609375
+        },
+        {
+          "src": 172,
+          "op": "xor20",
+          "strength": 14210.931640625
+        },
+        {
+          "src": 134,
+          "op": "xor20",
+          "strength": 14147.9013671875
+        },
+        {
+          "src": 166,
+          "op": "xor20",
+          "strength": 14109.4921875
+        },
+        {
+          "src": 171,
+          "op": "rotl1",
+          "strength": 7775.736328125
+        },
+        {
+          "src": 174,
+          "op": "rotl1",
+          "strength": 7744.69091796875
+        }
+      ],
+      "top_macro_pairs": [
+        {
+          "prev_op": "rotl1",
+          "cur_op": "rotl1",
+          "strength": 294948.1875
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "inc",
+          "strength": 293767.25
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "dec",
+          "strength": 292514.21875
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "xor20",
+          "strength": 285680.78125
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "flip_bit_0",
+          "strength": 149361.0
+        },
+        {
+          "prev_op": "flip_bit_0",
+          "cur_op": "inc",
+          "strength": 148454.875
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "inc",
+          "strength": 4168.77587890625
+        },
+        {
+          "prev_op": "inc",
+          "cur_op": "rotl1",
+          "strength": 3303.793212890625
+        },
+        {
+          "prev_op": "xor20",
+          "cur_op": "rotl1",
+          "strength": 2582.1298828125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "xor20",
+          "strength": 2577.80712890625
+        },
+        {
+          "prev_op": "dec",
+          "cur_op": "rotl1",
+          "strength": 2549.5830078125
+        },
+        {
+          "prev_op": "rotl1",
+          "cur_op": "dec",
+          "strength": 2547.77197265625
+        }
+      ]
+    }
+  ]
+}

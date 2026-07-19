@@ -1,0 +1,15 @@
+natural_reasoning_train.jsonl
+ultrachat_train.jsonl
+word_chains.txt
+*.jsonl
+*.pt
+*.pth
+*.ckpt
+
+qwen2.5-0.5b-instruct-q4_k_m.gguf
+*.gguf
+__pycache__/
+*.pyc
+checkpoints*/
+RobinWilliams/
+*.bin

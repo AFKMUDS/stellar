@@ -1,0 +1,1621 @@
+{
+  "ckpt": "C:\\Programming\\Programming_Projects\\stellar\\checkpoints\\rap_qwen_distill_balanced.pt",
+  "manifold_pt": "C:\\Programming\\Programming_Projects\\Duck\\duck_semantic_manifold_full_bw2.pt",
+  "basis_tier": "deep_operators",
+  "prompt_template": "In a physics system, the role of {word} changes the state because",
+  "group_count": 12,
+  "mean_within_primitive_cos": 0.9999999719716254,
+  "mean_within_state_cos": 0.999989348330668,
+  "mean_cross_primitive_cos": 0.9999999756021707,
+  "mean_cross_state_cos": 0.999988035270662,
+  "groups": [
+    {
+      "grounding": [
+        "act",
+        "legal"
+      ],
+      "primitive_score": 0.7579533877293522,
+      "words": [
+        {
+          "word": "acquiring",
+          "prompt": "In a physics system, the role of acquiring changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "arranging",
+          "prompt": "In a physics system, the role of arranging changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "blending",
+          "prompt": "In a physics system, the role of blending changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "branching",
+          "prompt": "In a physics system, the role of branching changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "breaking",
+          "prompt": "In a physics system, the role of breaking changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "brushing",
+          "prompt": "In a physics system, the role of brushing changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "burning",
+          "prompt": "In a physics system, the role of burning changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "buying",
+          "prompt": "In a physics system, the role of buying changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.999999959553991,
+      "within_state_cos": 0.9999941055263791,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "any",
+        "agent"
+      ],
+      "primitive_score": 0.7541615065377061,
+      "words": [
+        {
+          "word": "antiflatulent",
+          "prompt": "In a physics system, the role of antiflatulent changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "antifungal",
+          "prompt": "In a physics system, the role of antifungal changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "antimycotic",
+          "prompt": "In a physics system, the role of antimycotic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "emmenagogue",
+          "prompt": "In a physics system, the role of emmenagogue changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "fungicide",
+          "prompt": "In a physics system, the role of fungicide changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "fungicides",
+          "prompt": "In a physics system, the role of fungicides changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "lactifuge",
+          "prompt": "In a physics system, the role of lactifuge changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "lactogen",
+          "prompt": "In a physics system, the role of lactogen changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999765838895,
+      "within_state_cos": 0.9999895415135792,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "move",
+        "about"
+      ],
+      "primitive_score": 0.7449149530429069,
+      "words": [
+        {
+          "word": "gadded",
+          "prompt": "In a physics system, the role of gadded changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "gadding",
+          "prompt": "In a physics system, the role of gadding changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "gades",
+          "prompt": "In a physics system, the role of gades changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "gallivant",
+          "prompt": "In a physics system, the role of gallivant changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "gallivanted",
+          "prompt": "In a physics system, the role of gallivanted changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "gallivanting",
+          "prompt": "In a physics system, the role of gallivanting changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "gallivants",
+          "prompt": "In a physics system, the role of gallivants changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "maunder",
+          "prompt": "In a physics system, the role of maunder changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999744551522,
+      "within_state_cos": 0.99998725099223,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "about",
+        "move"
+      ],
+      "primitive_score": 0.726426358222643,
+      "words": [
+        {
+          "word": "about",
+          "prompt": "In a physics system, the role of about changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "asked",
+          "prompt": "In a physics system, the role of asked changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "asks",
+          "prompt": "In a physics system, the role of asks changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "enquire",
+          "prompt": "In a physics system, the role of enquire changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "enquired",
+          "prompt": "In a physics system, the role of enquired changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "enquires",
+          "prompt": "In a physics system, the role of enquires changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "enquiring",
+          "prompt": "In a physics system, the role of enquiring changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "explore",
+          "prompt": "In a physics system, the role of explore changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999552965164,
+      "within_state_cos": 0.9999902078083583,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "make",
+        "mess"
+      ],
+      "primitive_score": 0.7252202726766539,
+      "words": [
+        {
+          "word": "bobbled",
+          "prompt": "In a physics system, the role of bobbled changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "bobbling",
+          "prompt": "In a physics system, the role of bobbling changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "bodge",
+          "prompt": "In a physics system, the role of bodge changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "bollix",
+          "prompt": "In a physics system, the role of bollix changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "bollixed",
+          "prompt": "In a physics system, the role of bollixed changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "bollixes",
+          "prompt": "In a physics system, the role of bollixes changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "bollixing",
+          "prompt": "In a physics system, the role of bollixing changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "botched",
+          "prompt": "In a physics system, the role of botched changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999489103045,
+      "within_state_cos": 0.9999881897653852,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "make",
+        "less"
+      ],
+      "primitive_score": 0.7199000512659001,
+      "words": [
+        {
+          "word": "abated",
+          "prompt": "In a physics system, the role of abated changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "abates",
+          "prompt": "In a physics system, the role of abates changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "abating",
+          "prompt": "In a physics system, the role of abating changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "angioscope",
+          "prompt": "In a physics system, the role of angioscope changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "attemper",
+          "prompt": "In a physics system, the role of attemper changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "attempered",
+          "prompt": "In a physics system, the role of attempered changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "attempering",
+          "prompt": "In a physics system, the role of attempering changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "attempers",
+          "prompt": "In a physics system, the role of attempers changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999638114657,
+      "within_state_cos": 0.9999855969633374,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "act",
+        "making"
+      ],
+      "primitive_score": 0.7195154962886898,
+      "words": [
+        {
+          "word": "adventuresome",
+          "prompt": "In a physics system, the role of adventuresome changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "adventurous",
+          "prompt": "In a physics system, the role of adventurous changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "beautification",
+          "prompt": "In a physics system, the role of beautification changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "beautifications",
+          "prompt": "In a physics system, the role of beautifications changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "bootlegging",
+          "prompt": "In a physics system, the role of bootlegging changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "broadening",
+          "prompt": "In a physics system, the role of broadening changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "broadenings",
+          "prompt": "In a physics system, the role of broadenings changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "broom",
+          "prompt": "In a physics system, the role of broom changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 1.000000006386212,
+      "within_state_cos": 0.9999837705067226,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "relating",
+        "having"
+      ],
+      "primitive_score": 0.7042929967378543,
+      "words": [
+        {
+          "word": "acanthotic",
+          "prompt": "In a physics system, the role of acanthotic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "agraphic",
+          "prompt": "In a physics system, the role of agraphic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "algorithmic",
+          "prompt": "In a physics system, the role of algorithmic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "allantois",
+          "prompt": "In a physics system, the role of allantois changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "allergenic",
+          "prompt": "In a physics system, the role of allergenic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "apian",
+          "prompt": "In a physics system, the role of apian changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "arbitrative",
+          "prompt": "In a physics system, the role of arbitrative changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "autodidactic",
+          "prompt": "In a physics system, the role of autodidactic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999765838895,
+      "within_state_cos": 0.9999911657401493,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "any",
+        "various"
+      ],
+      "primitive_score": 0.6981660168299588,
+      "words": [
+        {
+          "word": "abalone",
+          "prompt": "In a physics system, the role of abalone changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "abalones",
+          "prompt": "In a physics system, the role of abalones changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "acacias",
+          "prompt": "In a physics system, the role of acacias changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "acanthocephalan",
+          "prompt": "In a physics system, the role of acanthocephalan changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "acanthopterygian",
+          "prompt": "In a physics system, the role of acanthopterygian changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "acid",
+          "prompt": "In a physics system, the role of acid changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "acids",
+          "prompt": "In a physics system, the role of acids changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "aconite",
+          "prompt": "In a physics system, the role of aconite changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999829701015,
+      "within_state_cos": 0.9999883621931076,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "relating",
+        "containing"
+      ],
+      "primitive_score": 0.6923005105802278,
+      "words": [
+        {
+          "word": "acetic",
+          "prompt": "In a physics system, the role of acetic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "albuminous",
+          "prompt": "In a physics system, the role of albuminous changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "alkalic",
+          "prompt": "In a physics system, the role of alkalic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "alkaline",
+          "prompt": "In a physics system, the role of alkaline changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "astrocytic",
+          "prompt": "In a physics system, the role of astrocytic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "augitic",
+          "prompt": "In a physics system, the role of augitic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "aurous",
+          "prompt": "In a physics system, the role of aurous changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "auxinic",
+          "prompt": "In a physics system, the role of auxinic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999510390418,
+      "within_state_cos": 0.9999981416123254,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "relating",
+        "resembling"
+      ],
+      "primitive_score": 0.690629188150994,
+      "words": [
+        {
+          "word": "anthracitic",
+          "prompt": "In a physics system, the role of anthracitic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "araneidal",
+          "prompt": "In a physics system, the role of araneidal changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "araneidan",
+          "prompt": "In a physics system, the role of araneidan changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "archangelic",
+          "prompt": "In a physics system, the role of archangelic changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "archangelical",
+          "prompt": "In a physics system, the role of archangelical changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "arundinaceous",
+          "prompt": "In a physics system, the role of arundinaceous changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "asteroidal",
+          "prompt": "In a physics system, the role of asteroidal changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "atheromatous",
+          "prompt": "In a physics system, the role of atheromatous changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999978712627,
+      "within_state_cos": 0.9999859758785793,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    },
+    {
+      "grounding": [
+        "capable",
+        "being"
+      ],
+      "primitive_score": 0.6832552146639792,
+      "words": [
+        {
+          "word": "abatable",
+          "prompt": "In a physics system, the role of abatable changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "abdicable",
+          "prompt": "In a physics system, the role of abdicable changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "abolishable",
+          "prompt": "In a physics system, the role of abolishable changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "absorbable",
+          "prompt": "In a physics system, the role of absorbable changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "accessible",
+          "prompt": "In a physics system, the role of accessible changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "acknowledgeable",
+          "prompt": "In a physics system, the role of acknowledgeable changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "acquirable",
+          "prompt": "In a physics system, the role of acquirable changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        },
+        {
+          "word": "actable",
+          "prompt": "In a physics system, the role of actable changes the state because",
+          "top_primitive": 0,
+          "top_logit_ids": [
+            32,
+            114,
+            110,
+            115,
+            100,
+            99,
+            108,
+            116
+          ]
+        }
+      ],
+      "within_primitive_cos": 0.9999999701976776,
+      "within_state_cos": 0.9999898714678628,
+      "top_primitive_hist": {
+        "0": 8
+      }
+    }
+  ]
+}

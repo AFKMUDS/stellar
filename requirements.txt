@@ -1,0 +1,6 @@
+torch>=2.1
+tqdm>=4.66
+numpy>=1.26
+matplotlib>=3.8
+networkx>=3.0
+datasets>=2.19
