@@ -1,0 +1,1 @@
+﻿Upload natural_reasoning_train.jsonl into this directory. run_train.sh expects data/natural_reasoning_train.jsonl.
