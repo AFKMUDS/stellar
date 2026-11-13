@@ -6,29 +6,68 @@ The base is **`rap_B_latest (1).pt` (saved step 87,199)**, not `rap_B_current.pt
 
 ## vNext integration status
 
-This is **not** the November 11 `RAP_Fresh_Training` integration. The new
-`trainnewideas/` directory contains its documentation and wrappers, but lacks
-the imported `rap/` package, `configs/`, and `train.py`; the fresh core cannot
-be loaded or verified from those files alone. The
-`experiment.py` CLI accepts the proposed flag names so unsupported choices
+The recovered `trainnewideas/` directory now has the fresh `rap/` core,
+`configs/cloud.json`, `train.py`, and a working `verify.py`. The unified guarded
+launcher `python -m rap_training_rebuild.vnext` selects either the original
+checkpoint-B pilot or the separately trained fresh implementation. The
+`experiment.py` CLI also accepts the proposed flag names so unsupported choices
 (fresh core/primitives, bitviews/multi encoding, expression head/loss,
 ordered/random/disabled retrieval, clock, router losses, stream persistence,
 curriculum, full diagnostics) fail *before* training rather than silently
-falling back. Currently only the original core, primitives, encoding, retrieval,
-record isolation and basic diagnostics are available; variants B/D use the
-joint readout. The `--head direct` proposal is **not** yet implemented.
+falling back on the **original** core. For the fresh core, `vnext` supports
+fresh primitives, bitviews, direct/expression head, ordered/random/none
+retrieval, the fresh joint memory readout, and stream persistence. All other
+proposed features still fail before training. `--head direct` is supported
+only for the fresh core.
 
 The original forward path has an exact parity test on the local B checkpoint.
-The large-data pipeline, token IDs outside 0-255, alternate core, bounded
-ordered memory, expression maps, phase clock, and deterministic full-run
-checkpointing requested in the vNext specification are **not ready**. Do not
-start a full vNext comparison or claim its acceptance criteria are met.
+The fresh core has disk-backed large-data preparation, tokens above 255,
+ordered bounded retrieval, reversible maps, persistent chunk state and exact
+new-format resume. It passed 13 CPU verification tests and a short CUDA
+train/resume test on the local RTX 4070. This is **not** full vNext readiness:
+cross-core mixed feature combinations, expression displacement, learned clock,
+and full intervention diagnostics are not implemented. The original and fresh
+vocabularies and supervision formats differ; do not claim strict matched-data
+A-G comparisons or launch a long campaign without those controls.
 `load_examples` handles `prompt`/`answer`, `question`/`reference_answer`,
 `instruction`/`output`, and `text` JSONL records for small experiments; this
 pilot eagerly loads JSONL, so **do not point it at the 500 MB corpus**.
 
-For the dataset already uploaded to Runpod, use the existing original trainer
-until the fresh source and full integration are available. From the cloned
+From the repo root on Runpod, for a **fresh-core preparation + short smoke**
+using the uploaded dataset, set `DATA` to its actual path:
+
+```bash
+DATA=/workspace/data/natural_reasoning_train.jsonl
+python -m rap_training_rebuild.vnext --core fresh --primitive-mode fresh \
+  --encoding bitviews --head expression --retrieval ordered \
+  --memory-readout joint --state-persistence stream --dataset "$DATA" \
+  --prepared trainnewideas/data/prepared --run trainnewideas/runs/vnext \
+  --config trainnewideas/configs/cloud.json --steps 3 --device cuda \
+  --batch-size 1 --chunk-length 128 --gradient-accumulation 1
+```
+
+For a **fresh-format checkpoint only**, resume the same prepared data and
+configuration with an absolute target step (do not pass an original B
+checkpoint as `--initialize-from`):
+
+```bash
+python -m rap_training_rebuild.vnext --core fresh --primitive-mode fresh \
+  --encoding bitviews --head expression --retrieval ordered \
+  --memory-readout joint --state-persistence stream \
+  --prepared trainnewideas/data/prepared --run trainnewideas/runs/vnext \
+  --config trainnewideas/configs/cloud.json --steps 6 --resume --device cuda \
+  --batch-size 1 --chunk-length 128 --gradient-accumulation 1
+```
+
+Fresh outputs never overwrite `rap_training_rebuild/outputs/` or the
+original `rap_B_latest (1).pt`. Both runs explicitly set the extra fresh
+auxiliary losses to zero; only next-token loss is optimized. This recovered
+bundle lacks the original release's `infer.py` and `diagnose.py`; use the
+cloud preset and the tested `rap.runtime.Session` /
+`rap.evaluation.evaluate` APIs instead. See `trainnewideas/INTEGRATION.md`.
+
+For a full-corpus **original** baseline on Runpod, use the existing original
+trainer until a matched disk-backed original pilot is available. From the cloned
 repo root on Runpod (adjust `DATA` to the actual existing location):
 
 ```bash

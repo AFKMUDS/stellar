@@ -1,0 +1,32 @@
+{
+  "model": {
+    "embedding_size": 256,
+    "state_size": 512,
+    "primitives": 8,
+    "controller_size": 512,
+    "readout_size": 256,
+    "retrieval": "tagged",
+    "expression_head": "reversible"
+  },
+  "train": {
+    "steps": 10000,
+    "batch_size": 1,
+    "chunk_length": 64,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.0002,
+    "minimum_learning_rate": 0.00002,
+    "warmup_steps": 100,
+    "device": "auto",
+    "precision": "auto",
+    "seed": 23,
+    "log_every": 10,
+    "save_every": 100,
+    "evaluate_every": 200,
+    "validation_target_tokens": 1024,
+    "sample_every": 500,
+    "future_weight": 0.0,
+    "past_weight": 0.0,
+    "boundary_weight": 0.0,
+    "stop_weight": 0.0
+  }
+}
