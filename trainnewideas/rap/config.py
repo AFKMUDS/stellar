@@ -55,6 +55,7 @@ class DataConfig:
     deduplicate: bool = True
     max_record_bytes: int = 1048576
     max_records: int = 0
+    source_weights: dict = field(default_factory=dict)
 
 @dataclass
 class Config:
@@ -114,6 +115,10 @@ def validate(cfg):
         raise ValueError('Invalid gradient clipping, CPU threads, or data limits.')
     if t.sample_every < 0 or t.sample_max_bytes <= 0:
         raise ValueError("Invalid sampling configuration.")
+    if (not isinstance(d.source_weights, dict)
+            or any(not isinstance(k, str) or not k or not isinstance(v, (int, float)) or v <= 0
+                   for k, v in d.source_weights.items())):
+        raise ValueError("source_weights must map source names to positive numeric weights.")
 
 def as_dict(config):
     return asdict(config)

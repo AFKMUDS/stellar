@@ -216,3 +216,7 @@ Quick local check (CPU, no Qwen):
 python -m unittest rap_training_rebuild.test_experiment -v
 python -m rap_training_rebuild.experiment --variant A --max-delay 64 --seq-len 400 --eval-examples 1 --rollouts 0
 ```
+
+For the separate bounded, source-weighted fresh-core dataset pilot and
+new-stage checkpoint initialization, see [MIXED_STAGE.md](MIXED_STAGE.md).
+It does not change the original-core comparison or the existing fresh run.

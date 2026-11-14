@@ -54,6 +54,7 @@ def parse_args(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
     add_flags(p)
     p.add_argument("--dataset", nargs="+", help="Existing JSONL data (fresh: disk-backed; original: small pilot only)")
+    p.add_argument("--mix", help="Validated, bounded source mixture from rap_training_rebuild.mix")
     p.add_argument("--base", help="Trusted original checkpoint, only for --core original")
     p.add_argument("--config", default=str(FRESH / "configs" / "cloud.json"))
     p.add_argument("--prepared", default=str(FRESH / "data" / "prepared"))
@@ -75,6 +76,8 @@ def parse_args(argv=None):
 
 
 def original(args, flags):
+    if args.mix:
+        raise ValueError("The original eager-loading pilot does not support weighted --mix")
     if not args.dataset or len(args.dataset) != 1:
         raise ValueError("Original pilot requires exactly one small JSONL --dataset")
     path = Path(args.dataset[0])
@@ -93,9 +96,10 @@ def original(args, flags):
 
 
 def fresh(args, flags):
-    from trainnewideas.rap.config import load_config
-    from trainnewideas.rap.data import prepare_dataset
+    from trainnewideas.rap.config import as_dict, from_dict, load_config
+    from trainnewideas.rap.data import prepare_dataset, sha256_file
     from trainnewideas.rap.engine import train
+    from trainnewideas.rap.runtime import load_payload
 
     mapping = {"direct": "direct", "expression": "reversible"}
     overrides = {
@@ -115,18 +119,47 @@ def fresh(args, flags):
         "train.future_weight": 0.0, "train.past_weight": 0.0,
         "train.boundary_weight": 0.0, "train.stop_weight": 0.0,
     }
+    mix = None
+    if args.mix:
+        if args.dataset:
+            raise ValueError("Choose --dataset or --mix, not both")
+        directory = Path(args.mix).resolve()
+        mix = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
+        if mix.get("format") != "rap-weighted-mix-v1":
+            raise ValueError("Unsupported weighted mixture manifest")
+        for name, digest in mix["files_sha256"].items():
+            if sha256_file(directory / name) != digest:
+                raise ValueError(f"Mix source checksum mismatch: {name}")
+        overrides["data.source_weights"] = mix["weights"]
     config = load_config(args.config, overrides)
-    prepared = Path(args.prepared)
-    if args.dataset:
-        prepared = prepare_dataset(args.dataset, prepared, config.data)
-    elif not (prepared / "manifest.json").exists():
-        raise ValueError("Pass --dataset for first preparation or an existing --prepared")
     latest = Path(args.run) / "latest.pt"
     if args.resume and not latest.exists():
         raise FileNotFoundError(f"Resume requested but no fresh checkpoint at {latest}")
     source = args.initialize_from
     if source and args.resume:
         raise ValueError("Choose --resume or --initialize-from")
+    if source:
+        if Path(source).resolve().parent == Path(args.run).resolve():
+            raise ValueError("New-stage --run must differ from the source checkpoint directory")
+        if Path(args.run).exists() and any(Path(args.run).iterdir()):
+            raise ValueError("New-stage --run must be an empty/new directory; never overwrite another run")
+        previous = from_dict(load_payload(source)["config"])
+        if as_dict(previous)["model"] != as_dict(config)["model"]:
+            raise ValueError("Fresh new-stage initialization requires identical model architecture")
+    prepared = Path(args.prepared)
+    if mix:
+        names = list(mix["weights"])
+        train_files = [directory / f"{name}.train.jsonl" for name in names]
+        val_files = [directory / f"{name}.validation.jsonl" for name in names]
+        prepared = prepare_dataset(train_files, prepared, config.data, validation_path=val_files)
+    elif args.dataset:
+        prepared = prepare_dataset(args.dataset, prepared, config.data)
+    elif not (prepared / "manifest.json").exists():
+        raise ValueError("Pass --dataset for first preparation or an existing --prepared")
+    if mix and (prepared / "manifest.json").exists():
+        recorded = json.loads((prepared / "manifest.json").read_text(encoding="utf-8"))
+        if recorded["data_config"]["source_weights"] != mix["weights"]:
+            raise ValueError("Prepared source weights do not match the mixture")
     path, _ = train(config, prepared, args.run, resume="auto" if args.resume else None,
                     initialize=source)
     print("Fresh checkpoint:", path)

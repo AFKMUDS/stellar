@@ -40,6 +40,10 @@ def train(config, prepared, run_dir, *, resume=None, initialize=None, stop_at=No
     device = choose_device(cfg.device)
     precision = choose_precision(cfg.precision, device)
     train_corpus, val_corpus = Corpus(prepared, "train"), Corpus(prepared, "validation")
+    validation_sources = {
+        name: Corpus(prepared, "validation", source=name)
+        for name in train_corpus.manifest.get("source_names", [])
+    }
     model = RAP(config.model).to(device)
     if initialize:
         source = load_payload(initialize)
@@ -54,11 +58,14 @@ def train(config, prepared, run_dir, *, resume=None, initialize=None, stop_at=No
     stream = StreamBatcher(train_corpus, cfg.batch_size, cfg.chunk_length, cfg.seed+100)
     state = model.initial_state(cfg.batch_size, device)
     step, target_tokens, best_loss = 0, 0, None
+    target_raw_bytes = 0
     if resume:
         raw = load_payload(resume)
         previous = from_dict(raw["config"])
         if as_dict(previous)["model"] != as_dict(config)["model"]:
             raise ValueError("Model config differs from checkpoint; exact resume cannot change the architecture.")
+        if as_dict(previous)["data"] != as_dict(config)["data"]:
+            raise ValueError("Data config differs from checkpoint; exact resume cannot change source weights or splits.")
         operational = {'steps', 'device', 'precision', 'cpu_threads', 'log_every', 'save_every',
                        'evaluate_every', 'validation_target_tokens', 'validation_input_limit',
                        'snapshot_every', 'sample_every', 'sample_max_bytes', 'sample_prompt'}
@@ -73,6 +80,7 @@ def train(config, prepared, run_dir, *, resume=None, initialize=None, stop_at=No
         stream.load_state_dict(raw["stream"])
         state = State.unpack(raw["recurrent_state"], device)
         step, target_tokens, best_loss = raw["step"], raw.get("target_tokens", 0), raw.get("best_loss")
+        target_raw_bytes = raw.get("metrics", {}).get("target_raw_bytes", 0)
         restore_rng(raw["rng"])
         if previous.train.steps != cfg.steps:
             print("Extended/changed target steps: future learning rates follow the new configured horizon.", flush=True)
@@ -81,6 +89,8 @@ def train(config, prepared, run_dir, *, resume=None, initialize=None, stop_at=No
         parameters=parameter_count(model), state_size=config.model.state_size,
         byte_memory_slots=256, train_records=len(train_corpus.indices),
         validation_records=len(val_corpus.indices), corpus_fingerprint=train_corpus.fingerprint)
+    if validation_sources:
+        environment["source_stats"] = train_corpus.manifest["source_stats"]
     (run_dir/"environment.json").write_text(json.dumps(environment, indent=2), encoding="utf-8")
     print(json.dumps(environment, indent=2), flush=True)
     stop_requested = [False]
@@ -95,6 +105,7 @@ def train(config, prepared, run_dir, *, resume=None, initialize=None, stop_at=No
             scaler=scaler, step=step, stream=stream, state=state,
             metrics=metrics, best_loss=best_loss, target_tokens=target_tokens)
     metrics = {}
+    initial_target_raw_bytes = target_raw_bytes
     beginning = time.monotonic()
     limit = min(cfg.steps, stop_at) if stop_at is not None else cfg.steps
     model.train()
@@ -104,6 +115,7 @@ def train(config, prepared, run_dir, *, resume=None, initialize=None, stop_at=No
                 group["lr"] = learning_rate(cfg, step)
             optimizer.zero_grad(set_to_none=True)
             tokens = 0
+            raw_bytes = 0
             supervised_chunks = 0
             prefill_chunks = 0
             sums = {}
@@ -128,6 +140,7 @@ def train(config, prepared, run_dir, *, resume=None, initialize=None, stop_at=No
                 scaler.scale(loss_sum).backward()
                 count = int(count.item())
                 tokens += count; supervised_chunks += 1
+                raw_bytes += int((batch["mask"] & (batch["target"] < 256)).sum().item())
                 for name, value in terms.items():
                     sums[name] = sums.get(name, 0.0)+float(value.detach().item())*count
             if tokens == 0:
@@ -144,20 +157,33 @@ def train(config, prepared, run_dir, *, resume=None, initialize=None, stop_at=No
             previous_scale = scaler.get_scale()
             scaler.step(optimizer)
             scaler.update()
-            step += 1; target_tokens += tokens
+            step += 1; target_tokens += tokens; target_raw_bytes += raw_bytes
             metrics = {name: value/tokens for name, value in sums.items()}
             metrics.update(step=step, target_tokens=target_tokens,
+                target_raw_bytes=target_raw_bytes,
                 input_symbols=stream.input_tokens, completed_records=stream.completed_records,
                 learning_rate=optimizer.param_groups[0]["lr"],
                 gradient_norm=float(norm.item()) if torch.isfinite(norm).item() else None,
                 optimizer_update_skipped=(scaler.get_scale() < previous_scale),
                 elapsed_seconds=time.monotonic()-beginning)
+            if stream.source_names:
+                metrics["source_supervised_bytes"] = dict(zip(
+                    stream.source_names, map(int, stream.source_supervised_bytes)))
+            metrics["supervised_bytes_per_second"] = (target_raw_bytes - initial_target_raw_bytes) / max(
+                metrics["elapsed_seconds"], 1e-9)
+            if device.type == "cuda":
+                metrics["peak_vram_bytes"] = torch.cuda.max_memory_allocated(device)
             if step == 1 or step % cfg.log_every == 0:
                 append_json(run_dir/"metrics.jsonl", metrics)
                 print(f"step {step}/{cfg.steps}  LM {metrics['language_nats']:.4f} nats  "
                       f"targets {target_tokens:,}  lr {metrics['learning_rate']:.3g}", flush=True)
             if not stop_requested[0] and (step % cfg.evaluate_every == 0 or step == limit):
                 validation = evaluate(model, val_corpus, cfg, device, precision)
+                if validation_sources:
+                    validation["by_source"] = {
+                        name: evaluate(model, corpus, cfg, device, precision)
+                        for name, corpus in validation_sources.items()
+                    }
                 append_json(run_dir/"validation.jsonl", dict(step=step, **validation))
                 print(f"validation step {step}: {json.dumps(validation)}", flush=True)
                 if validation["language_nats"] is not None and (best_loss is None or validation["language_nats"] < best_loss):

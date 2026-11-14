@@ -1,0 +1,66 @@
+{
+  "seed": 2718,
+  "validation_fraction": 0.02,
+  "target_supervised_bytes": 1000000,
+  "validation_bytes_per_source": 2000,
+  "max_record_bytes": 8192,
+  "sources": [
+    {
+      "name": "natural",
+      "kind": "natural",
+      "path": "/workspace/data/natural_reasoning_train.jsonl",
+      "license": "unverified",
+      "license_reviewed": false,
+      "weight": 0.35,
+      "max_scanned": 100000
+    },
+    {
+      "name": "fineweb",
+      "kind": "fineweb",
+      "repo": "HuggingFaceFW/fineweb-edu",
+      "config": "REPLACE_WITH_SELECTED_SAMPLE_CONFIG",
+      "split": "train",
+      "revision": "REPLACE_WITH_IMMUTABLE_40_CHARACTER_COMMIT_SHA",
+      "license": "unverified",
+      "license_reviewed": false,
+      "weight": 0.25,
+      "max_scanned": 50000
+    },
+    {
+      "name": "smoltalk",
+      "kind": "smoltalk",
+      "repo": "HuggingFaceTB/smoltalk2",
+      "config": "REPLACE_WITH_SELECTED_SFT_CONFIG",
+      "split": "train",
+      "revision": "REPLACE_WITH_IMMUTABLE_40_CHARACTER_COMMIT_SHA",
+      "license": "unverified",
+      "license_reviewed": false,
+      "weight": 0.2,
+      "max_scanned": 50000,
+      "max_target_bytes": 512,
+      "include_reasoning": false
+    },
+    {
+      "name": "openthoughts",
+      "kind": "openthoughts",
+      "repo": "open-thoughts/OpenThoughts3-1.2M",
+      "split": "train",
+      "revision": "REPLACE_WITH_IMMUTABLE_40_CHARACTER_COMMIT_SHA",
+      "license": "unverified",
+      "license_reviewed": false,
+      "weight": 0.1,
+      "max_scanned": 50000,
+      "max_target_bytes": 512,
+      "include_reasoning": false
+    },
+    {
+      "name": "synthetic",
+      "kind": "synthetic",
+      "license": "generated-here",
+      "license_reviewed": true,
+      "weight": 0.1,
+      "max_scanned": 20000,
+      "max_delay": 256
+    }
+  ]
+}

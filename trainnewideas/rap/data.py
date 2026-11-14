@@ -169,7 +169,10 @@ def _signature(files, validation, cfg):
         for p in paths:
             stat = p.stat()
             entries.append([split, str(p), stat.st_size, stat.st_mtime_ns])
-    return hashlib.sha256(json.dumps([entries, asdict(cfg)], sort_keys=True).encode()).hexdigest()
+    config = asdict(cfg)
+    if not config.get("source_weights"):
+        config.pop("source_weights", None)  # Preserve signatures of old prepared corpora.
+    return hashlib.sha256(json.dumps([entries, config], sort_keys=True).encode()).hexdigest()
 
 def sha256_file(path):
     digest = hashlib.sha256()
@@ -181,6 +184,19 @@ def sha256_file(path):
 def prepare_dataset(dataset, output, cfg, *, validation_path=None, force=False):
     main = source_files(dataset)
     validation = source_files(validation_path) if validation_path else []
+    weighted = bool(cfg.source_weights)
+    if weighted and not validation:
+        raise ValueError("Weighted mixtures require explicit per-source validation files.")
+    if weighted and cfg.max_records:
+        raise ValueError("max_records would change weighted source quotas; set it to zero.")
+    source_names = [path.stem.split(".", 1)[0] for path in main] if weighted else []
+    if weighted and (len(set(source_names)) != len(source_names)
+                     or set(source_names) != set(cfg.source_weights)):
+        raise ValueError("Weighted source filenames must uniquely match source_weights names.")
+    validation_names = [path.stem.split(".", 1)[0] for path in validation] if weighted else []
+    if weighted and any(name not in source_names for name in validation_names):
+        raise ValueError("Each weighted validation filename must match a training source.")
+    source_lookup = {name: index for index, name in enumerate(source_names)}
     output = Path(output).resolve()
     signature = _signature(main, validation, cfg)
     manifest_path = output/"manifest.json"
@@ -206,7 +222,11 @@ def prepare_dataset(dataset, output, cfg, *, validation_path=None, force=False):
         connection.execute("PRAGMA journal_mode=OFF")
         connection.execute("CREATE TABLE docs (digest BLOB PRIMARY KEY, split INTEGER, first_index INTEGER)")
         handles = {name: (staging/name).open("wb", buffering=1024*1024)
-                   for name in ["tokens.bin", "loss_mask.bin", "records.bin", "splits.bin", "hashes.bin"]}
+                   for name in ["tokens.bin", "loss_mask.bin", "records.bin", "splits.bin", "hashes.bin"]
+                   + (["record_sources.bin"] if weighted else [])}
+        per_source = {name: {"train_records": 0, "validation_records": 0,
+                             "train_supervised": 0, "validation_supervised": 0}
+                      for name in source_names}
         def error(path, line, reason):
             stats["invalid"] += 1
             if len(stats["first_errors"]) < 12:
@@ -217,6 +237,7 @@ def prepare_dataset(dataset, output, cfg, *, validation_path=None, force=False):
             split_written = 0
             for path in paths:
                 print(f"Preparing {path.name}", flush=True)
+                source = path.stem.split(".", 1)[0] if weighted else None
                 for line, obj in iter_objects(path, error):
                     stats["records_seen"] += 1
                     try:
@@ -249,6 +270,12 @@ def prepare_dataset(dataset, output, cfg, *, validation_path=None, force=False):
                     handles["records.bin"].write(struct.pack("<QQ", stats["tokens"], len(ids)))
                     handles["splits.bin"].write(bytes([split]))
                     handles["hashes.bin"].write(digest)
+                    if weighted:
+                        handles["record_sources.bin"].write(struct.pack("<I", source_lookup[source]))
+                        row = per_source[source]
+                        side = "validation" if split else "train"
+                        row[f"{side}_records"] += 1
+                        row[f"{side}_supervised"] += sum(mask[1:])
                     stats["tokens"] += len(ids)
                     stats["target_tokens"] += sum(mask[1:])
                     stats["records_written"] += 1
@@ -291,12 +318,16 @@ def prepare_dataset(dataset, output, cfg, *, validation_path=None, force=False):
         connection.close(); connection = None
         (staging/"dedup.sqlite").unlink()
         file_hashes = {name: sha256_file(staging/name) for name in
-                       ["tokens.bin", "loss_mask.bin", "records.bin", "splits.bin", "hashes.bin"]}
+                       ["tokens.bin", "loss_mask.bin", "records.bin", "splits.bin", "hashes.bin"]
+                       + (["record_sources.bin"] if weighted else [])}
         fingerprint = hashlib.sha256(json.dumps([FORMAT, file_hashes], sort_keys=True).encode()).hexdigest()
         manifest = dict(format=FORMAT, source_signature=signature, fingerprint=fingerprint,
                         tokenizer="raw-utf8-bytes-plus-structural-v1",
                         sources=[str(p) for p in main], explicit_validation=[str(p) for p in validation],
                         data_config=asdict(cfg), stats=stats, file_sha256=file_hashes)
+        if weighted:
+            manifest["source_names"] = source_names
+            manifest["source_stats"] = per_source
         (staging/"manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
         backup = None
         if output.exists():
@@ -318,7 +349,7 @@ def prepare_dataset(dataset, output, cfg, *, validation_path=None, force=False):
         raise
 
 class Corpus:
-    def __init__(self, directory, split):
+    def __init__(self, directory, split, source=None):
         self.directory = Path(directory).resolve()
         self.manifest = json.loads((self.directory/"manifest.json").read_text(encoding="utf-8"))
         if self.manifest.get("format") != FORMAT:
@@ -326,6 +357,8 @@ class Corpus:
         n, tokens = self.manifest["stats"]["records_written"], self.manifest["stats"]["tokens"]
         expected = {"tokens.bin": tokens*2, "loss_mask.bin": tokens, "records.bin": n*16,
                     "splits.bin": n, "hashes.bin": n*32}
+        if "source_names" in self.manifest:
+            expected["record_sources.bin"] = n * 4
         for name, size in expected.items():
             if (self.directory/name).stat().st_size != size:
                 raise ValueError(f"Prepared file size mismatch: {name}; prepare again.")
@@ -333,9 +366,15 @@ class Corpus:
         self.mask = np.memmap(self.directory/"loss_mask.bin", dtype=np.uint8, mode="r", shape=(tokens,))
         self.records = np.memmap(self.directory/"records.bin", dtype="<u8", mode="r", shape=(n, 2))
         self.partition = np.memmap(self.directory/"splits.bin", dtype=np.uint8, mode="r", shape=(n,))
+        self.sources = (np.memmap(self.directory/"record_sources.bin", dtype="<u4", mode="r",
+                                  shape=(n,)) if "source_names" in self.manifest else None)
         code = 0 if split == "train" else 1 if split == "validation" else None
         if code is None: raise ValueError("split must be train or validation")
         self.indices = np.flatnonzero(self.partition == code)
+        if source is not None:
+            if self.sources is None or source not in self.manifest["source_names"]:
+                raise ValueError(f"Unknown prepared source: {source}")
+            self.indices = self.indices[self.sources[self.indices] == self.manifest["source_names"].index(source)]
         self.split = split
         if not len(self.indices):
             raise ValueError(f"No records in {split} split.")
@@ -353,11 +392,28 @@ class StreamBatcher:
         self.next_record = 0
         self.completed_records = 0
         self.input_tokens = 0
+        self.source_names = corpus.manifest.get("source_names", []) if shuffle else []
+        weights = corpus.manifest.get("data_config", {}).get("source_weights", {})
+        self.source_weights = np.array([weights[name] for name in self.source_names], dtype=np.float64)
+        if len(self.source_weights):
+            self.source_weights /= self.source_weights.sum()
+        self.source_supervised_bytes = np.zeros(len(self.source_names), dtype=np.int64)
+        self.source_records = ([corpus.indices[corpus.sources[corpus.indices] == i]
+                                for i in range(len(self.source_names))] if self.source_names else [])
+        if any(not len(group) for group in self.source_records):
+            raise ValueError("Each weighted source must have training records.")
         self.lanes = [self._new_lane() for _ in range(batch_size)]
 
     def _new_lane(self):
         if self.shuffle:
-            record = int(self.rng.choice(self.corpus.indices))
+            if self.source_names:
+                # Choose the most byte-underexposed source, then a document within it.
+                deficit = self.source_supervised_bytes / self.source_weights
+                candidates = np.flatnonzero(deficit == deficit.min())
+                source = int(self.rng.choice(candidates))
+                record = int(self.rng.choice(self.source_records[source]))
+            else:
+                record = int(self.rng.choice(self.corpus.indices))
         else:
             record = int(self.corpus.indices[self.next_record % len(self.corpus.indices)])
             self.next_record += 1
@@ -379,23 +435,36 @@ class StreamBatcher:
                 x[b, t] = self.corpus.tokens[at]
                 y[b, t] = self.corpus.tokens[at+1]
                 mask[b, t] = self.corpus.mask[at+1]
+                if self.source_names:
+                    self.source_supervised_bytes[int(self.corpus.sources[record])] += int(
+                        mask[b, t] and y[b, t] < 256)
                 self.lanes[b][1] += 1
         self.input_tokens += x.size
         return {"input": torch.from_numpy(x), "target": torch.from_numpy(y),
                 "mask": torch.from_numpy(mask)}
 
     def state_dict(self):
-        return dict(lanes=[list(x) for x in self.lanes], rng=self.rng.bit_generator.state,
+        result = dict(lanes=[list(x) for x in self.lanes], rng=self.rng.bit_generator.state,
                     next_record=self.next_record, completed_records=self.completed_records,
                     input_tokens=self.input_tokens, fingerprint=self.corpus.fingerprint,
                     batch_size=self.batch_size, chunk_length=self.chunk_length,
                     shuffle=self.shuffle)
+        if self.source_names:
+            result["source_names"] = self.source_names
+            result["source_weights"] = self.source_weights.tolist()
+            result["source_supervised_bytes"] = self.source_supervised_bytes.tolist()
+        return result
 
     def load_state_dict(self, raw):
         for key, value in [("fingerprint", self.corpus.fingerprint), ("batch_size", self.batch_size),
                            ("chunk_length", self.chunk_length), ("shuffle", self.shuffle)]:
             if raw[key] != value:
                 raise ValueError(f"Resume batch stream mismatch: {key}")
+        if self.source_names:
+            if (raw.get("source_names") != self.source_names
+                    or raw.get("source_weights") != self.source_weights.tolist()):
+                raise ValueError("Resume source weights/names differ from checkpoint.")
+            self.source_supervised_bytes[:] = raw["source_supervised_bytes"]
         self.lanes = [list(x) for x in raw["lanes"]]
         self.rng.bit_generator.state = raw["rng"]
         self.next_record = raw["next_record"]
